@@ -416,6 +416,26 @@ export function DecisionTableExpression({
     widths,
   ]);
 
+  const createDefaultRule = () => {
+    const defaultRowToAdd: Normalized<DMN15__tDecisionRule> = {
+      "@_id": generateUuid(),
+      inputEntry: [
+        {
+          "@_id": generateUuid(),
+          text: { __$$text: DECISION_TABLE_INPUT_DEFAULT_VALUE },
+        },
+      ],
+      outputEntry: [
+        {
+          "@_id": generateUuid(),
+          text: { __$$text: DECISION_TABLE_OUTPUT_DEFAULT_VALUE },
+        },
+      ],
+      annotationEntry: [{ text: { __$$text: "// Your annotations here" } }],
+    };
+    return defaultRowToAdd;
+  };
+
   const beeTableRows = useMemo(() => {
     const mapRuleToRow = (rule: Normalized<DMN15__tDecisionRule>) => {
       const ruleRow = [
@@ -437,22 +457,10 @@ export function DecisionTableExpression({
     };
     const prevRules = decisionTableExpression.rule ?? [];
     if (prevRules.length === 0) {
-      const defaultRowToAdd: Normalized<DMN15__tDecisionRule> = {
-        "@_id": generateUuid(),
-        inputEntry: decisionTableExpression.input?.map(() => ({
-          "@_id": generateUuid(),
-          text: { __$$text: DECISION_TABLE_INPUT_DEFAULT_VALUE },
-        })),
-        outputEntry: decisionTableExpression.output?.map(() => ({
-          "@_id": generateUuid(),
-          text: { __$$text: DECISION_TABLE_OUTPUT_DEFAULT_VALUE },
-        })),
-        annotationEntry: [{ text: { __$$text: "" } }],
-      };
-      return [mapRuleToRow(defaultRowToAdd)];
+      return [mapRuleToRow(createDefaultRule())];
     }
     return prevRules.map(mapRuleToRow);
-  }, [decisionTableExpression.rule, decisionTableExpression.output, decisionTableExpression.input, beeTableColumns]);
+  }, [decisionTableExpression.rule, decisionTableExpression.output.length, beeTableColumns]);
 
   const onCellUpdates = useCallback(
     (cellUpdates: BeeTableCellUpdate<ROWTYPE>[]) => {
@@ -461,19 +469,7 @@ export function DecisionTableExpression({
           let previousExpression: Normalized<BoxedDecisionTable> = { ...prev };
           const isDisplayOnlyRowPresent = previousExpression.rule === undefined ? true : false;
           if (isDisplayOnlyRowPresent) {
-            const defaultRowToAdd: Normalized<DMN15__tDecisionRule> = {
-              "@_id": generateUuid(),
-              inputEntry: Array.from(new Array(prev.input?.length ?? 0)).map(() => {
-                return createInputEntry();
-              }),
-              outputEntry: Array.from(new Array(prev.output?.length ?? 0)).map(() => {
-                return createOutputEntry();
-              }),
-              annotationEntry: Array.from(new Array(prev.annotation?.length ?? 0)).map(() => {
-                return { text: { __$$text: "" } };
-              }),
-            };
-            previousExpression.rule = [defaultRowToAdd];
+            previousExpression.rule = [createDefaultRule()];
           }
           cellUpdates.forEach((cellUpdate) => {
             const newRules = [...(previousExpression.rule ?? [])];
@@ -749,9 +745,11 @@ export function DecisionTableExpression({
     (args: { beforeIndex: number; rowsCount: number }) => {
       setExpression({
         setExpressionAction: (prev: Normalized<BoxedDecisionTable>) => {
+          if (!prev.rule) {
+            prev.rule = [createDefaultRule()];
+          }
           const newRules = [...(prev.rule ?? [])];
           const newItems: Normalized<DMN15__tDecisionRule>[] = [];
-          newRules.length === 0 ? args.rowsCount++ : args.rowsCount;
           for (let i = 0; i < args.rowsCount; i++) {
             newItems.push({
               "@_id": generateUuid(),
