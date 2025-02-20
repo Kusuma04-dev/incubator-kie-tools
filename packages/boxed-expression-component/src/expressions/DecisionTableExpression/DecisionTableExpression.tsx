@@ -447,7 +447,7 @@ export function DecisionTableExpression({
           "@_id": generateUuid(),
           text: { __$$text: DECISION_TABLE_OUTPUT_DEFAULT_VALUE },
         })),
-        annotationEntry: [{ text: { __$$text: "// Your annotations here" } }],
+        annotationEntry: [{ text: { __$$text: "" } }],
       };
       return [mapRuleToRow(defaultRowToAdd)];
     }
@@ -470,7 +470,7 @@ export function DecisionTableExpression({
                 return createOutputEntry();
               }),
               annotationEntry: Array.from(new Array(prev.annotation?.length ?? 0)).map(() => {
-                return { text: { __$$text: "// Your annotations here" } };
+                return { text: { __$$text: "" } };
               }),
             };
             previousExpression.rule = [defaultRowToAdd];
@@ -751,7 +751,7 @@ export function DecisionTableExpression({
         setExpressionAction: (prev: Normalized<BoxedDecisionTable>) => {
           const newRules = [...(prev.rule ?? [])];
           const newItems: Normalized<DMN15__tDecisionRule>[] = [];
-
+          newRules.length === 0 ? args.rowsCount++ : args.rowsCount;
           for (let i = 0; i < args.rowsCount; i++) {
             newItems.push({
               "@_id": generateUuid(),
