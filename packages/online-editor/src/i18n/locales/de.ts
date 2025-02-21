@@ -446,7 +446,16 @@ export const de: OnlineI18n = {
         " und melden Sie ein Problem. Vergessen Sie nicht, die aktuelle Datei und die verwendeten Eingaben hochzuladen",
       ],
     },
-    table: { ...de_unitables },
+    table: {
+      ...de_unitables,
+
+      validation: {
+        xDmnAllowedValues: "does not belong to set of allowed values",
+        xDmnTypeConstraint: "does not belong to set of type constraint",
+        daysAndTimeError: "should match format P1D(ays)T2H(ours)3M(inutes)1S(econds)",
+        yearsAndMonthsError: "should match format P1Y(ears)2M(onths)",
+      },
+    },
     modal: {
       initial: {
         runDmnModels: "Führen Sie Ihre Modelle aus und sehen Sie die Ergebnisse live, während Sie sie bearbeiten.",

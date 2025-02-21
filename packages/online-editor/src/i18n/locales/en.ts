@@ -434,7 +434,16 @@ export const en: OnlineI18n = {
         " and report an issue. Don't forget to upload the current file, and the used inputs",
       ],
     },
-    table: { ...en_unitables },
+    table: {
+      ...en_unitables,
+
+      validation: {
+        xDmnAllowedValues: "does not belong to set of allowed values",
+        xDmnTypeConstraint: "does not belong to set of type constraint",
+        daysAndTimeError: "should match format P1D(ays)T2H(ours)3M(inutes)1S(econds)",
+        yearsAndMonthsError: "should match format P1Y(ears)2M(onths)",
+      },
+    },
     modal: {
       initial: {
         runDmnModels: "Run your models and see live forms and results as you edit.",
