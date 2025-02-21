@@ -27,4 +27,10 @@ export const de: DmnUnitablesI18n = {
   schema: {
     selectPlaceholder: "Auswählen...",
   },
+  validation: {
+    xDmnAllowedValues: "does not belong to set of allowed values",
+    xDmnTypeConstraint: "does not belong to set of type constraint",
+    daysAndTimeError: "should match format P1D(ays)T2H(ours)3M(inutes)1S(econds)",
+    yearsAndMonthsError: "should match format P1Y(ears)2M(onths)",
+  },
 };

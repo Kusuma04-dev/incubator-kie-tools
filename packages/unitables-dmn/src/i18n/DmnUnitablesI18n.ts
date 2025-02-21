@@ -27,4 +27,11 @@ interface DmnUniablesDictionary extends ReferenceDictionary {
   };
 }
 
-export interface DmnUnitablesI18n extends DmnUniablesDictionary, CommonI18n, UnitablesI18n {}
+export interface DmnUnitablesI18n extends DmnUniablesDictionary, CommonI18n, UnitablesI18n {
+  validation: {
+    xDmnAllowedValues: string;
+    xDmnTypeConstraint: string;
+    daysAndTimeError: string;
+    yearsAndMonthsError: string;
+  };
+}

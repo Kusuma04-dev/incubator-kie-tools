@@ -25,6 +25,8 @@ import { context as UniformsContext } from "uniforms";
 import { AUTO_ROW_ID, UnitablesJsonSchemaBridge } from "./uniforms";
 import { DmnAutoFieldProvider } from "@kie-tools/dmn-runner/dist/uniforms/DmnAutoFieldProvider";
 import { unitablesDmnRunnerAutoFieldValue } from "./uniforms/UnitablesDmnRunnerAutoFieldValue";
+import { UnitablesValidator } from "./UnitablesValidator";
+import { unitablesI18n } from "./i18n";
 
 interface Props {
   formsId: string;
@@ -41,7 +43,11 @@ export interface UnitablesRowApi {
 export const UnitablesRow = React.forwardRef<UnitablesRowApi, PropsWithChildren<Props>>(
   ({ children, formsId, rowIndex, jsonSchemaBridge, rowInput, onSubmitRow }, forwardRef) => {
     const autoRowRef = useRef<HTMLFormElement>(null);
-
+    const i18n = React.useMemo(() => {
+      unitablesI18n.setLocale(navigator.language);
+      return unitablesI18n.getCurrent();
+    }, []);
+    const dmnValidator = React.useMemo(() => new UnitablesValidator(i18n), [i18n]);
     const onSubmit = useCallback(
       (rowInput: Record<string, any>) => {
         console.debug("DMN RUNNER TABLE: submit row: ", rowIndex);
@@ -50,11 +56,40 @@ export const UnitablesRow = React.forwardRef<UnitablesRowApi, PropsWithChildren<
       [onSubmitRow, rowIndex]
     );
 
-    // Without it the errors will be returned in "onChange" validation;
-    const onValidate = useCallback((inputs, error) => {
-      // returns the validation errors;
-      return null;
-    }, []);
+    const onValidate = useCallback(
+      (inputs, error) => {
+        if (!error) {
+          return null;
+        }
+
+        const {
+          details,
+          changes,
+        }: {
+          details: object[];
+          changes: Array<[string, string | number | undefined]>;
+        } = error.details.reduce(
+          (infos: any, detail: any) => {
+            infos.details = [...infos.details, detail];
+            return infos;
+          },
+          { details: [], changes: [] }
+        );
+
+        changes.forEach(([formFieldPath, fieldValue]) => {
+          formFieldPath?.split(".")?.reduce((deeper, field, index, array) => {
+            if (index === array.length - 1) {
+              deeper[field] = fieldValue;
+            } else {
+              return deeper[field];
+            }
+          }, inputs);
+        });
+        return { details };
+      },
+
+      []
+    );
 
     useImperativeHandle(forwardRef, () => {
       return {
@@ -77,6 +112,7 @@ export const UnitablesRow = React.forwardRef<UnitablesRowApi, PropsWithChildren<
           placeholder={true}
           validate={"onSubmit"}
           onValidate={onValidate}
+          validator={dmnValidator}
         >
           <UniformsContext.Consumer>
             {(uniformsContext) => (

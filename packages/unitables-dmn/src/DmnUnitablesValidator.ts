@@ -24,7 +24,10 @@ import { UnitablesValidator } from "@kie-tools/unitables/dist/UnitablesValidator
 import { DmnRunnerAjv } from "@kie-tools/dmn-runner/dist/ajv";
 import { SCHEMA_DRAFT4 } from "@kie-tools/dmn-runner/dist/jsonSchemaConstants";
 import type { JSONSchema4 } from "json-schema";
-
+import {
+  X_DMN_ALLOWED_VALUES_KEYWORD,
+  X_DMN_TYPE_CONSTRAINTS_KEYWORD,
+} from "@kie-tools/dmn-runner/dist/jitExecutorKeywords";
 export class DmnUnitablesValidator extends UnitablesValidator {
   protected readonly dmnRunnerAjv = new DmnRunnerAjv();
 
@@ -40,18 +43,23 @@ export class DmnUnitablesValidator extends UnitablesValidator {
       validator(JSON.parse(JSON.stringify(model)));
 
       if (validator.errors && validator.errors.length) {
-        const details = validator.errors
-          .filter((error: any) => error.keyword !== "required")
-          .map((error: any) => {
-            if (error.keyword === "format") {
-              if ((error.params as any).format === DAYS_AND_TIME_DURATION_FORMAT) {
-                return { ...error, message: "" };
-              }
-              if ((error.params as any).format === YEARS_AND_MONTHS_DURATION_FORMAT) {
-                return { ...error, message: "" };
-              }
+        const details = validator.errors.map((error: any) => {
+          if (error.keyword === "format") {
+            if ((error.params as any).format === DAYS_AND_TIME_DURATION_FORMAT) {
+              return { ...error, message: (this.i18n as DmnUnitablesI18n).validation.daysAndTimeError };
             }
-          });
+            if ((error.params as any).format === YEARS_AND_MONTHS_DURATION_FORMAT) {
+              return { ...error, message: (this.i18n as DmnUnitablesI18n).validation.yearsAndMonthsError };
+            }
+          }
+          if (error.keyword === X_DMN_ALLOWED_VALUES_KEYWORD) {
+            return { ...error, message: (this.i18n as DmnUnitablesI18n).validation.xDmnAllowedValues };
+          }
+          if (error.keyword === X_DMN_TYPE_CONSTRAINTS_KEYWORD) {
+            return { ...error, message: (this.i18n as DmnUnitablesI18n).validation.xDmnTypeConstraint };
+          }
+          return error;
+        });
         return { details };
       }
       return null;
