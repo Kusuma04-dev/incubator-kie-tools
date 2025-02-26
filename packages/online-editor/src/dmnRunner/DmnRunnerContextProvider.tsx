@@ -84,6 +84,7 @@ const initialDmnRunnerProviderStates: DmnRunnerProviderState = {
   isExpanded: false,
   currentInputIndex: 0,
 };
+const [currentResponseMessage, setCurrentResponseMessage] = useState<Map<string, DmnEvaluationMessages[]>>(new Map());
 
 function dmnRunnerContextProviderReducer(dmnRunnerProvider: DmnRunnerProviderState, action: DmnRunnerProviderAction) {
   switch (action.type) {
@@ -262,6 +263,18 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
             if (canceled.get()) {
               return;
             }
+            const currentResults = results[currentInputIndex];
+            if (currentResults && currentResults.messages?.length > 0) {
+              const messagesMap = new Map(
+                (currentResults.decisionResults || []).map((decisionResult) => {
+                  const messages = currentResults.messages || [];
+                  return [decisionResult.decisionId, messages];
+                })
+              );
+              setCurrentResponseMessage(messagesMap);
+            } else {
+              setCurrentResponseMessage(new Map());
+            }
 
             const runnerResults: Array<DecisionResult[] | undefined> = [];
             for (const result of results) {
@@ -286,6 +299,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
         extendedServices.client,
         dmnRunnerInputs,
         extendedServicesModelPayload,
+        currentInputIndex,
       ]
     )
   );
@@ -343,7 +357,10 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
 
     const messagesBySourceId =
       results[currentInputIndex]?.reduce((acc, decisionResult) => {
-        decisionResult.messages?.forEach((message) => {
+        const messages = decisionResult.messages?.length
+          ? decisionResult.messages
+          : currentResponseMessage.get(decisionResult.decisionId) ?? [];
+        messages?.forEach((message) => {
           const messageEntry = acc.get(message.sourceId);
           if (!messageEntry) {
             acc.set(message.sourceId, [message]);
@@ -372,6 +389,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
     currentInputIndex,
     props.workspaceFile.extension,
     extendedServices.status,
+    currentResponseMessage,
   ]);
 
   const setDmnRunnerPersistenceJson = useCallback(
