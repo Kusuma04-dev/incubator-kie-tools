@@ -22,6 +22,7 @@ import { useCallback, useState } from "react";
 import { useCancelableEffect } from "@kie-tools-core/react-hooks/dist/useCancelableEffect";
 import { basename } from "path";
 
+import { Alert } from "@patternfly/react-core/dist/js/components/Alert";
 import { Button } from "@patternfly/react-core/dist/js/components/Button";
 import { Checkbox } from "@patternfly/react-core/dist/js/components/Checkbox";
 import { EmptyState, EmptyStateIcon } from "@patternfly/react-core/dist/js/components/EmptyState";
@@ -77,8 +78,10 @@ function TestScenarioCreationPanel() {
       ({ canceled }) => {
         onRequestExternalModelsAvailableToInclude?.()
           .then((dmnModelNormalizedPosixPathRelativePaths) => {
-            console.trace("[TestScenarioCreationPanel] The below external DMN models have been found");
-            console.trace(dmnModelNormalizedPosixPathRelativePaths);
+            console.debug(
+              "[TestScenarioCreationPanel] The below external DMN models have been found ",
+              dmnModelNormalizedPosixPathRelativePaths
+            );
 
             if (canceled.get()) {
               setAllDmnModelNormalizedPosixRelativePaths(undefined);
@@ -112,8 +115,10 @@ function TestScenarioCreationPanel() {
 
         onRequestExternalModelByPath(selectedDmnModelPathRelativeToThisScesim)
           .then((externalDMNModel) => {
-            console.trace("[TestScenarioCreationPanel] The below external DMN model have been loaded");
-            console.trace(externalDMNModel);
+            console.debug(
+              "[TestScenarioCreationPanel] The below external DMN model have been loaded ",
+              externalDMNModel
+            );
 
             if (canceled.get() || !externalDMNModel) {
               setSelectedDmnModel(undefined);
@@ -196,7 +201,7 @@ function TestScenarioCreationPanel() {
                 id="dmn-select"
                 name="dmn-select"
                 onChange={(dmnModelPathRelativeToThisScesim) => {
-                  console.trace(`[TestScenarioCreationPanel] Selected path ${dmnModelPathRelativeToThisScesim}`);
+                  console.debug(`[TestScenarioCreationPanel] Selected path ${dmnModelPathRelativeToThisScesim}`);
                   setSelectedDmnModelPathRelativeToThisScesim(dmnModelPathRelativeToThisScesim);
                 }}
                 value={selectedDmnModelPathRelativeToThisScesim}
@@ -280,7 +285,7 @@ function TestScenarioCreationPanel() {
               <>
                 <span>{i18n.creationPanel.testSkip}</span>
                 <Tooltip content={i18n.drawer.settings.testSkippedTooltip}>
-                  <Icon className={"kie-scesim-editor-creation-panel--info-icon"} size="sm" status="info">
+                  <Icon className="kie-scesim-editor-creation-panel--info-icon" size="sm" status="info">
                     <HelpIcon />
                   </Icon>
                 </Tooltip>
@@ -292,9 +297,16 @@ function TestScenarioCreationPanel() {
           />
         </FormGroup>
       </Form>
+      {assetType === "RULE" && (
+        <Alert
+          className="kie-scesim-editor-creation-panel--rule-scesim-alert"
+          variant="danger"
+          title="Rule based Test Scenario is not supported yet."
+        />
+      )}
       <Button
         icon={<AddIcon />}
-        isDisabled={assetType === "" || (assetType === "DMN" && !selectedDmnModel)}
+        isDisabled={assetType === "" || assetType === "RULE" || (assetType === "DMN" && !selectedDmnModel)}
         onClick={createTestScenario}
         variant="primary"
       >

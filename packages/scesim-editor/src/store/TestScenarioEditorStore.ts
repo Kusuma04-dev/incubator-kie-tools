@@ -52,8 +52,11 @@ export type TestScenarioAlert = {
 export type TestScenarioDataObject = {
   id: string;
   children?: TestScenarioDataObject[];
+  className?: string;
+  collectionGenericType?: string[];
   customBadgeContent?: string;
-  isSimpleTypeFact?: boolean;
+  expressionElements: string[];
+  hasBadge?: boolean;
   name: string;
 };
 
@@ -120,8 +123,7 @@ export const defaultStaticState = (): Omit<State, "computed" | "dispatch" | "sce
 });
 
 export function createTestScenarioEditorStore(model: SceSimModel, computedCache: ComputedStateCache<Computed>) {
-  console.trace("[TestScenarioEditorStore] Creating store with above model and empty cache ");
-  console.trace(model);
+  console.debug("[TestScenarioEditorStore] Creating store with above model and empty cache ", model);
 
   const { ...defaultState } = defaultStaticState();
   return create(
