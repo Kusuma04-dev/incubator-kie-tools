@@ -69,9 +69,11 @@ export function computeIndexedDrd(
       // Ignore anything that is unknown.
     }
   }
+
   return {
     dmnEdgesByDmnElementRef,
     dmnShapesByHref,
     hrefsOfDmnElementRefsOfShapesPointingToExternalDmnObjects,
+    diExtensions: definitions["dmndi:DMNDI"]?.["dmndi:DMNDiagram"]?.[drdIndex]?.["di:extension"],
   };
 }

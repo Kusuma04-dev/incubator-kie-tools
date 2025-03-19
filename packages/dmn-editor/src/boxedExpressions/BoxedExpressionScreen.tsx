@@ -100,7 +100,7 @@ export function BoxedExpressionScreen({ container }: { container: React.RefObjec
   const settings = useSettings();
   const dmnEditorStoreApi = useDmnEditorStoreApi();
 
-  const thisDmn = useDmnEditorStore((s) => s.dmn);
+  const drgElements = useDmnEditorStore((s) => s.dmn.model.definitions.drgElement);
 
   const activeDrgElementId = useDmnEditorStore((s) => s.boxedExpressionEditor.activeDrgElementId);
   const isPropertiesPanelOpen = useDmnEditorStore((s) => s.boxedExpressionEditor.propertiesPanel.isOpen);
@@ -135,21 +135,21 @@ export function BoxedExpressionScreen({ container }: { container: React.RefObjec
       return undefined;
     }
 
-    return (thisDmn.model.definitions.drgElement ?? []).findIndex((e) => e["@_id"] === activeDrgElementId);
-  }, [activeDrgElementId, thisDmn.model.definitions.drgElement]);
+    return (drgElements ?? []).findIndex((e) => e["@_id"] === activeDrgElementId);
+  }, [activeDrgElementId, drgElements]);
 
   const drgElement = useMemo(() => {
     if (drgElementIndex === undefined) {
       return undefined;
     }
 
-    const drgElement = thisDmn.model.definitions.drgElement?.[drgElementIndex];
+    const drgElement = drgElements?.[drgElementIndex];
     if (!(drgElement?.__$$element === "decision" || drgElement?.__$$element === "businessKnowledgeModel")) {
       return undefined;
     }
 
     return drgElement;
-  }, [drgElementIndex, thisDmn.model.definitions.drgElement]);
+  }, [drgElementIndex, drgElements]);
 
   // BEGIN (setState batching for `expression` and `widthsById`)
   //
@@ -158,12 +158,12 @@ export function BoxedExpressionScreen({ container }: { container: React.RefObjec
   // More than that, they are responsible for maintaining an up-to-date ref for each one of
   // those values, so that batching works normally without having the `onChange` handlers be
   // recalculated, breaking batching.
+  const kieComponentWidths = useDmnEditorStore(
+    (s) => s.computed(s).indexedDrd().diExtensions?.["kie:ComponentsWidthsExtension"]?.["kie:ComponentWidths"]
+  );
+
   const widthsById = useMemo(() => {
-    return (
-      thisDmn.model.definitions["dmndi:DMNDI"]?.["dmndi:DMNDiagram"]?.[drdIndex]["di:extension"]?.[
-        "kie:ComponentsWidthsExtension"
-      ]?.["kie:ComponentWidths"] ?? []
-    ).reduce((acc, c) => {
+    return (kieComponentWidths ?? []).reduce((acc, c) => {
       if (c["@_dmnElementRef"] === undefined) {
         return acc;
       } else {
@@ -173,7 +173,7 @@ export function BoxedExpressionScreen({ container }: { container: React.RefObjec
         );
       }
     }, new Map<string, number[]>());
-  }, [drdIndex, thisDmn.model.definitions]);
+  }, [kieComponentWidths]);
 
   const expression = useMemo(() => {
     if (!drgElement) {
