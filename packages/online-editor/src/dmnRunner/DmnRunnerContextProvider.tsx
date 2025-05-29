@@ -217,7 +217,23 @@ function theWorstEvaluationResult(a?: NewDmnEditorTypes.EvaluationResult, b?: Ne
   }
   return "succeeded";
 }
+export function extractImportNamespaceMap(dmnXml: string): Record<string, string> {
+  const parser = new DOMParser();
+  const xmlDoc = parser.parseFromString(dmnXml, "application/xml");
 
+  const importElements = Array.from(xmlDoc.getElementsByTagName("import"));
+  const namespaceMap: Record<string, string> = {};
+
+  importElements.forEach((imp) => {
+    const namespace = imp.getAttribute("namespace");
+    const name = imp.getAttribute("name");
+    if (namespace && name) {
+      namespaceMap[namespace] = name;
+    }
+  });
+
+  return namespaceMap;
+}
 export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
   const { i18n } = useOnlineI18n();
   // Calling forceDmnRunnerReRender will cause a update in the dmnRunnerKey
@@ -305,6 +321,27 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
       setDmnRunnerContextProviderState({ type: DmnRunnerProviderActionType.DEFAULT, newState: { isExpanded: false } });
     }
   }, [prevExtendedServicesStatus, extendedServices.status, props.workspaceFile.extension]);
+
+  const [namespaceNameMap, setNamespaceNameMap] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    const fetchNamespaces = async () => {
+      try {
+        const fileContent = await workspaces.getFileContent({
+          workspaceId: props.workspaceFile.workspaceId,
+          relativePath: props.workspaceFile.relativePath,
+        });
+
+        const decodedFileContent = decoder.decode(fileContent);
+        const extractedMap = extractImportNamespaceMap(decodedFileContent);
+        setNamespaceNameMap(extractedMap);
+      } catch (error) {
+        console.error("Failed to fetch or parse DMN file:", error);
+      }
+    };
+
+    fetchNamespaces();
+  }, [props.workspaceFile.workspaceId, props.workspaceFile.relativePath, workspaces]);
 
   const extendedServicesModelPayload = useCallback<(formInputs?: InputRow) => Promise<ExtendedServicesModelPayload>>(
     async (formInputs) => {
@@ -870,6 +907,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
       results,
       resultsDifference,
       status,
+      namespaceNameMap,
     }),
     [
       canBeVisualized,
@@ -885,6 +923,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
       results,
       resultsDifference,
       status,
+      namespaceNameMap,
     ]
   );
 

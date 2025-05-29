@@ -94,11 +94,11 @@ export function DmnRunnerOutputsTable({
           <OutputsBeeTable
             scrollableParentRef={scrollableParentRef}
             i18n={i18n}
-            outputsPropertiesMap={outputsPropertiesMap}
             results={results}
             id={outputUid}
             openBoxedExpressionEditor={openBoxedExpressionEditor}
             openedBoxedExpressionEditorNodeId={openedBoxedExpressionEditorNodeId}
+            outputsPropertiesMap={new Map()}
           />
         </ErrorBoundary>
       ) : (
