@@ -94,11 +94,11 @@ export function DmnRunnerOutputsTable({
           <OutputsBeeTable
             scrollableParentRef={scrollableParentRef}
             i18n={i18n}
-            outputsPropertiesMap={outputsPropertiesMap}
             results={results}
             id={outputUid}
             openBoxedExpressionEditor={openBoxedExpressionEditor}
             openedBoxedExpressionEditorNodeId={openedBoxedExpressionEditorNodeId}
+            outputsPropertiesMap={outputsPropertiesMap}
           />
         </ErrorBoundary>
       ) : (
@@ -448,7 +448,7 @@ function OutputsBeeTable({
     outputsPropertiesMap,
     results,
   ]);
-
+  console.log("results", results);
   const beeTableRows = useMemo<ROWTYPE[]>(() => {
     return (results ?? []).map((decisionResult, rowIndex) => {
       const rowValues = decisionResult?.flatMap(({ result, decisionName }): DmnEvaluationResult[] => {

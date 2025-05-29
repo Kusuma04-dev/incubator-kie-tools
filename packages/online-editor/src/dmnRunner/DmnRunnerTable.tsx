@@ -19,7 +19,7 @@
 
 import * as React from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { useDmnRunnerDispatch, useDmnRunnerState } from "./DmnRunnerContext";
+import { DmnRunnerStateContext, useDmnRunnerDispatch, useDmnRunnerState } from "./DmnRunnerContext";
 import { DmnRunnerMode } from "./DmnRunnerStatus";
 import { DmnRunnerLoading } from "./DmnRunnerLoading";
 import { Drawer, DrawerContent, DrawerPanelContent } from "@patternfly/react-core/dist/js/components/Drawer";
@@ -31,12 +31,13 @@ import "./DmnRunnerTable.css";
 import setObjectValueByPath from "lodash/set";
 import cloneDeep from "lodash/cloneDeep";
 import { DmnRunnerProviderActionType } from "./DmnRunnerTypes";
-import { DmnRunnerExtendedServicesError } from "./DmnRunnerContextProvider";
+import { DmnRunnerContextProvider, DmnRunnerExtendedServicesError } from "./DmnRunnerContextProvider";
 import { MessageBusClientApi } from "@kie-tools-core/envelope-bus/dist/api";
 import { NewDmnEditorEnvelopeApi } from "@kie-tools/dmn-editor-envelope/dist/NewDmnEditorEnvelopeApi";
 import { useSettings } from "../settings/SettingsContext";
 import { useEditorDockContext } from "../editor/EditorPageDockContextProvider";
 import { useSharedValue } from "@kie-tools-core/envelope-bus/dist/hooks";
+import { mergeDmnSchemas } from "./mergedSchemas";
 
 export function DmnRunnerTable() {
   // STATEs
@@ -66,16 +67,20 @@ export function DmnRunnerTable() {
       inputsContainerRef,
       outputsContainerRef,
     });
-
+  const { namespaceNameMap } = React.useContext(DmnRunnerStateContext);
   // MEMOs
   const rowCount = useMemo(() => inputs?.length ?? 1, [inputs?.length]);
   const jsonSchemaBridge = useMemo(() => {
     try {
-      return new DmnUnitablesValidator(i18n.dmnRunner.table).getBridge(cloneDeep(jsonSchema) ?? {});
+      const mergedSchema = mergeDmnSchemas(cloneDeep(jsonSchema ?? {}), namespaceNameMap);
+      console.log("json", jsonSchema);
+      console.log("mergedSchema", mergedSchema);
+      console.log("namespaceNameMap", namespaceNameMap);
+      return new DmnUnitablesValidator(i18n.dmnRunner.table).getBridge(mergedSchema);
     } catch (err) {
       throw Error(`getBridge ${err}`);
     }
-  }, [i18n, jsonSchema]);
+  }, [i18n.dmnRunner.table, jsonSchema, namespaceNameMap]);
 
   useEffect(() => {
     setDmnRunnerTableError(false);

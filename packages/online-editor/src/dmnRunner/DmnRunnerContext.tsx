@@ -41,6 +41,7 @@ export interface DmnRunnerContextType {
   results: Array<DecisionResult[] | undefined>;
   resultsDifference: Array<Array<object>>;
   status: DmnRunnerStatus;
+  namespaceNameMap: Record<string, string>;
 }
 
 export interface DmnRunnerCallbacksContextType {

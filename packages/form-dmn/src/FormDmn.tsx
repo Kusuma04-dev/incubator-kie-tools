@@ -28,21 +28,60 @@ import { JSONSchema4 } from "json-schema";
 
 export type InputRow = Record<string, any>;
 
-export function FormDmn(props: FormProps<InputRow, JSONSchema4>) {
+export function FormDmn(props: FormProps<any, JSONSchema4>) {
   const i18n = useMemo(() => {
     formDmnI18n.setLocale(props.locale ?? navigator.language);
     return formDmnI18n.getCurrent();
   }, [props.locale]);
+
   const dmnValidator = useMemo(() => new FormDmnValidator(i18n), [i18n]);
+  const mergedSchema = useMemo(() => {
+    const originalSchema = props.formSchema ?? {};
+    const definitions = originalSchema.definitions ?? {};
+    const mainInputSet = definitions.InputSet as JSONSchema4;
+    const includedInputSets = Object.entries(definitions).filter(([key]) => key.startsWith("InputSetDMN__"));
+
+    const includedNamespaceProps: Record<string, JSONSchema4> = {};
+    let includedRequired: string[] = [];
+
+    includedInputSets.forEach(([_, schema]) => {
+      if (schema && schema.type === "object" && schema.properties) {
+        Object.entries(schema.properties).forEach(([propName, propSchema]) => {
+          includedNamespaceProps[propName] = propSchema as JSONSchema4;
+        });
+        if (Array.isArray(schema.required)) {
+          includedRequired = [...includedRequired, ...schema.required];
+        }
+      }
+    });
+
+    const merged = {
+      type: "object",
+      properties: {
+        ...(mainInputSet?.properties ?? {}),
+        nmspc: {
+          type: "object",
+          properties: includedNamespaceProps,
+          required: includedRequired.length > 0 ? includedRequired : undefined,
+        },
+      },
+      required: mainInputSet?.required,
+      definitions,
+      $schema: originalSchema.$schema,
+    };
+    console.log("form merged", merged);
+    return merged;
+  }, [props.formSchema]);
 
   return (
     <FormComponent
       {...props}
+      formSchema={mergedSchema}
       i18n={i18n}
       validator={dmnValidator}
       removeRequired={true}
-      entryPath={"definitions.InputSet"}
-      propertiesEntryPath={"definitions.InputSet.properties"}
+      entryPath={undefined}
+      propertiesEntryPath={undefined}
     >
       <DmnAutoFieldProvider value={formDmnRunnerAutoFieldValue} />
     </FormComponent>

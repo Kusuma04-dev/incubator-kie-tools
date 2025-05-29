@@ -217,7 +217,23 @@ function theWorstEvaluationResult(a?: NewDmnEditorTypes.EvaluationResult, b?: Ne
   }
   return "succeeded";
 }
+export function extractImportNamespaceMap(dmnXml: string): Record<string, string> {
+  const parser = new DOMParser();
+  const xmlDoc = parser.parseFromString(dmnXml, "application/xml");
 
+  const importElements = Array.from(xmlDoc.getElementsByTagName("import"));
+  const namespaceMap: Record<string, string> = {};
+
+  importElements.forEach((imp) => {
+    const namespace = imp.getAttribute("namespace");
+    const name = imp.getAttribute("name");
+    if (namespace && name) {
+      namespaceMap[namespace] = name;
+    }
+  });
+
+  return namespaceMap;
+}
 export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
   const { i18n } = useOnlineI18n();
   // Calling forceDmnRunnerReRender will cause a update in the dmnRunnerKey
@@ -306,13 +322,68 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
     }
   }, [prevExtendedServicesStatus, extendedServices.status, props.workspaceFile.extension]);
 
+  const [namespaceNameMap, setNamespaceNameMap] = useState<Record<string, string>>({});
+
+  useEffect(() => {
+    const fetchNamespaces = async () => {
+      try {
+        const fileContent = await workspaces.getFileContent({
+          workspaceId: props.workspaceFile.workspaceId,
+          relativePath: props.workspaceFile.relativePath,
+        });
+
+        const decodedFileContent = decoder.decode(fileContent);
+        const extractedMap = extractImportNamespaceMap(decodedFileContent);
+        setNamespaceNameMap(extractedMap);
+      } catch (error) {
+        console.error("Failed to fetch or parse DMN file:", error);
+      }
+    };
+
+    fetchNamespaces();
+  }, [props.workspaceFile.workspaceId, props.workspaceFile.relativePath, workspaces]);
+  function transformInputs(formInputs: Record<string, any> | undefined): Record<string, any> {
+    if (!formInputs) {
+      return {};
+    }
+
+    const transformedInputs: Record<string, any> = {};
+
+    Object.entries(formInputs).forEach(([inputKey, inputValue]) => {
+      const keyParts = inputKey.split(".");
+
+      if (keyParts.length > 1) {
+        const importName = keyParts[0];
+
+        if (!transformedInputs[importName]) {
+          transformedInputs[importName] = {};
+        }
+
+        let currentLevel = transformedInputs[importName];
+        keyParts.slice(1).forEach((part, index) => {
+          if (index === keyParts.length - 2) {
+            currentLevel[part] = inputValue;
+          } else {
+            if (!currentLevel[part]) {
+              currentLevel[part] = {};
+            }
+            currentLevel = currentLevel[part];
+          }
+        });
+      } else {
+        transformedInputs[inputKey] = inputValue;
+      }
+    });
+
+    return transformedInputs;
+  }
   const extendedServicesModelPayload = useCallback<(formInputs?: InputRow) => Promise<ExtendedServicesModelPayload>>(
     async (formInputs) => {
       const fileContent = await workspaces.getFileContent({
         workspaceId: props.workspaceFile.workspaceId,
         relativePath: props.workspaceFile.relativePath,
       });
-
+      console.log("formInputs", formInputs);
       const decodedFileContent = decoder.decode(fileContent);
       const importIndex = await props.dmnLanguageService?.buildImportIndex([
         {
@@ -322,7 +393,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
       ]);
 
       return {
-        context: formInputs,
+        context: transformInputs(formInputs),
         mainURI: props.workspaceFile.relativePath,
         resources: [...(importIndex?.models.entries() ?? [])].map(
           ([normalizedPosixPathRelativeToTheWorkspaceRoot, model]) => ({
@@ -870,6 +941,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
       results,
       resultsDifference,
       status,
+      namespaceNameMap,
     }),
     [
       canBeVisualized,
@@ -885,6 +957,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
       results,
       resultsDifference,
       status,
+      namespaceNameMap,
     ]
   );
 

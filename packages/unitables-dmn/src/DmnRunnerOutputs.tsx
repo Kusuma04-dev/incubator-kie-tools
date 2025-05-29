@@ -47,6 +47,8 @@ export function useDmnRunnerOutputs(
       jsonSchemaBridge.schema.definitions?.OutputSet?.properties ?? []
     ).reduce((outputTypeMap: Map<string, OutputField>, [name, properties]: [string, DmnInputFieldProperties]) => {
       const dataType = jsonSchemaBridge.getFieldDataType(properties).dataType;
+      console.log("jsonSchemaBridge", jsonSchemaBridge);
+      console.log("datatype", dataType);
       outputTypeMap.set(name, {
         type: properties.type!,
         dataType,
@@ -55,9 +57,10 @@ export function useDmnRunnerOutputs(
         properties: properties.properties,
         items: properties.items,
       });
+      console.log("outtype", outputTypeMap);
       return outputTypeMap;
     }, new Map<string, OutputField>());
-
+    console.log("outputsPropertiesMap", outputsPropertiesMap);
     return {
       outputsPropertiesMap,
     };
