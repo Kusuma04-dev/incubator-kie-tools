@@ -133,19 +133,33 @@ export function useForm<Input extends Record<string, any>, Schema extends Record
   useEffect(() => {
     try {
       const form = cloneDeep(formSchema ?? {}) as Record<string, Record<string, object>>;
-      if (removeRequired) {
-        const entry = getObjectByPath(form, entryPath);
-        delete entry.required;
-        delete form.required;
-      }
-      setJsonSchemaBridge(formValidator.getBridge(form));
+      const definitions = getObjectByPath(form, "definitions") as Record<string, any>;
+      const inputSetSchemas = Object.entries(definitions)
+        .filter(([key]) => key.startsWith("InputSet") && definitions[key].type === "object")
+        .map(([, value]) => value);
 
+      const mergedSchema: Record<string, any> = {
+        type: "object",
+        properties: {},
+      };
+
+      for (const schema of inputSetSchemas) {
+        Object.assign(mergedSchema.properties, schema.properties);
+        if (removeRequired && schema.required) {
+          const entry = getObjectByPath(form, entryPath);
+          delete entry.required;
+        } else if (schema.required) {
+          mergedSchema.required = [...(mergedSchema.required ?? []), ...schema.required];
+        }
+      }
+
+      setJsonSchemaBridge(formValidator.getBridge(mergedSchema));
       setFormStatus(FormStatus.WITHOUT_ERROR);
     } catch (err) {
       console.error(err);
       setFormStatus(FormStatus.VALIDATOR_ERROR);
     }
-  }, [setFormInputs, formSchema, formValidator, entryPath, removeRequired]);
+  }, [formSchema, formValidator, entryPath, removeRequired]);
 
   // Manage form status
   useEffect(() => {

@@ -19,7 +19,7 @@
 
 import * as React from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { useDmnRunnerDispatch, useDmnRunnerState } from "./DmnRunnerContext";
+import { DmnRunnerStateContext, useDmnRunnerDispatch, useDmnRunnerState } from "./DmnRunnerContext";
 import { DmnRunnerMode } from "./DmnRunnerStatus";
 import { DmnRunnerLoading } from "./DmnRunnerLoading";
 import { Drawer, DrawerContent, DrawerPanelContent } from "@patternfly/react-core/dist/js/components/Drawer";
@@ -69,13 +69,53 @@ export function DmnRunnerTable() {
 
   // MEMOs
   const rowCount = useMemo(() => inputs?.length ?? 1, [inputs?.length]);
+  const { namespaceNameMap } = React.useContext(DmnRunnerStateContext);
   const jsonSchemaBridge = useMemo(() => {
     try {
-      return new DmnUnitablesValidator(i18n.dmnRunner.table).getBridge(cloneDeep(jsonSchema) ?? {});
+      // Deep clone the base schema
+      const form = cloneDeep(jsonSchema ?? {}) as Record<string, any>;
+
+      // Extract definitions (usually contains sub-schemas)
+      const definitions = form.definitions as Record<string, any> | undefined;
+
+      if (!definitions) {
+        console.warn("No definitions found in schema");
+        return new DmnUnitablesValidator(i18n.dmnRunner.table).getBridge(form);
+      }
+
+      // Filter input sets schemas (example: keys start with 'InputSet' and type === 'object')
+      const inputSetSchemas = Object.entries(definitions)
+        .filter(([key, value]) => key.startsWith("InputSet") && value.type === "object")
+        .map(([, value]) => value);
+
+      // Prepare the merged schema starting with a blank object type
+      const mergedSchema: Record<string, any> = {
+        type: "object",
+        properties: {},
+        required: [],
+      };
+
+      // Merge all inputSetSchemas properties & required fields
+      for (const schema of inputSetSchemas) {
+        Object.assign(mergedSchema.properties, schema.properties);
+
+        if (schema.required) {
+          mergedSchema.required = [...mergedSchema.required, ...schema.required];
+        }
+      }
+
+      // Remove duplicates from required
+      mergedSchema.required = Array.from(new Set(mergedSchema.required));
+
+      console.log("mergedSchema", mergedSchema);
+      console.log("namespaceNameMap", namespaceNameMap);
+
+      // Create new bridge from mergedSchema
+      return new DmnUnitablesValidator(i18n.dmnRunner.table).getBridge(mergedSchema);
     } catch (err) {
       throw Error(`getBridge ${err}`);
     }
-  }, [i18n, jsonSchema]);
+  }, [i18n.dmnRunner.table, jsonSchema, namespaceNameMap]);
 
   useEffect(() => {
     setDmnRunnerTableError(false);

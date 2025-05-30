@@ -36,14 +36,7 @@ export function FormDmn(props: FormProps<InputRow, JSONSchema4>) {
   const dmnValidator = useMemo(() => new FormDmnValidator(i18n), [i18n]);
 
   return (
-    <FormComponent
-      {...props}
-      i18n={i18n}
-      validator={dmnValidator}
-      removeRequired={true}
-      entryPath={"definitions.InputSet"}
-      propertiesEntryPath={"definitions.InputSet.properties"}
-    >
+    <FormComponent {...props} i18n={i18n} validator={dmnValidator} removeRequired={true}>
       <DmnAutoFieldProvider value={formDmnRunnerAutoFieldValue} />
     </FormComponent>
   );

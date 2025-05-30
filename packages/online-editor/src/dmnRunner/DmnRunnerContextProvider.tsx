@@ -39,6 +39,7 @@ import {
   DecisionResult,
   DmnEvaluationMessages,
   ExtendedServicesDmnResult,
+  ExtendedServicesFormSchema,
   ExtendedServicesModelPayload,
 } from "@kie-tools/extended-services-api";
 import { DmnRunnerAjv } from "@kie-tools/dmn-runner/dist/ajv";
@@ -217,7 +218,23 @@ function theWorstEvaluationResult(a?: NewDmnEditorTypes.EvaluationResult, b?: Ne
   }
   return "succeeded";
 }
+function extractImportNamespaceMap(dmnXml: string): Record<string, string> {
+  const parser = new DOMParser();
+  const xmlDoc = parser.parseFromString(dmnXml, "application/xml");
 
+  const importElements = Array.from(xmlDoc.getElementsByTagName("import"));
+  const namespaceMap: Record<string, string> = {};
+
+  importElements.forEach((imp) => {
+    const namespace = imp.getAttribute("namespace");
+    const name = imp.getAttribute("name");
+    if (namespace && name) {
+      namespaceMap[namespace] = name;
+    }
+  });
+
+  return namespaceMap;
+}
 export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
   const { i18n } = useOnlineI18n();
   // Calling forceDmnRunnerReRender will cause a update in the dmnRunnerKey
@@ -261,7 +278,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
   );
   const status = useMemo(() => (isExpanded ? DmnRunnerStatus.AVAILABLE : DmnRunnerStatus.UNAVAILABLE), [isExpanded]);
   const dmnRunnerAjv = useMemo(() => new DmnRunnerAjv().getAjv(), []);
-
+  const [namespaceNameMap, setNamespaceNameMap] = useState<Record<string, string>>({});
   const { envelopeServer } = useEditorDockContext();
 
   useLayoutEffect(() => {
@@ -289,6 +306,24 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
       hasJsonSchema.current = true;
     }
   }, [jsonSchema]);
+  useEffect(() => {
+    const fetchNamespaces = async () => {
+      try {
+        const fileContent = await workspaces.getFileContent({
+          workspaceId: props.workspaceFile.workspaceId,
+          relativePath: props.workspaceFile.relativePath,
+        });
+
+        const decodedFileContent = decoder.decode(fileContent);
+        const extractedMap = extractImportNamespaceMap(decodedFileContent);
+        setNamespaceNameMap(extractedMap);
+      } catch (error) {
+        console.error("Failed to fetch or parse DMN file:", error);
+      }
+    };
+
+    fetchNamespaces();
+  }, []);
 
   // Control the isExpaded state based on the extended services status;
   useLayoutEffect(() => {
@@ -303,15 +338,60 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
       setDmnRunnerContextProviderState({ type: DmnRunnerProviderActionType.DEFAULT, newState: { isExpanded: false } });
     }
   }, [prevExtendedServicesStatus, extendedServices.status, props.workspaceFile.extension]);
+  function transformFormInputsToNested(
+    formInputs: Record<string, any>,
+    formSchema: ExtendedServicesFormSchema | undefined,
+    namespaceNameMap: Record<string, string>
+  ): Record<string, any> {
+    if (!formSchema || !formSchema.definitions) {
+      return formInputs;
+    }
 
-  const extendedServicesModelPayload = useCallback<(formInputs?: InputRow) => Promise<ExtendedServicesModelPayload>>(
-    async (formInputs) => {
+    const definitions = formSchema.definitions;
+    const inputSet = definitions.InputSet as JSONSchema4 | undefined;
+    const directKeys = new Set(Object.keys(inputSet?.properties ?? {}));
+    const namespacedKeys: Record<string, string> = {};
+
+    for (const [defName, schema] of Object.entries(definitions)) {
+      if (!defName.startsWith("InputSetDMN__")) continue;
+      const dmnType = schema["x-dmn-type"];
+      if (typeof dmnType !== "string") continue;
+
+      const match = dmnType.match(/DMNType{\s*(https?:\/\/[^\s:]+)/);
+      const namespace = match?.[1]?.trim();
+      const alias = namespace && namespaceNameMap[namespace];
+      if (!alias || typeof schema !== "object" || schema.type !== "object" || !schema.properties) continue;
+
+      for (const key of Object.keys(schema.properties)) {
+        namespacedKeys[key] = alias;
+      }
+    }
+
+    const result: Record<string, any> = {};
+    for (const [key, value] of Object.entries(formInputs)) {
+      if (directKeys.has(key)) {
+        result[key] = value;
+      } else if (namespacedKeys[key]) {
+        const alias = namespacedKeys[key];
+        result[alias] ??= {};
+        result[alias][key] = value;
+      } else {
+        result[key] = value; // fallback
+      }
+    }
+
+    return result;
+  }
+  const extendedServicesModelPayload = useCallback(
+    async (formInputs?: InputRow): Promise<ExtendedServicesModelPayload> => {
       const fileContent = await workspaces.getFileContent({
         workspaceId: props.workspaceFile.workspaceId,
         relativePath: props.workspaceFile.relativePath,
       });
 
       const decodedFileContent = decoder.decode(fileContent);
+
+      // Build import index (used for both transformation and final output)
       const importIndex = await props.dmnLanguageService?.buildImportIndex([
         {
           content: decodedFileContent,
@@ -319,18 +399,38 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
         },
       ]);
 
-      return {
-        context: formInputs,
+      // Fetch OpenAPI-based form schema
+      const formSchema = await extendedServices.client.formSchema({
+        context: {}, // Can be empty here, just need structure
         mainURI: props.workspaceFile.relativePath,
-        resources: [...(importIndex?.models.entries() ?? [])].map(
-          ([normalizedPosixPathRelativeToTheWorkspaceRoot, model]) => ({
-            content: model.xml,
-            URI: normalizedPosixPathRelativeToTheWorkspaceRoot,
-          })
-        ),
+        resources: [...(importIndex?.models.entries() ?? [])].map(([URI, model]) => ({
+          content: model.xml,
+          URI,
+        })),
+      });
+
+      // Transform form inputs using schema + namespace map
+      const transformedInputs = formInputs
+        ? transformFormInputsToNested(formInputs, formSchema, namespaceNameMap)
+        : undefined;
+
+      return {
+        context: transformedInputs,
+        mainURI: props.workspaceFile.relativePath,
+        resources: [...(importIndex?.models.entries() ?? [])].map(([URI, model]) => ({
+          content: model.xml,
+          URI,
+        })),
       };
     },
-    [props.dmnLanguageService, props.workspaceFile.relativePath, props.workspaceFile.workspaceId, workspaces]
+    [
+      props.dmnLanguageService,
+      props.workspaceFile.relativePath,
+      props.workspaceFile.workspaceId,
+      workspaces,
+      extendedServices.client,
+      namespaceNameMap,
+    ]
   );
 
   // Responsible for getting decision results
@@ -828,6 +928,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
       results,
       resultsDifference,
       status,
+      namespaceNameMap,
     }),
     [
       canBeVisualized,
@@ -840,6 +941,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
       extendedServicesError,
       isExpanded,
       jsonSchema,
+      namespaceNameMap,
       results,
       resultsDifference,
       status,
