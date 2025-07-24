@@ -43,7 +43,7 @@ import {
 } from "@kie-tools/extended-services-api";
 import { DmnRunnerAjv } from "@kie-tools/dmn-runner/dist/ajv";
 import { useDmnRunnerPersistence } from "../dmnRunnerPersistence/DmnRunnerPersistenceHook";
-import { DmnLanguageService } from "@kie-tools/dmn-language-service";
+import { DmnLanguageService, ImportIndex } from "@kie-tools/dmn-language-service";
 import { decoder } from "@kie-tools-core/workspaces-git-fs/dist/encoderdecoder/EncoderDecoder";
 import { generateUuid } from "../dmnRunnerPersistence/DmnRunnerPersistenceService";
 import { useDmnRunnerPersistenceDispatch } from "../dmnRunnerPersistence/DmnRunnerPersistenceDispatchContext";
@@ -86,6 +86,8 @@ import type { JSONSchema4 } from "json-schema";
 import { MessageBusClientApi } from "@kie-tools-core/envelope-bus/dist/api";
 import { NewDmnEditorEnvelopeApi } from "@kie-tools/dmn-editor-envelope/dist/NewDmnEditorEnvelopeApi";
 import { NewDmnEditorTypes } from "@kie-tools/dmn-editor-envelope/dist/NewDmnEditorTypes";
+import { ExternalModel, ExternalModelsIndex } from "../../../dmn-editor/dist/DmnEditor";
+import { filter, has } from "lodash";
 
 interface Props {
   isEditorReady?: boolean;
@@ -306,6 +308,303 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
     }
   }, [prevExtendedServicesStatus, extendedServices.status, props.workspaceFile.extension]);
 
+  const processJsonSchema = (jsonSchema: JSONSchema4, importIndex: ImportIndex): JSONSchema4 => {
+    if (!jsonSchema.definitions) return jsonSchema;
+    console.log("importindex", importIndex);
+    // console.log("importindex", JSON.parse(JSON.stringify(importIndex)));
+    console.log("jsonSchema", jsonSchema);
+    const modifiedSchema = cloneDeep(jsonSchema);
+    const inputSet = modifiedSchema.definitions!.InputSet;
+    if (!inputSet?.properties) return modifiedSchema;
+
+    const includedContainer: JSONSchema4 = {
+      type: "object",
+      properties: {},
+    };
+
+    let currentContainer = includedContainer;
+
+    const importedModelsMap = new Map<string, any>();
+    // const importModels = Array.from(importIndex.models.values()).filter((model) => model.definitions?.import);
+    const importModels = Array.from(importIndex.models.values());
+
+    const modelElementsMap = new Map<string, Map<string, any>>();
+
+    const decisionInputMap = new Map<string, Set<string>>();
+
+    // First, populate importedModelsMap and modelElementsMap
+    for (const model of importModels) {
+      const imports = Array.isArray(model.definitions.import) ? model.definitions.import : [model.definitions.import];
+
+      for (const imp of imports) {
+        if (imp?.["@_namespace"]) {
+          importedModelsMap.set(imp["@_namespace"], model);
+        }
+      }
+
+      const drgElements = model.definitions?.drgElement || [];
+      const elementsMap = new Map<string, any>();
+      drgElements.forEach((element: any) => {
+        const id = element["@_id"];
+        elementsMap.set(id, element);
+      });
+      modelElementsMap.set(model.definitions?.["@_namespace"] || "", elementsMap);
+    }
+
+    console.log("mappedInputs", modelElementsMap);
+
+    const getDecisionInputs = (decisionId: string, modelNamespace: string): Set<string> => {
+      const cacheKey = `${modelNamespace}#${decisionId}`;
+      if (decisionInputMap.has(cacheKey)) {
+        return decisionInputMap.get(cacheKey)!;
+      }
+
+      const inputs = new Set<string>();
+      decisionInputMap.set(cacheKey, inputs);
+
+      const elementsMap = modelElementsMap.get(modelNamespace);
+      if (!elementsMap) return inputs;
+
+      const decision = elementsMap.get(decisionId);
+      if (!decision || decision["__$$element"] !== "decision") return inputs;
+
+      const requirements = decision.informationRequirement || [];
+      for (const req of requirements) {
+        if (req.requiredInput) {
+          // Direct input requirement
+          const inputHref = req.requiredInput["@_href"];
+          const inputId = inputHref.startsWith("#") ? inputHref.substring(1) : inputHref;
+          inputs.add(inputId);
+        } else if (req.requiredDecision) {
+          // Decision dependency - could be local or from another model
+          const depHref = req.requiredDecision["@_href"];
+          let depModelNamespace = modelNamespace;
+          let depId = depHref;
+
+          if (depHref.includes("#")) {
+            const [nsPart, idPart] = depHref.split("#");
+            if (nsPart.startsWith("http") || nsPart.startsWith("https")) {
+              // Cross-model reference
+              depModelNamespace = nsPart;
+              depId = idPart;
+            } else {
+              // Local reference with #
+              depId = idPart;
+            }
+          }
+
+          // Find the model that contains this decision
+          const depModel = importedModelsMap.get(depModelNamespace);
+          if (depModel) {
+            console.log("depModel", depModel);
+            // Recursively get all inputs for this dependent decision
+            const depInputs = getDecisionInputs(depId, depModelNamespace);
+            depInputs.forEach((inputId) => inputs.add(inputId));
+          }
+        }
+      }
+
+      return inputs;
+    };
+
+    // Build the complete dependency graph for all decisions in all models
+    for (const [modelNamespace, elementsMap] of modelElementsMap) {
+      for (const [id, element] of elementsMap) {
+        if (element["__$$element"] === "decision") {
+          getDecisionInputs(id, modelNamespace);
+          const x = getDecisionInputs(id, modelNamespace);
+          // console.log(x);
+        }
+      }
+      console.log("Decesion Map", decisionInputMap);
+    }
+
+    const requiredDecision: any[] = [];
+    const decisions = new Set<string>();
+
+    const filterRequiredDecisionInputs = (requiredNameSpace?: string) => {
+      if (!requiredNameSpace) {
+        return;
+      }
+      const elementsMap = modelElementsMap.get(requiredNameSpace);
+      if (elementsMap) {
+        for (const [id, element] of elementsMap) {
+          // console.log("element", element, id);
+          const requirements = element.informationRequirement || [];
+          if (requirements.length === 0) {
+            continue;
+          }
+          for (const req of requirements) {
+            if (req.requiredInput) {
+              // const inputHref = req.requiredInput["@_href"];
+              // const inputId = inputHref.startsWith("#") ? inputHref.substring(1) : inputHref;
+              // decisionInputMap.set(`${requiredNameSpace}#${id}`, new Set([inputId]));
+            } else if (req.requiredDecision) {
+              const depHref = req.requiredDecision["@_href"];
+
+              if (decisionInputMap.has(depHref)) {
+                requiredDecision.push(depHref);
+                decisions.add(depHref);
+              }
+
+              let hasfurtherDependencies = false;
+
+              if (depHref.includes("#")) {
+                const [nsPart, idPart] = depHref.split("#");
+                if (nsPart.startsWith("http") || nsPart.startsWith("https")) {
+                  // Cross-model reference
+                  hasfurtherDependencies = true;
+                }
+                if (nsPart) {
+                  filterRequiredDecisionInputs(nsPart);
+                }
+              }
+            }
+          }
+        }
+        const s = new Set(requiredDecision);
+        // console.log("requiredDecision", s);
+        // console.log("requiredDecision", decisions);
+      }
+      // console.log("elementsMap", elementsMap, requiredNameSpace);
+    };
+
+    for (const model of importModels) {
+      const imports = Array.isArray(model.definitions.import) ? model.definitions.import : [model.definitions.import];
+
+      for (const imp of imports) {
+        const importName = imp?.["@_name"];
+        const namespace = imp?.["@_namespace"];
+        if (!namespace) continue;
+
+        let firstElement;
+        for (const item of importIndex.models) {
+          firstElement = item;
+          break; // Exit after the first element
+        }
+        // console.log(firstElement); // Output: 10
+        firstElement && firstElement[1] && filterRequiredDecisionInputs(firstElement[1].definitions?.["@_namespace"]);
+
+        const dmnDef = Object.values(modifiedSchema.definitions!).find((def) =>
+          def?.["x-dmn-type"]?.includes(namespace)
+        ) as JSONSchema4 | undefined;
+
+        if (!dmnDef || !dmnDef.properties) continue;
+
+        const filteredProperties: Record<string, any> = {};
+
+        const InputIDS: string[] = [];
+        const InputNAMES: string[] = [];
+
+        for (const [cacheKey, inputIds] of decisionInputMap) {
+          if (requiredDecision.includes(cacheKey)) {
+            const [ns, _] = cacheKey.split("#");
+            const elementsMap = modelElementsMap.get(ns);
+            if (!elementsMap) continue;
+            for (const [id, element] of elementsMap) {
+              if (id === _) {
+                console.log("element", element, "id", id, "cacheKey", cacheKey, "inputIds", inputIds);
+                const requirements = element.informationRequirement || [];
+                if (requirements.length === 0) {
+                  continue;
+                }
+
+                const inputs = requirements.filter((req: { requiredInput: any }) => req.requiredInput);
+
+                inputs.map((x: { requiredInput: { [x: string]: string } }) => {
+                  InputIDS.push(x.requiredInput["@_href"].split("#")[1]);
+                });
+
+                // console.log("inputs", inputs, "element", element, "id", id, "cacheKey", cacheKey, "inputIds", inputIds);
+              }
+              // console.log("inputIds", inputIds);
+
+              // if (ns !== namespace) {
+              //   continue;
+              // }
+              // console.log("cacheKey", cacheKey, "inputIds", inputIds);
+              // for (const inputId of inputIds) {
+              //   if (dmnDef.properties[inputId]) {
+              //     console.log("inputId", inputId, "dmnDef.properties[inputId]", dmnDef.properties[inputId]);
+              //   }
+              // }
+            }
+            // console.log(elementsMap, "elementsMap", ns, cacheKey, InputIDS, _);
+          }
+        }
+
+        for (const [cacheKey, inputIds] of decisionInputMap) {
+          if (requiredDecision.includes(cacheKey)) {
+            const [ns, _] = cacheKey.split("#");
+            const elementsMap = modelElementsMap.get(ns);
+            if (!elementsMap) continue;
+            for (const [id, element] of elementsMap) {
+              if (InputIDS.includes(id)) {
+                InputNAMES.push(element["@_name"]);
+
+                // console.log("inputs", inputs, "element", element, "id", id, "cacheKey", cacheKey, "inputIds", inputIds);
+              }
+            }
+            // console.log(elementsMap, "elementsMap", ns, cacheKey, InputIDS, _);
+          }
+        }
+
+        console.log("InputIDS", InputIDS);
+        console.log("InputNAMES", InputNAMES);
+
+        for (const [propKey, propValue] of Object.entries(dmnDef.properties)) {
+          // console.log("propKey", propKey, "propValue", propValue);
+          let isRequired = false;
+
+          for (const [cacheKey, inputIds] of decisionInputMap) {
+            const [ns, _] = cacheKey.split("#");
+            // if (ns === namespace) {
+            //     isRequired = true;
+            //     break;
+            // }
+
+            console.log(requiredDecision.includes(cacheKey));
+            if (requiredDecision.includes(cacheKey)) {
+              isRequired = true;
+              break;
+            }
+            // if (ns === namespace && imports[0] && namespace == imports[0]["@_namespace"]) {
+            //   isRequired = true;
+            //   break;
+            // }
+          }
+
+          if (isRequired && InputNAMES.includes(propKey)) {
+            console.log("key", propKey);
+            filteredProperties[propKey] = propValue;
+            console.log("value", filteredProperties[propKey]);
+          }
+        }
+
+        if (importName) {
+          const prefixedName = importName;
+
+          currentContainer.properties![prefixedName] = {
+            type: "object",
+            properties: filteredProperties,
+            required: dmnDef.required,
+          };
+
+          currentContainer = currentContainer.properties![prefixedName];
+        } else {
+          Object.assign(currentContainer.properties!, filteredProperties);
+        }
+      }
+    }
+
+    if (Object.keys(includedContainer.properties!).length > 0) {
+      inputSet.properties["Included Model Inputs"] = includedContainer;
+    }
+    console.log("schema", modifiedSchema);
+
+    return modifiedSchema;
+  };
+
   const extendedServicesModelPayload = useCallback<(formInputs?: InputRow) => Promise<ExtendedServicesModelPayload>>(
     async (formInputs) => {
       const fileContent = await workspaces.getFileContent({
@@ -320,9 +619,24 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
           normalizedPosixPathRelativeToTheWorkspaceRoot: props.workspaceFile.relativePath,
         },
       ]);
+      console.log("importIndex", importIndex);
+      console.log("formInputs", formInputs);
+      const { ["Included Model Inputs"]: includedModelInputs, ...rest } = formInputs || {};
+      const context = {
+        ...rest,
+        ...(includedModelInputs
+          ? Object.fromEntries(
+              Object.entries(includedModelInputs).map(([key, val]) => {
+                const prefix = "Included Import Name ";
+                const cleanKey = key.startsWith(prefix) ? key.slice(prefix.length) : key;
+                return [cleanKey, val];
+              })
+            )
+          : {}),
+      };
 
       return {
-        context: formInputs,
+        context: context,
         mainURI: props.workspaceFile.relativePath,
         resources: [...(importIndex?.models.entries() ?? [])].map(
           ([normalizedPosixPathRelativeToTheWorkspaceRoot, model]) => ({
@@ -553,10 +867,36 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
         type: DmnRunnerPersistenceReducerActionType.PREVIOUS,
         newPersistenceJson: (previousDmnRunnerPersistenceJson) => {
           const newDmnRunnerPersistenceJson = cloneDeep(previousDmnRunnerPersistenceJson);
-          if (typeof args.newInputsRow === "function") {
-            newDmnRunnerPersistenceJson.inputs = args.newInputsRow(previousDmnRunnerPersistenceJson.inputs);
-          } else if (args.newInputsRow) {
-            newDmnRunnerPersistenceJson.inputs = args.newInputsRow;
+          if (args.newInputsRow) {
+            const updatedInputs = Array.isArray(args.newInputsRow)
+              ? args.newInputsRow
+              : args.newInputsRow(previousDmnRunnerPersistenceJson.inputs);
+
+            const finalInputs: InputRow[] = [];
+
+            updatedInputs.forEach((input) => {
+              const finalInput: InputRow = {};
+
+              // Merge all top-level properties from the input object (except "included model inputs")
+              Object.keys(input).forEach((key) => {
+                if (key !== "included model inputs") {
+                  finalInput[key] = input[key]; // Regular input
+                }
+              });
+
+              // If there are model-specific inputs (like "included model inputs"), merge them as well
+              if (input["included model inputs"]) {
+                Object.keys(input["included model inputs"]).forEach((modelKey) => {
+                  finalInput[modelKey] = input["included model inputs"][modelKey];
+                });
+              }
+
+              // Push the finalInput into the array
+              finalInputs.push(finalInput);
+            });
+
+            // Replace or update the inputs array
+            newDmnRunnerPersistenceJson.inputs = finalInputs;
           }
 
           if (args.newMode) {
@@ -606,6 +946,16 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
     },
     [setDmnRunnerPersistenceJson]
   );
+
+  useLayoutEffect(() => {
+    // Reset inputs and configs when the jsonSchema changes
+    setDmnRunnerPersistenceJson({
+      newInputsRow: [],
+      newConfigInputs: {},
+      shouldUpdateFs: false,
+      cancellationToken: new Holder(false),
+    });
+  }, [jsonSchema, setDmnRunnerPersistenceJson]);
 
   // The refreshCallback is called after a CompanionFS event;
   // When another TAB updates the FS, this callback will sync up;
@@ -703,7 +1053,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
               }
 
               dereferenceAndCheckForRecursion(formSchema, canceled)
-                .then((dereferencedOpenApiSchema) => {
+                .then(async (dereferencedOpenApiSchema) => {
                   if (canceled.get() || !dereferencedOpenApiSchema) {
                     return;
                   }
@@ -711,15 +1061,28 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
                   const jsonSchema = openapiSchemaToJsonSchema(dereferencedOpenApiSchema, {
                     definitionKeywords: ["definitions"],
                   });
+                  const fileContent = await workspaces.getFileContent({
+                    workspaceId: props.workspaceFile.workspaceId,
+                    relativePath: props.workspaceFile.relativePath,
+                  });
+                  const decodedFileContent = decoder.decode(fileContent);
+                  const importIndex = await props.dmnLanguageService?.buildImportIndex([
+                    {
+                      content: decodedFileContent,
+                      normalizedPosixPathRelativeToTheWorkspaceRoot: props.workspaceFile.relativePath,
+                    },
+                  ]);
+                  const processedSchema = importIndex ? processJsonSchema(jsonSchema, importIndex) : jsonSchema;
 
+                  console.log("jsonSchema", jsonSchema);
                   setJsonSchema((previousJsonSchema) => {
                     // Early bailout in the DMN first render;
                     // This prevents to set the inputs from the previous DMN
                     if (!previousJsonSchema) {
-                      return jsonSchema;
+                      return processedSchema;
                     }
 
-                    const validateInputs = dmnRunnerAjv.compile(jsonSchema);
+                    const validateInputs = dmnRunnerAjv.compile(processedSchema);
 
                     // Add default values and delete changed data types;
                     setDmnRunnerPersistenceJson({
@@ -733,17 +1096,17 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
                           const id = input.id;
                           removeChangedPropertiesAndAdditionalProperties(validateInputs, input);
                           input.id = id;
-                          return { ...getDefaultValues(jsonSchema), ...input };
+                          return { ...getDefaultValues(processedSchema), ...input };
                         });
                       },
                       cancellationToken: canceled,
                     });
 
                     // This should be done to remove any previous errors or to add new errors
-                    if (Object.keys(diff(previousJsonSchema, jsonSchema)).length > 0) {
+                    if (Object.keys(diff(previousJsonSchema, processedSchema)).length > 0) {
                       forceDmnRunnerReRender();
                     }
-                    return jsonSchema;
+                    return processedSchema;
                   });
                 })
                 .catch((err) => {
@@ -765,8 +1128,12 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
         extendedServices.client,
         extendedServices.status,
         extendedServicesModelPayload,
+        props.dmnLanguageService,
         props.workspaceFile.extension,
+        props.workspaceFile.relativePath,
+        props.workspaceFile.workspaceId,
         setDmnRunnerPersistenceJson,
+        workspaces,
       ]
     )
   );
