@@ -1,1170 +1,623 @@
-# .build-env-root
 .build-env-root
-# .envrc
 .envrc
-# .gitattributes
 .gitattributes
-# .npmrc
 .npmrc
-# .prettierignore
 .prettierignore
-# .rat-excludes
 .rat-excludes
-# DISCLAIMER-WIP
+.rat-reports
 DISCLAIMER-WIP
-# devbox.lock
+_intellij-project/maven-based-packages-@-kie-tools.iml
 devbox.lock
-# pnpm-lock.yaml
-pnpm-lock.yaml
-# pnpm-workspace.yaml
-pnpm-workspace.yaml
-# _intellij-project/maven-based-packages-@-kie-tools.iml
-maven-based-packages-@-kie-tools.iml
-# examples/micro-frontends-multiplying-architecture-base64png-editor-vscode-extension/.vscodeignore
-.vscodeignore
-# examples/kie-sandbox-commit-message-validation-service/go.mod
-go.mod
-# examples/kie-sandbox-commit-message-validation-service/go.sum
-go.sum
-# examples/process-user-tasks-subsystem/process-user-tasks-subsystem.iml
-process-user-tasks-subsystem.iml
-# examples/process-user-tasks-subsystem/src/main/docker/Dockerfile.jvm
-Dockerfile.jvm
-# examples/process-user-tasks-subsystem/src/main/docker/Dockerfile.native
-Dockerfile.native
-# examples/process-accelerator/process-accelerator.iml
-process-accelerator.iml
-# examples/process-accelerator/src/main/resources/calculate.bpmn
-calculate.bpmn
-# examples/process-business-calendar/process-business-calendar.iml
-process-business-calendar.iml
-# examples/process-business-calendar/src/main/resources/bankTransaction.bpmn2
-bankTransaction.bpmn2
-# examples/process-compact-architecture/src/main/resources/NewHiringOffer.dmn
-NewHiringOffer.dmn
-# examples/process-compact-architecture/src/main/resources/hiring.bpmn
-hiring.bpmn
-# examples/process-compact-architecture/src/main/resources/META-INF/processSVG/hiring.svg
-hiring.svg
-# examples/process-event-driven/process-event-driven.iml
-process-event-driven.iml
-# examples/process-event-driven/hotels/src/main/resources/hotel.bpmn
-hotel.bpmn
-# examples/process-event-driven/travelers/src/main/resources/travelers.bpmn
-travelers.bpmn
-# examples/process-user-tasks-subsystem/src/main/resources/hiring.bpmn
-hiring.bpmn
-# examples/process-user-tasks-subsystem/src/main/resources/META-INF/processSVG/hiring.svg
-hiring.svg
-# examples/process-compact-architecture/.gitignore
-.gitignore
-# examples/process-compact-architecture/process-compact-architecture.iml
-process-compact-architecture.iml
-# examples/process-compact-architecture/docker-compose/pgadmin/pgpass
-pgpass
-# examples/process-compact-architecture/docker-compose/sql/init.sql
-init.sql
-# examples/micro-frontends-multiplying-architecture-ping-pong-view-in-angular/src/assets/.gitkeep
-.gitkeep
-# examples/sonataflow-greeting/sonataflow-greeting.iml
-sonataflow-greeting.iml
-# examples/micro-frontends-multiplying-architecture-todo-list-view-vscode-extension/.vscodeignore
-.vscodeignore
-# examples/micro-frontends-multiplying-architecture-base64png-editor-on-webapp/static/examples/dorinha.base64png
-dorinha.base64png
-# examples/micro-frontends-multiplying-architecture-base64png-editor-on-webapp/static/examples/luiz.base64png
-luiz.base64png
-# examples/micro-frontends-multiplying-architecture-base64png-editor-on-webapp/static/examples/sample.base64png
-sample.base64png
-# examples/micro-frontends-multiplying-architecture-base64png-editor-on-webapp/static/examples/tiago.base64png
-tiago.base64png
-# packages/bpmn-marshaller/src/schemas/bpmn-2_0/BPMN20.xsd
-BPMN20.xsd
-# packages/bpmn-marshaller/src/schemas/bpmn-2_0/BPMNDI.xsd
-BPMNDI.xsd
-# packages/bpmn-marshaller/src/schemas/bpmn-2_0/DC.xsd
-DC.xsd
-# packages/bpmn-marshaller/src/schemas/bpmn-2_0/DI.xsd
-DI.xsd
-# packages/bpmn-marshaller/src/schemas/bpmn-2_0/Semantic.xsd
-Semantic.xsd
-# packages/bpmn-marshaller/src/schemas/bpmn-2_0/Semantic.kogito-compat.xsd
-Semantic.kogito-compat.xsd
-# packages/chrome-extension/tests/app/components/single/__snapshots__/SingleEditorApp.test.tsx.snap
-SingleEditorApp.test.tsx.snap
-# packages/chrome-extension/tests/app/components/single/__snapshots__/SingleEditorToolbar.test.tsx.snap
-SingleEditorToolbar.test.tsx.snap
-# packages/chrome-extension-serverless-workflow-editor/e2e-tests/samples/chrome_sample.sw.yaml
-chrome_sample.sw.yaml
-# packages/dashbuilder/dashbuilder-parent.iml
-dashbuilder-parent.iml
-# packages/dashbuilder/appformer/uberfire-api/src/main/resources/org/uberfire/jre/org/uberfire/util/uri.min.js
-uri.min.js
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/columnWithComponentsLayout.txt
-columnWithComponentsLayout.txt
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/fullLayoutFluid.txt
-fullLayoutFluid.txt
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/fullLayoutPage.txt
-fullLayoutPage.txt
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/sampleFullFluidLayout.txt
-sampleFullFluidLayout.txt
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/sampleFullPageLayout.txt
-sampleFullPageLayout.txt
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/singleRowComponentLayout.txt
-singleRowComponentLayout.txt
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/singleRowComponentLayoutWithParts.txt
-singleRowComponentLayoutWithParts.txt
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/singleRowTwoComponentsLayout.txt
-singleRowTwoComponentsLayout.txt
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-runtime-plugins/uberfire-runtime-plugins-client/src/test/resources/org/uberfire/ext/plugin/client/perspective/editor/layout/editor/fullLayoutPage.txt
-fullLayoutPage.txt
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/client/resources/js/wysihtml/wysihtml.all-commands.min.js
-wysihtml.all-commands.min.js
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/client/resources/js/wysihtml/wysihtml.min.js
-wysihtml.min.js
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/client/resources/js/wysihtml/wysihtml.table_editing.min.js
-wysihtml.table_editing.min.js
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/client/resources/js/wysihtml/wysihtml.toolbar.min.js
-wysihtml.toolbar.min.js
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/client/resources/js/wysihtml/parser_rules/advanced_and_extended.js
-advanced_and_extended.js
-# packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/public/highlight/highlight.min.js
-highlight.min.js
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-client-views-patternfly/src/main/resources/org/uberfire/client/views/static/jquery-ui/jquery-ui.min.css
-jquery-ui.min.css
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-client-views-patternfly/src/main/resources/org/uberfire/client/views/static/jquery-ui/jquery-ui.min.js
-jquery-ui.min.js
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest1.java
-PerspectiveTest1.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest13.java
-PerspectiveTest13.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest14.java
-PerspectiveTest14.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest15.java
-PerspectiveTest15.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest19.java
-PerspectiveTest19.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest2.java
-PerspectiveTest2.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest20.java
-PerspectiveTest20.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest21.java
-PerspectiveTest21.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest22.java
-PerspectiveTest22.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest23.java
-PerspectiveTest23.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest24.java
-PerspectiveTest24.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest3.java
-PerspectiveTest3.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest4.java
-PerspectiveTest4.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest5.java
-PerspectiveTest5.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest6.java
-PerspectiveTest6.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest7.java
-PerspectiveTest7.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest1.java
-WorkbenchClientEditorTest1.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest2.java
-WorkbenchClientEditorTest2.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest3.java
-WorkbenchClientEditorTest3.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest4.java
-WorkbenchClientEditorTest4.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest5.java
-WorkbenchClientEditorTest5.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest6.java
-WorkbenchClientEditorTest6.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest7.java
-WorkbenchClientEditorTest7.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest8.java
-WorkbenchClientEditorTest8.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest1.java
-WorkbenchPopupTest1.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest12.java
-WorkbenchPopupTest12.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest2.java
-WorkbenchPopupTest2.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest3.java
-WorkbenchPopupTest3.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest4.java
-WorkbenchPopupTest4.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest5.java
-WorkbenchPopupTest5.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest6.java
-WorkbenchPopupTest6.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest7.java
-WorkbenchPopupTest7.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest8.java
-WorkbenchPopupTest8.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest9.java
-WorkbenchPopupTest9.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest1.java
-WorkbenchScreenTest1.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest10.java
-WorkbenchScreenTest10.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest11.java
-WorkbenchScreenTest11.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest12.java
-WorkbenchScreenTest12.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest13.java
-WorkbenchScreenTest13.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest14.java
-WorkbenchScreenTest14.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest15.java
-WorkbenchScreenTest15.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest16.java
-WorkbenchScreenTest16.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest17.java
-WorkbenchScreenTest17.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest18.java
-WorkbenchScreenTest18.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest18Super.java
-WorkbenchScreenTest18Super.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest19.java
-WorkbenchScreenTest19.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest2.java
-WorkbenchScreenTest2.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest20.java
-WorkbenchScreenTest20.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest21.java
-WorkbenchScreenTest21.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest22.java
-WorkbenchScreenTest22.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest23.java
-WorkbenchScreenTest23.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest24.java
-WorkbenchScreenTest24.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest25.java
-WorkbenchScreenTest25.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest26.java
-WorkbenchScreenTest26.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest27.java
-WorkbenchScreenTest27.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest28.java
-WorkbenchScreenTest28.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest3.java
-WorkbenchScreenTest3.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest33.java
-WorkbenchScreenTest33.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest4.java
-WorkbenchScreenTest4.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest5.java
-WorkbenchScreenTest5.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest6.java
-WorkbenchScreenTest6.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest7.java
-WorkbenchScreenTest7.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest8.java
-WorkbenchScreenTest8.java
-# packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest9.java
-WorkbenchScreenTest9.java
-# packages/dashbuilder/dashbuilder-runtime-parent/dashbuilder-runtime-client/src/test/resources/ds.csv
-ds.csv
-# packages/dashbuilder/dashbuilder-runtime-parent/dashbuilder-runtime-client/src/test/resources/ds.dset
-ds.dset
-# packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/beanDataSetDef.dset
-beanDataSetDef.dset
-# packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/csvDataSetDef.dset
-csvDataSetDef.dset
-# packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/customDataSetDef.dset
-customDataSetDef.dset
-# packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/dataSetDefFilter.dset
-dataSetDefFilter.dset
-# packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/expenseReports.dset
-expenseReports.dset
-# packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/externalDataSetDef.dset
-externalDataSetDef.dset
-# packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/kafkaDataSetDef.dset
-kafkaDataSetDef.dset
-# packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-core/src/test/resources/salesPerYear.dset
-salesPerYear.dset
-# packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-core/src/test/resources/salesPerYearAdjusted.dset
-salesPerYearAdjusted.dset
-# packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-core/src/test/resources/salesYear2014.dset
-salesYear2014.dset
-# packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-core/src/test/resources/deployments/salesPerYear.dset
-salesPerYear.dset
-# packages/dashbuilder-language-service/tests/__snapshots__/DashbuilderYamlLanguageService.test.ts.snap
-DashbuilderYamlLanguageService.test.ts.snap
-# packages/dev-deployment-quarkus-blank-app/dev-deployment-quarkus-blank-app.iml
-dev-deployment-quarkus-blank-app.iml
-# packages/dev-deployment-upload-service/go.mod
-go.mod
-# packages/dev-deployment-upload-service/go.sum
-go.sum
-# packages/dev-deployment-upload-service/tests/__snapshots__/integrationTest.test.js.snap
-integrationTest.test.js.snap
-# packages/dmn-editor/src/spec.txt
-spec.txt
-# packages/dmn-editor-standalone/tests-e2e/__fixtures__/files/loan-pre-qualification.dmn
-loan-pre-qualification.dmn
-# packages/dmn-editor-standalone/tests-e2e/__fixtures__/files/scorecard.pmml
-scorecard.pmml
-# packages/dmn-feel-antlr4-parser/src/parser/grammar/generated-parser/FEEL_1_1.interp
-FEEL_1_1.interp
-# packages/dmn-feel-antlr4-parser/src/parser/grammar/generated-parser/FEEL_1_1.tokens
-FEEL_1_1.tokens
-# packages/dmn-feel-antlr4-parser/src/parser/grammar/generated-parser/FEEL_1_1Lexer.interp
-FEEL_1_1Lexer.interp
-# packages/dmn-feel-antlr4-parser/src/parser/grammar/generated-parser/FEEL_1_1Lexer.tokens
-FEEL_1_1Lexer.tokens
-# packages/dmn-marshaller/src/schemas/dmn-1_0/dmn.xsd
-dmn.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_0/dmn3.xsd
-dmn3.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_1/dmn.xsd
-dmn.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_2/DC.xsd
-DC.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_2/DI.xsd
-DI.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_2/DMN12.xsd
-DMN12.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_2/DMNDI12.xsd
-DMNDI12.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_3/DC.xsd
-DC.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_3/DI.xsd
-DI.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_3/DMN13.xsd
-DMN13.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_3/DMNDI13.xsd
-DMNDI13.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_4/DC.xsd
-DC.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_4/DI.xsd
-DI.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_4/DMN14.xsd
-DMN14.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_4/DMNDI13.xsd
-DMNDI13.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_5/DC.xsd
-DC.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_5/DI.xsd
-DI.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_5/DMN15.xsd
-DMN15.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_5/DMNDI15.xsd
-DMNDI15.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_6/DC.xsd
-DC.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_6/DI.xsd
-DI.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_6/DMN16.xsd
-DMN16.xsd
-# packages/dmn-marshaller/src/schemas/dmn-1_6/DMNDI15.xsd
-DMNDI15.xsd
-# packages/dmn-marshaller/src/schemas/kie-1_0/KIE.xsd
-KIE.xsd
-# packages/dmn-marshaller-backend-compatibility-tester/dmn-marshaller-backend-compatibility-tester.iml
-dmn-marshaller-backend-compatibility-tester.iml
-# packages/dmn-testing-models/dmn-testing-models.iml
-dmn-testing-models.iml
-# packages/editor/tests/embedded/embedded/__snapshots__/EmbeddedEditor.test.tsx.snap
-EmbeddedEditor.test.tsx.snap
-# packages/editor/tests/embedded/embedded/__snapshots__/EmbeddedViewer.test.tsx.snap
-EmbeddedViewer.test.tsx.snap
-# packages/editor/tests/envelope/KeyBindingHelpOverlay/__snapshots__/KeyBindingsHelpOverlay.test.tsx.snap
-KeyBindingsHelpOverlay.test.tsx.snap
-# packages/editor/tests/envelope/LoadingScreen/__snapshots__/LoadingScreen.test.tsx.snap
-LoadingScreen.test.tsx.snap
-# packages/editor/tests/envelope/__snapshots__/EditorEnvelopeView.test.tsx.snap
-EditorEnvelopeView.test.tsx.snap
-# packages/extended-services/go.mod
-go.mod
-# packages/extended-services/go.sum
-go.sum
-# packages/extended-services/scripts/macos/src/Info.plist
-Info.plist
-# packages/extended-services-java/extended-services-java.iml
-extended-services-java.iml
-# packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/getCheckboxGroupValue.txt
-getCheckboxGroupValue.txt
-# packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/getMultipleSelectValue.txt
-getMultipleSelectValue.txt
-# packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/getRadioGroupValue.txt
-getRadioGroupValue.txt
-# packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/listHelperFunctions.txt
-listHelperFunctions.txt
-# packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/setCheckboxGroupValue.txt
-setCheckboxGroupValue.txt
-# packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/setRadioGroupValue.txt
-setRadioGroupValue.txt
-# packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/setSelecMultipletValue.txt
-setSelecMultipletValue.txt
-# packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/setSelectValue.txt
-setSelectValue.txt
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkbox.setModelData.template
-checkbox.setModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkbox.template
-checkbox.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkbox.writeModelData.template
-checkbox.writeModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkboxGroup.setModelData.template
-checkboxGroup.setModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkboxGroup.template
-checkboxGroup.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkboxGroup.writeModelData.template
-checkboxGroup.writeModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/date.setModelData.template
-date.setModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/date.template
-date.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/form.template
-form.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/formGroup.template
-formGroup.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/input.setModelData.template
-input.setModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/input.template
-input.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/input.writeModelData.template
-input.writeModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/listField.globalFunctions.template
-listField.globalFunctions.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/listField.setModelData.template
-listField.setModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/listField.template
-listField.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/listField.writeModelData.template
-listField.writeModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/nestField.globalFunctions.template
-nestField.globalFunctions.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/nestField.setModelData.template
-nestField.setModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/nestField.template
-nestField.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/nestField.writeModelData.template
-nestField.writeModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/number.template
-number.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/number.writeModelData.template
-number.writeModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/radioGroup.setModelData.template
-radioGroup.setModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/radioGroup.template
-radioGroup.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/radioGroup.writeModelData.template
-radioGroup.writeModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/select.setModelData.template
-select.setModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/select.template
-select.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/select.writeModelData.template
-select.writeModelData.template
-# packages/form-code-generator-bootstrap4-theme/src/resources/templates/unsupported.template
-unsupported.template
-# packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/AutoForm.test.tsx.snap
-AutoForm.test.tsx.snap
-# packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/BoolField.test.tsx.snap
-BoolField.test.tsx.snap
-# packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/CheckboxGroupField.test.tsx.snap
-CheckboxGroupField.test.tsx.snap
-# packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/DateField.test.tsx.snap
-DateField.test.tsx.snap
-# packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/NestField.test.tsx.snap
-NestField.test.tsx.snap
-# packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/NumField.test.tsx.snap
-NumField.test.tsx.snap
-# packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/RadioField.test.tsx.snap
-RadioField.test.tsx.snap
-# packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/SelectField.test.tsx.snap
-SelectField.test.tsx.snap
-# packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/TextField.test.tsx.snap
-TextField.test.tsx.snap
-# packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/UnsupportedField.test.tsx.snap
-UnsupportedField.test.tsx.snap
-# packages/form-code-generator-patternfly-theme/src/resources/checkboxGroupFunctions.txt
-checkboxGroupFunctions.txt
-# packages/form-code-generator-patternfly-theme/src/resources/dateFunctions.txt
-dateFunctions.txt
-# packages/form-code-generator-patternfly-theme/src/resources/multipleSelectFunctions.txt
-multipleSelectFunctions.txt
-# packages/form-code-generator-patternfly-theme/src/resources/selectFunctions.txt
-selectFunctions.txt
-# packages/form-code-generator-patternfly-theme/src/resources/timeFunctions.txt
-timeFunctions.txt
-# packages/form-code-generator-patternfly-theme/tests/__snapshots__/AutoForm.test.tsx.snap
-AutoForm.test.tsx.snap
-# packages/form-code-generator-patternfly-theme/tests/__snapshots__/BoolField.test.tsx.snap
-BoolField.test.tsx.snap
-# packages/form-code-generator-patternfly-theme/tests/__snapshots__/CheckBoxGroupField.test.tsx.snap
-CheckBoxGroupField.test.tsx.snap
-# packages/form-code-generator-patternfly-theme/tests/__snapshots__/DateField.test.tsx.snap
-DateField.test.tsx.snap
-# packages/form-code-generator-patternfly-theme/tests/__snapshots__/ListField.test.tsx.snap
-ListField.test.tsx.snap
-# packages/form-code-generator-patternfly-theme/tests/__snapshots__/NestField.test.tsx.snap
-NestField.test.tsx.snap
-# packages/form-code-generator-patternfly-theme/tests/__snapshots__/NumField.test.tsx.snap
-NumField.test.tsx.snap
-# packages/form-code-generator-patternfly-theme/tests/__snapshots__/RadioField.test.tsx.snap
-RadioField.test.tsx.snap
-# packages/form-code-generator-patternfly-theme/tests/__snapshots__/SelectField.test.tsx.snap
-SelectField.test.tsx.snap
-# packages/form-code-generator-patternfly-theme/tests/__snapshots__/TextField.test.tsx.snap
-TextField.test.tsx.snap
-# packages/form-code-generator-patternfly-theme/tests/__snapshots__/UnsupportedField.test.tsx.snap
-UnsupportedField.test.tsx.snap
-# packages/dmn-uniforms-patternfly-form-wrapper/tests/__snapshots__/FormDmn.test.tsx.snap
-FormDmn.test.tsx.snap
-# packages/dmn-uniforms-patternfly-form-wrapper/tests/__snapshots__/FormDmnOutputs.test.tsx.snap
-FormDmnOutputs.test.tsx.snap
-# packages/image-builder/README.md
-README.md
-# packages/import-java-classes-component/tests/ImportJavaClasses/__snapshots__/ImportJavaClasses.test.tsx.snap
-ImportJavaClasses.test.tsx.snap
-# packages/jbpm-quarkus-devui/jbpm-quarkus-devui-parent.iml
-jbpm-quarkus-devui-parent.iml
-# packages/jbpm-quarkus-devui/dev/src/main/resources/custom-forms-dev/hiring_ITInterview.tsx
-hiring_ITInterview.tsx
-# packages/jbpm-quarkus-devui/dev/src/main/resources/custom-forms-dev/hiring_ITInterview.config
-hiring_ITInterview.config
-# packages/jbpm-quarkus-devui/dev/src/main/resources/custom-forms-dev/hiring.tsx
-hiring.tsx
-# packages/jbpm-quarkus-devui/dev/src/main/resources/custom-forms-dev/hiring.config
-hiring.config
-# packages/jbpm-quarkus-devui/jbpm-quarkus-devui-runtime/src/test/resources/forms/hiring_HRInterview.config
-hiring_HRInterview.config
-# packages/jbpm-quarkus-devui/jbpm-quarkus-devui-runtime/src/test/resources/forms/hiring_ITInterview.config
-hiring_ITInterview.config
-# packages/runtime-tools-management-console-webapp/dev-webapp/unsecured-runtime/src/main/resources/custom-forms-dev/hiring_ITInterview.html
-hiring_ITInterview.html
-# packages/runtime-tools-management-console-webapp/dev-webapp/unsecured-runtime/src/main/resources/custom-forms-dev/hiring_ITInterview.config
-hiring_ITInterview.config
-# packages/runtime-tools-management-console-webapp/dev-webapp/unsecured-runtime/src/main/resources/custom-forms-dev/hiring.tsx
-hiring.tsx
-# packages/runtime-tools-management-console-webapp/dev-webapp/unsecured-runtime/src/main/resources/custom-forms-dev/hiring.config
-hiring.config
-# packages/json-yaml-language-service/tests/__snapshots__/EditorJsonLanguageService.test.ts.snap
-EditorJsonLanguageService.test.ts.snap
-# packages/json-yaml-language-service/tests/__snapshots__/EditorYamlLanguageService.test.ts.snap
-EditorYamlLanguageService.test.ts.snap
-# packages/kie-editors-dev-vscode-extension/.vscodeignore
-.vscodeignore
-# packages/kie-editors-dev-vscode-extension/e2e-tests/resources/ReuseDataTypeTest.bpmn
-ReuseDataTypeTest.bpmn
-# packages/kie-editors-dev-vscode-extension/e2e-tests/resources/demo-dmn.scesim
-demo-dmn.scesim
-# packages/kie-editors-dev-vscode-extension/e2e-tests/resources/example.txt
-example.txt
-# packages/kie-editors-dev-vscode-extension/e2e-tests/resources/global/default-global.wid
-default-global.wid
-# packages/kie-editors-dev-vscode-extension/e2e-tests/resources/src/main/java/org/kie/Log.wid
-Log.wid
-# packages/kie-editors-dev-vscode-extension/e2e-tests/resources/src/main/java/org/kie/businessapp/Email.wid
-Email.wid
-# packages/kie-sandbox-distribution/.env
-.env
-# packages/kie-sandbox-fs/src/DefaultBackend.js
-DefaultBackend.js
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/.superblock.txt
-.superblock.txt
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/a.txt
-a.txt
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/b.txt
-b.txt
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/c.txt
-c.txt
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/not-in-superblock.txt
-not-in-superblock.txt
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/0/a.txt
-a.txt
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/0/b.txt
-b.txt
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/0/c.txt
-c.txt
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/1/d.txt
-d.txt
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/1/e.txt
-e.txt
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/1/f.txt
-f.txt
-# packages/kie-sandbox-fs/tests/__fixtures__/test-folder/2/a.txt
-a.txt
-# packages/kie-sandbox-helm-chart/scripts/update-readmes.js
-update-readmes.js
-# packages/kie-sandbox-helm-chart/src/.helmignore
-.helmignore
-# packages/kie-sandbox-helm-chart/src/Chart.lock
-Chart.lock
-# packages/kie-sandbox-helm-chart/src/Chart.yaml
-Chart.yaml
-# packages/kie-sandbox-helm-chart/src/charts/cors_proxy/Chart.yaml
-Chart.yaml
-# packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/_helpers.tpl
-_helpers.tpl
-# packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/deployment.yaml.helm
-deployment.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/hpa.yaml.helm
-hpa.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/ingress.yaml.helm
-ingress.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/route.yaml.helm
-route.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/service.yaml.helm
-service.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/serviceaccount.yaml.helm
-serviceaccount.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/extended_services/Chart.yaml
-Chart.yaml
-# packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/_helpers.tpl
-_helpers.tpl
-# packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/deployment.yaml.helm
-deployment.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/hpa.yaml.helm
-hpa.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/ingress.yaml.helm
-ingress.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/route.yaml.helm
-route.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/service.yaml.helm
-service.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/serviceaccount.yaml.helm
-serviceaccount.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/Chart.yaml
-Chart.yaml
-# packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/_helpers.tpl
-_helpers.tpl
-# packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/deployment.yaml.helm
-deployment.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/hpa.yaml.helm
-hpa.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/ingress.yaml.helm
-ingress.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/route.yaml.helm
-route.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/service.yaml.helm
-service.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/serviceaccount.yaml.helm
-serviceaccount.yaml.helm
-# packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/tests/test-connection.yaml.helm
-test-connection.yaml.helm
-# packages/kie-sandbox-helm-chart/src/templates/NOTES.txt
-NOTES.txt
-# packages/kie-sandbox-helm-chart/src/templates/_helpers.tpl
-_helpers.tpl
-# packages/kn-plugin-workflow/go.mod
-go.mod
-# packages/kn-plugin-workflow/go.sum
-go.sum
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/knative.yml
-knative.yml
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex-custom-namespace.yml
-kogito-complex-custom-namespace.yml
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex.yml
-kogito-complex.yml
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex2-custom-namespace.yml
-kogito-complex2-custom-namespace.yml
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex2.yml
-kogito-complex2.yml
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex3-custom-namespace.yml
-kogito-complex3-custom-namespace.yml
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex3.yml
-kogito-complex3.yml
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-default-custom-namespace.yml
-kogito-default-custom-namespace.yml
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-default.yml
-kogito-default.yml
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/pom1-expected.xml_no_auto_formatting
-pom1-expected.xml_no_auto_formatting
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/pom1-input.xml_no_auto_formatting
-pom1-input.xml_no_auto_formatting
-# packages/kn-plugin-workflow/pkg/common/k8sclient/fake.go
-fake.go
-# packages/kn-plugin-workflow/pkg/common/k8sclient/goapi.go
-goapi.go
-# packages/kn-plugin-workflow/pkg/specs/testdata/greetingAPI.yaml
-greetingAPI.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/hello.sw.yaml
-hello.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/emptyworkflow.sw.yaml
-emptyworkflow.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi-subflow34.expected.yaml
-openapi-subflow34.expected.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi.expected.yaml
-openapi.expected.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi.yaml
-openapi.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi1.expected.yaml
-openapi1.expected.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi1.yaml
-openapi1.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi2.expected.yaml
-openapi2.expected.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi2.yaml
-openapi2.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/subflow1.sw.yaml
-subflow1.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/subflow2.sw.yaml
-subflow2.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/subflow3.sw.yaml
-subflow3.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/subflow4.sw.yaml
-subflow4.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/refs/workflow1.sw.yaml
-workflow1.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/subflow-custom.sw.yaml
-subflow-custom.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/subflow-mySpecsDir.sw.yaml
-subflow-mySpecsDir.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/subflow.sw.yaml
-subflow.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/workflow-empty.sw.yaml
-workflow-empty.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/workflow-empty2.sw.yaml
-workflow-empty2.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/workflow-greeting.sw.yaml
-workflow-greeting.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/workflow-mySpecsDir-one-finction.sw.yaml
-workflow-mySpecsDir-one-finction.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/workflow-mySpecsDir.sw.yaml
-workflow-mySpecsDir.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/workflow-subflow-custom.sw.yaml
-workflow-subflow-custom.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/workflow.sw.yaml
-workflow.sw.yaml
-# packages/kn-plugin-workflow/pkg/specs/testdata/workflow2.sw.yaml
-workflow2.sw.yaml
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/docker/Dockerfile.jvm
-Dockerfile.jvm
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/docker/Dockerfile.native
-Dockerfile.native
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/docker/Dockerfile.legacy-jar
-Dockerfile.legacy-jar
-# packages/kn-plugin-workflow/pkg/command/quarkus/testdata/docker/Dockerfile.native-micro
-Dockerfile.native-micro
-packages/kn-plugin-workflow/pkg/command/quarkus/testdata/dockerignore
 dockerignore
-# packages/kn-plugin-workflow/e2e-tests/testdata/lock.sw.yaml
-lock.sw.yaml
-# packages/maven-base/kie-tools-maven-base.iml
-kie-tools-maven-base.iml
-# packages/maven-base/settings.xml
-settings.xml
-# packages/maven-m2-repo-via-http-image/settings.xml.envsubst
-settings.xml.envsubst
-# packages/online-editor/Caddyfile
-Caddyfile
-# packages/online-editor/src/accelerators/test.dmn
-test.dmn
-# packages/online-editor/static/samples/Sample.pmml
-Sample.pmml
-# packages/pmml-editor/e2e-tests/fixtures/compound-predicate.pmml
-compound-predicate.pmml
-# packages/pmml-editor/e2e-tests/fixtures/empty-characteristics-DD-defined-types.pmml
-empty-characteristics-DD-defined-types.pmml
-# packages/pmml-editor/e2e-tests/fixtures/empty-characteristics-DD-defined.pmml
-empty-characteristics-DD-defined.pmml
-# packages/pmml-editor/e2e-tests/fixtures/simple-predicate.pmml
-simple-predicate.pmml
-# packages/pmml-editor/tests/editor/components/DataDictionary/DataDictionaryContainer/__snapshots__/DataDictionaryContainer.test.tsx.snap
-DataDictionaryContainer.test.tsx.snap
-# packages/pmml-editor/tests/editor/components/EditorScorecard/organisms/__snapshots__/AttributesTable.test.tsx.snap
-AttributesTable.test.tsx.snap
-# packages/pmml-editor/tests/editor/components/EditorScorecard/organisms/__snapshots__/CharacteristicsTable.test.tsx.snap
-CharacteristicsTable.test.tsx.snap
-# packages/pmml-editor/tests/editor/components/EditorScorecard/organisms/__snapshots__/CorePropertiesTable.test.tsx.snap
-CorePropertiesTable.test.tsx.snap
-# packages/pmml-editor/tests/editor/components/LandingPage/molecules/__snapshots__/LandingPageToolbar.test.tsx.snap
-LandingPageToolbar.test.tsx.snap
-# packages/pmml-editor/tests/editor/components/LandingPage/molecules/__snapshots__/ModelCard.test.tsx.snap
-ModelCard.test.tsx.snap
-# packages/pmml-editor/tests/editor/components/LandingPage/organisms/__snapshots__/EmptyStateNoContent.test.tsx.snap
-EmptyStateNoContent.test.tsx.snap
-# packages/pmml-editor/tests/editor/components/LandingPage/organisms/__snapshots__/EmptyStateNoModels.test.tsx.snap
-EmptyStateNoModels.test.tsx.snap
-# packages/pmml-editor/tests/editor/components/LandingPage/templates/__snapshots__/LandingPage.test.tsx.snap
-LandingPage.test.tsx.snap
-# packages/pmml-editor/tests/editor/components/MiningSchema/MiningSchemaContainer/__snapshots__/MiningSchemaContainer.test.tsx.snap
-MiningSchemaContainer.test.tsx.snap
-# packages/pmml-editor/tests/editor/components/Outputs/organisms/OutputFieldsTable/__snapshots__/OutputFieldsTable.test.tsx.snap
-OutputFieldsTable.test.tsx.snap
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_AnomalyDetectionModel.ts
-TestData_AnomalyDetectionModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_AssociationModel.ts
-TestData_AssociationModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_BaselineModel.ts
-TestData_BaselineModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_BayesianNetworkModel.ts
-TestData_BayesianNetworkModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_ClusteringModel.ts
-TestData_ClusteringModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_GaussianProcessModel.ts
-TestData_GaussianProcessModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_GeneralRegressionModel.ts
-TestData_GeneralRegressionModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_LinearRegressions.ts
-TestData_LinearRegressions.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_MiningModel.ts
-TestData_MiningModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_MiningSchema.ts
-TestData_MiningSchema.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_NaiveBayesModel.ts
-TestData_NaiveBayesModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_NearestNeighborModel.ts
-TestData_NearestNeighborModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_NeuralNetwork.ts
-TestData_NeuralNetwork.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_RuleSetModel.ts
-TestData_RuleSetModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_SequenceModel.ts
-TestData_SequenceModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_SupportVectorMachineModel.ts
-TestData_SupportVectorMachineModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_TextModel.ts
-TestData_TextModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_TimeSeriesModel.ts
-TestData_TimeSeriesModel.ts
-# packages/pmml-editor-marshaller/tests/marshaller/TestData_TreeModel.ts
-TestData_TreeModel.ts
-# packages/python-venv/requirements.txt
-requirements.txt
-# packages/root-env/root-env.iml
-root-env.iml
-# packages/runtime-tools-components/config/declare.d.ts
-declare.d.ts
-# packages/runtime-tools-consoles-helm-chart/scripts/update-readmes.js
-update-readmes.js
-# packages/runtime-tools-consoles-helm-chart/src/.helmignore
-.helmignore
-# packages/runtime-tools-consoles-helm-chart/src/Chart.lock
-Chart.lock
-# packages/runtime-tools-consoles-helm-chart/src/Chart.yaml
-Chart.yaml
-# packages/runtime-tools-consoles-helm-chart/src/charts/management-console/Chart.yaml
-Chart.yaml
-# packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/_helpers.tpl
-_helpers.tpl
-# packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/deployment.yaml.helm
-deployment.yaml.helm
-# packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/hpa.yaml.helm
-hpa.yaml.helm
-# packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/ingress.yaml.helm
-ingress.yaml.helm
-# packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/route.yaml.helm
-route.yaml.helm
-# packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/service.yaml.helm
-service.yaml.helm
-# packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/serviceaccount.yaml.helm
-serviceaccount.yaml.helm
-# packages/runtime-tools-consoles-helm-chart/src/templates/NOTES.txt
-NOTES.txt
-# packages/runtime-tools-consoles-helm-chart/src/templates/_helpers.tpl
-_helpers.tpl
-# packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/hiring.config
-hiring.config
-# packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/hiring.tsx
-hiring.tsx
-# packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/html_hiring_HRInterview.config
-html_hiring_HRInterview.config
-# packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/html_hiring_ITInterview.config
-html_hiring_ITInterview.config
-# packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/react_hiring_HRInterview.config
-react_hiring_HRInterview.config
-# packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/react_hiring_ITInterview.config
-react_hiring_ITInterview.config
-# packages/serverless-logic-web-tools/e2e-tests/fixtures/expression/expression.sw.yaml
-expression.sw.yaml
-# packages/serverless-logic-web-tools/e2e-tests/fixtures/uploadFile/helloDashbuilder.dash.yaml
-helloDashbuilder.dash.yaml
-# packages/serverless-logic-web-tools/e2e-tests/fixtures/uploadFile/helloYamlWorkflow.sw.yaml
-helloYamlWorkflow.sw.yaml
-# packages/serverless-logic-web-tools-swf-deployment-quarkus-app/serverless-logic-web-tools-swf-deployment-quarkus-app.iml
-serverless-logic-web-tools-swf-deployment-quarkus-app.iml
-# packages/serverless-logic-web-tools-swf-dev-mode-image/.dockerignore
-.dockerignore
-# packages/serverless-workflow-diagram-editor/serverless-workflow-diagram-editor-parent.iml
-serverless-workflow-diagram-editor-parent.iml
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/C2S.externs.js
-C2S.externs.js
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/FileSaver.externs.js
-FileSaver.externs.js
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/Mustache.js
-Mustache.js
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/elk.externs.js
-elk.externs.js
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/envelope.externs.js
-envelope.externs.js
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/jquery_plugins.js
-jquery_plugins.js
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/jsPDF.externs.js
-jsPDF.externs.js
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/monaco.externs.js
-monaco.externs.js
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-Bold-webfont.svg
-OpenSans-Bold-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-BoldItalic-webfont.svg
-OpenSans-BoldItalic-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-ExtraBold-webfont.svg
-OpenSans-ExtraBold-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-ExtraBoldItalic-webfont.svg
-OpenSans-ExtraBoldItalic-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-Italic-webfont.svg
-OpenSans-Italic-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-Light-webfont.svg
-OpenSans-Light-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-LightItalic-webfont.svg
-OpenSans-LightItalic-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-Regular-webfont.svg
-OpenSans-Regular-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-Semibold-webfont.svg
-OpenSans-Semibold-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-SemiboldItalic-webfont.svg
-OpenSans-SemiboldItalic-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/fontawesome-webfont.svg
-fontawesome-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-Bold-webfont.svg
-OpenSans-Bold-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-BoldItalic-webfont.svg
-OpenSans-BoldItalic-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-ExtraBold-webfont.svg
-OpenSans-ExtraBold-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-ExtraBoldItalic-webfont.svg
-OpenSans-ExtraBoldItalic-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-Italic-webfont.svg
-OpenSans-Italic-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-Light-webfont.svg
-OpenSans-Light-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-LightItalic-webfont.svg
-OpenSans-LightItalic-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-Regular-webfont.svg
-OpenSans-Regular-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-Semibold-webfont.svg
-OpenSans-Semibold-webfont.svg
-# packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-SemiboldItalic-webfont.svg
-OpenSans-SemiboldItalic-webfont.svg
-# packages/serverless-workflow-diagram-editor/third_party/errai/src/main/java/org/jboss/errai/common/client/util/Base64Util.java
-Base64Util.java
-# packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/css/bootstrap-3.4.1.min.cache.css
-bootstrap-3.4.1.min.cache.css
-# packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/css/bootstrap-theme-3.4.1.min.cache.css
-bootstrap-theme-3.4.1.min.cache.css
-# packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/css/font-awesome-4.7.0.min.cache.css
-font-awesome-4.7.0.min.cache.css
-# packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/fonts/fontawesome-webfont.svg
-fontawesome-webfont.svg
-# packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/js/bootstrap-3.4.1.min.cache.js.back
-bootstrap-3.4.1.min.cache.js.back
-# packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/js/jquery-1.12.4.min.cache.js.back
-jquery-1.12.4.min.cache.js.back
-# packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/extras/src/main/java/org/gwtbootstrap3/extras/animate/client/resource/css/animate-3.5.2.min.cache.css
-animate-3.5.2.min.cache.css
-# packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/extras/src/main/java/org/gwtbootstrap3/extras/notify/client/resource/css/bootstrap-notify-custom.min.cache.css
-bootstrap-notify-custom.min.cache.css
-# packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/extras/src/main/java/org/gwtbootstrap3/extras/notify/client/resource/js/bootstrap-notify-3.1.3.min.cache
-bootstrap-notify-3.1.3.min.cache
-# packages/serverless-workflow-diagram-editor/uberfire-extensions/uberfire-commons-editor/uberfire-commons-editor-client/src/main/resources/org/uberfire/ext/editor/commons/client/file/exports/js/FileSaver.min.js.back
-FileSaver.min.js.back
-# packages/serverless-workflow-diagram-editor/uberfire-extensions/uberfire-commons-editor/uberfire-commons-editor-client/src/main/resources/org/uberfire/ext/editor/commons/client/file/exports/js/canvas2svg.js.back
-canvas2svg.js.back
-# packages/serverless-workflow-diagram-editor/uberfire-extensions/uberfire-commons-editor/uberfire-commons-editor-client/src/main/resources/org/uberfire/ext/editor/commons/client/file/exports/js/jspdf.min.js.back
-jspdf.min.js.back
-# packages/serverless-workflow-diagram-editor/uberfire-workbench/uberfire-workbench-client/src/main/java/org/uberfire/client/util/GWTEditor.native.js
-GWTEditor.native.js
-# packages/serverless-workflow-diagram-editor/uberfire-workbench/uberfire-workbench-client/src/main/resources/META-INF/beans.xml
-beans.xml
-# packages/serverless-workflow-language-service/tests/__snapshots__/SwfJsonLanguageService.test.ts.snap
-SwfJsonLanguageService.test.ts.snap
-# packages/serverless-workflow-language-service/tests/__snapshots__/SwfYamlLanguageService.test.ts.snap
-SwfYamlLanguageService.test.ts.snap
-# packages/serverless-workflow-language-service/tests/expectedResults/emptyfile_autocompletion.sw.json.result
-emptyfile_autocompletion.sw.json.result
-# packages/serverless-workflow-language-service/tests/expectedResults/emptyfile_autocompletion.sw.yaml.result
-emptyfile_autocompletion.sw.yaml.result
-# packages/serverless-workflow-language-service/tests/inputFiles/yaml/greeting-long.sw.yaml
-greeting-long.sw.yaml
-# packages/serverless-workflow-language-service/tests/inputFiles/yaml/greeting.sw.yaml
-greeting.sw.yaml
-# packages/serverless-workflow-language-service/tests/inputFiles/yaml/helloState.sw.yaml
-helloState.sw.yaml
-# packages/serverless-workflow-service-catalog/tests/channel/parsers/examples/wrong.txt
-wrong.txt
-# packages/serverless-workflow-standalone-editor/resources/swf/swfCombinedEditorEnvelopeIndex.template
-swfCombinedEditorEnvelopeIndex.template
-# packages/serverless-workflow-standalone-editor/resources/swf/swfDiagramEditorEnvelopeIndex.template
-swfDiagramEditorEnvelopeIndex.template
-# packages/serverless-workflow-standalone-editor/resources/swf/swfTextEditorEnvelopeIndex.template
-swfTextEditorEnvelopeIndex.template
-# packages/serverless-workflow-vscode-extension/.vscodeignore
-.vscodeignore
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/autocompletion.sw.json.result
-autocompletion.sw.json.result
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/autocompletion.sw.yaml
-autocompletion.sw.yaml
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/autocompletion.sw.yaml.result
-autocompletion.sw.yaml.result
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/emptyfile_autocompletion.sw.json.result
-emptyfile_autocompletion.sw.json.result
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/emptyfile_autocompletion.sw.yaml
-emptyfile_autocompletion.sw.yaml
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/emptyfile_autocompletion.sw.yaml.result
-emptyfile_autocompletion.sw.yaml.result
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/emptyworkflow_autocompletion.sw.json.result
-emptyworkflow_autocompletion.sw.json.result
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/basic-operations/greet.sw.yaml
-greet.sw.yaml
-# packages/kogito-db-migrator-tool/kogito-db-migrator-tool.iml
-kogito-db-migrator-tool.iml
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/basic-operations/hello-world.sw.yaml
-hello-world.sw.yaml
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/diagram-navigation/applicant-request-decision.sw.yaml
-applicant-request-decision.sw.yaml
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/expression/expression.sw.yaml
-expression.sw.yaml
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/event.sw.json.result
-event.sw.json.result
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/event.sw.yaml
-event.sw.yaml
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/event.sw.yaml.result
-event.sw.yaml.result
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/function.sw.json.result
-function.sw.json.result
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/function.sw.yaml
-function.sw.yaml
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/function.sw.yaml.result
-function.sw.yaml.result
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/specs/asyncapi.yaml
-asyncapi.yaml
-# packages/serverless-workflow-vscode-extension/e2e-tests/resources/greeting-flow/.dockerignore
-.dockerignore
-# packages/sonataflow-builder-image/.gitignore
-.gitignore
-# packages/sonataflow-builder-image/test-resources/tests/features/sonataflow-builder-2.feature
-sonataflow-builder-2.feature
-# packages/sonataflow-builder-image/test-resources/tests/features/sonataflow-builder.feature
-sonataflow-builder.feature
-# packages/sonataflow-builder-image/test-resources/tests/shell/sonataflow-builder/resources/greet/Dockerfile
-Dockerfile
-# packages/sonataflow-builder-image/test-resources/tests/shell/sonataflow-builder/resources/greet-with-inputschema/Dockerfile
-Dockerfile
-# packages/sonataflow-dev-app/src/MockData/customDashboard/data.js
-data.js
-# packages/sonataflow-dev-app/src/MockData/forms/examples/html_hiring_HRInterview.config
-html_hiring_HRInterview.config
-# packages/sonataflow-dev-app/src/MockData/forms/examples/html_hiring_ITInterview.config
-html_hiring_ITInterview.config
-# packages/sonataflow-dev-app/src/MockData/forms/examples/react_hiring_HRInterview.config
-react_hiring_HRInterview.config
-# packages/sonataflow-dev-app/src/MockData/forms/examples/react_hiring_HRInterview.tsx
-react_hiring_HRInterview.tsx
-# packages/sonataflow-dev-app/src/MockData/forms/examples/react_hiring_ITInterview.config
-react_hiring_ITInterview.config
-# packages/sonataflow-dev-app/src/MockData/forms/examples/react_hiring_ITInterview.tsx
-react_hiring_ITInterview.tsx
-# packages/sonataflow-devmode-image/test-resources/tests/features/sonataflow-devmode-2.feature
-sonataflow-devmode-2.feature
-# packages/sonataflow-devmode-image/test-resources/tests/features/sonataflow-devmode.feature
-sonataflow-devmode.feature
-# packages/sonataflow-image-common/.gitignore
-.gitignore
-# packages/sonataflow-image-common/resources/modules/kogito-maven/common/maven/maven-m2-repo-via-http-settings.xml.envsubst
-maven-m2-repo-via-http-settings.xml.envsubst
-# packages/sonataflow-image-common/resources/modules/kogito-maven/common/maven/settings.xml
-settings.xml
-# packages/sonataflow-image-common/resources/scripts/common.py
-common.py
-# packages/sonataflow-management-console-webapp/resources/monitoring-webapp/MonitoringReport.dash.yml
-MonitoringReport.dash.yml
-# packages/sonataflow-management-console-webapp/resources/monitoring-webapp/WorkflowDetails.dash.yml
-sonataflow-management-console.feature
-# packages/sonataflow-management-console-image/test-resources/tests/features/sonataflow-management-console.feature
-WorkflowDetails.dash.yml
-# packages/sonataflow-operator/PROJECT
-PROJECT
-# packages/sonataflow-operator/go.mod
-go.mod
-# packages/sonataflow-operator/go.sum
-go.sum
-# packages/sonataflow-operator/go.work
-go.work
-# packages/sonataflow-operator/go.work.sum
-go.work.sum
-# packages/sonataflow-operator/api/go.mod
-go.mod
-# packages/sonataflow-operator/api/go.sum
-go.sum
-# packages/sonataflow-operator/container-builder/go.mod
-go.mod
-# packages/sonataflow-operator/container-builder/go.sum
-go.sum
-# packages/sonataflow-operator/images/requirements.txt
-requirements.txt
-# packages/sonataflow-operator/workflowproj/go.mod
-go.mod
-# packages/sonataflow-operator/workflowproj/go.sum
-go.sum
-# packages/sonataflow-quarkus-devui/sonataflow-quarkus-devui-parent.iml
-sonataflow-quarkus-devui-parent.iml
-# packages/uniforms-patternfly/.eslintignore
-.eslintignore
-# packages/vscode-extension/tests/test-workspace/resource1.txt
-resource1.txt
-# packages/vscode-extension/tests/test-workspace/resource2.txt
-resource2.txt
-# packages/vscode-extension-dashbuilder-editor/e2e-tests/resources/autocompletion/autocompletion.dash.yaml
-autocompletion.dash.yaml
-# packages/vscode-extension-dashbuilder-editor/e2e-tests/resources/autocompletion/empty_file_autocompletion.dash.yaml
-empty_file_autocompletion.dash.yaml
-# packages/vscode-extension-dashbuilder-editor/e2e-tests/resources/autocompletion/empty_file_autocompletion.dash.yaml.result
-empty_file_autocompletion.dash.yaml.result
-# packages/vscode-extension-dashbuilder-editor/e2e-tests/resources/smoke-test/empty-dashbuilder-example.dash.yaml
-empty-dashbuilder-example.dash.yaml
-# packages/vscode-java-code-completion-extension-plugin/vscode-java-code-completion-extension-plugin.iml
-vscode-java-code-completion-extension-plugin.iml
-# packages/vscode-java-code-completion-extension-plugin/vscode-java-code-completion-extension-plugin-core/META-INF/MANIFEST.MF
-MANIFEST.MF
-# packages/vscode-java-code-completion-extension-plugin/vscode-java-code-completion-extension-plugin-core/src/main/resources/templates/templateAccessors.java
-templateAccessors.java
-# packages/vscode-java-code-completion-extension-plugin/vscode-java-code-completion-extension-plugin-core/src/main/resources/templates/templateClass.java
-templateClass.java
-# packages/vscode-java-code-completion-extension-plugin/vscode-java-code-completion-extension-plugin-core/src/test/resources/testProject/src/main/java/org/kogito/test/project/empty/.gitkeep
-.gitkeep
-# packages/xml-parser-ts-codegen/src/schemas/xsd/HFP.xsd
-HFP.xsd
-# packages/xml-parser-ts-codegen/src/schemas/xsd/XSD.xsd
-XSD.xsd
-# packages/xml-parser-ts-codegen/src/schemas/xsd/xml.xsd
-xml.xsd
-# packages/xml-parser-ts-codegen/src/schemas/xsd-incomplete--manually-written/HFP.xsd
-HFP.xsd
-# packages/xml-parser-ts-codegen/src/schemas/xsd-incomplete--manually-written/XSD.xsd
-XSD.xsd
-# packages/yaml-language-server/tests/__snapshots__/YamlLanguageService.test.ts.snap
-YamlLanguageService.test.ts.snap
-# packages/yard-model/yard-model.iml
-yard-model.iml
-# packages/yard-validator-worker/yard-validator-worker.iml
-yard-validator-worker.iml
-# packages/yard-vscode-extension/.vscodeignore
-.vscodeignore
-# packages/yard-vscode-extension/e2e-tests/resources/empty.yard.yaml
-empty.yard.yaml
-# packages/yard-vscode-extension/e2e-tests/resources/empty.yard.yml
-empty.yard.yml
-# patches/immer@10.0.3.patch
-immer@10.0.3.patch
-# patches/karma-firefox-launcher@2.1.2.patch
-karma-firefox-launcher@2.1.2.patch
-# patches/run-script-os@1.1.6.patch
-run-script-os@1.1.6.patch
-# patches/zustand@4.4.2.patch
-zustand@4.4.2.patch
-# repo/graph.dot
-graph.dot
-# repo/repo.iml
-repo.iml
-# scripts/run-script-if/README.md
-README.md
-# scripts/scripts.iml
-scripts.iml
-# scripts/check-junit-report-results/tests/index.test.js
-index.test.js
-# scripts/check-junit-report-results/tests/reports/empty.xml
-empty.xml
-# packages/runtime-tools-process-gateway-api/src/graphql/types.tsx
-types.tsx
+examples/kie-sandbox-commit-message-validation-service/go.mod
+examples/kie-sandbox-commit-message-validation-service/go.sum
+examples/micro-frontends-multiplying-architecture-base64png-editor-on-webapp/static/examples/dorinha.base64png
+examples/micro-frontends-multiplying-architecture-base64png-editor-on-webapp/static/examples/luiz.base64png
+examples/micro-frontends-multiplying-architecture-base64png-editor-on-webapp/static/examples/sample.base64png
+examples/micro-frontends-multiplying-architecture-base64png-editor-on-webapp/static/examples/tiago.base64png
+examples/micro-frontends-multiplying-architecture-base64png-editor-vscode-extension/.vscodeignore
+examples/micro-frontends-multiplying-architecture-ping-pong-view-in-angular/src/assets/.gitkeep
+examples/micro-frontends-multiplying-architecture-todo-list-view-vscode-extension/.vscodeignore
+examples/process-accelerator/.gitignore
+examples/process-accelerator/docker-compose/pgadmin/pgpass
+examples/process-accelerator/process-accelerator.iml
+examples/process-accelerator/src/main/resources/calculate.bpmn
+examples/process-business-calendar/process-business-calendar.iml
+examples/process-business-calendar/src/main/resources/bankTransaction.bpmn2
+examples/process-compact-architecture/.gitignore
+examples/process-compact-architecture/docker-compose/pgadmin/pgpass
+examples/process-compact-architecture/docker-compose/sql/init.sql
+examples/process-compact-architecture/process-compact-architecture.iml
+examples/process-compact-architecture/src/main/resources/META-INF/processSVG/hiring.svg
+examples/process-compact-architecture/src/main/resources/NewHiringOffer.dmn
+examples/process-compact-architecture/src/main/resources/hiring.bpmn
+examples/process-event-driven/.gitignore
+examples/process-event-driven/docker-compose/pgadmin/pgpass
+examples/process-event-driven/hotels/src/main/resources/hotel.bpmn
+examples/process-event-driven/process-event-driven.iml
+examples/process-event-driven/travelers/src/main/resources/travelers.bpmn
+examples/process-security/docker-compose/pgadmin/pgpass
+examples/process-security/docker-compose/sql/init.sql
+examples/process-security/docker-compose/svg/hiring.svg
+examples/process-security/kie-service-1/.gitignore
+examples/process-security/kie-service-1/src/main/resources/META-INF/processSVG/hiring.svg
+examples/process-security/kie-service-1/src/main/resources/NewHiringOffer.dmn
+examples/process-security/kie-service-1/src/main/resources/hiring.bpmn
+examples/process-security/kie-service-2/.gitignore
+examples/process-security/kie-service-2/src/main/resources/META-INF/processSVG/hiring.svg
+examples/process-security/kie-service-2/src/main/resources/NewHiringOffer.dmn
+examples/process-security/kie-service-2/src/main/resources/hiring.bpmn
+examples/process-security/kie-service-3/.gitignore
+examples/process-security/kie-service-3/src/main/resources/META-INF/processSVG/hiring.svg
+examples/process-security/kie-service-3/src/main/resources/NewHiringOffer.dmn
+examples/process-security/kie-service-3/src/main/resources/hiring.bpmn
+examples/process-user-tasks-subsystem/.gitignore
+examples/process-user-tasks-subsystem/docker-compose/pgadmin/pgpass
+examples/process-user-tasks-subsystem/process-user-tasks-subsystem.iml
+examples/process-user-tasks-subsystem/src/main/docker/Dockerfile.jvm
+examples/process-user-tasks-subsystem/src/main/docker/Dockerfile.native
+examples/process-user-tasks-subsystem/src/main/resources/META-INF/processSVG/hiring.svg
+examples/process-user-tasks-subsystem/src/main/resources/hiring.bpmn
+examples/sonataflow-greeting/sonataflow-greeting.iml
+packages/bpmn-marshaller/src/schemas/bpmn-2_0/BPMN20.xsd
+packages/bpmn-marshaller/src/schemas/bpmn-2_0/BPMNDI.xsd
+packages/bpmn-marshaller/src/schemas/bpmn-2_0/DC.xsd
+packages/bpmn-marshaller/src/schemas/bpmn-2_0/DI.xsd
+packages/bpmn-marshaller/src/schemas/bpmn-2_0/Semantic.kogito-compat.xsd
+packages/bpmn-marshaller/src/schemas/bpmn-2_0/Semantic.xsd
+packages/chrome-extension-serverless-workflow-editor/e2e-tests/samples/chrome_sample.sw.yaml
+packages/chrome-extension/tests/app/components/single/__snapshots__/SingleEditorApp.test.tsx.snap
+packages/chrome-extension/tests/app/components/single/__snapshots__/SingleEditorToolbar.test.tsx.snap
+packages/dashbuilder-language-service/tests/__snapshots__/DashbuilderYamlLanguageService.test.ts.snap
+packages/dashbuilder/appformer/uberfire-api/src/main/resources/org/uberfire/jre/org/uberfire/util/uri.min.js
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/columnWithComponentsLayout.txt
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/fullLayoutFluid.txt
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/fullLayoutPage.txt
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/sampleFullFluidLayout.txt
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/sampleFullPageLayout.txt
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/singleRowComponentLayout.txt
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/singleRowComponentLayoutWithParts.txt
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-layout-editor/uberfire-layout-editor-client/src/test/resources/org/uberfire/ext/layout/editor/client/singleRowTwoComponentsLayout.txt
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-runtime-plugins/uberfire-runtime-plugins-client/src/test/resources/org/uberfire/ext/plugin/client/perspective/editor/layout/editor/fullLayoutPage.txt
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/client/resources/js/wysihtml/parser_rules/advanced_and_extended.js
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/client/resources/js/wysihtml/wysihtml.all-commands.min.js
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/client/resources/js/wysihtml/wysihtml.min.js
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/client/resources/js/wysihtml/wysihtml.table_editing.min.js
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/client/resources/js/wysihtml/wysihtml.toolbar.min.js
+packages/dashbuilder/appformer/uberfire-extensions/uberfire-widgets/uberfire-widgets-commons/src/main/resources/org/uberfire/ext/widgets/common/public/highlight/highlight.min.js
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-client-views-patternfly/src/main/resources/org/uberfire/client/views/static/jquery-ui/jquery-ui.min.css
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-client-views-patternfly/src/main/resources/org/uberfire/client/views/static/jquery-ui/jquery-ui.min.js
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest1.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest13.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest14.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest15.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest19.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest2.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest20.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest21.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest22.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest23.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest24.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest3.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest4.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest5.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest6.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/PerspectiveTest7.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest1.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest2.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest3.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest4.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest5.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest6.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest7.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchClientEditorTest8.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest1.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest12.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest2.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest3.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest4.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest5.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest6.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest7.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest8.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchPopupTest9.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest1.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest10.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest11.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest12.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest13.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest14.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest15.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest16.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest17.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest18.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest18Super.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest19.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest2.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest20.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest21.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest22.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest23.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest24.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest25.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest26.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest27.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest28.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest3.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest33.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest4.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest5.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest6.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest7.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest8.java
+packages/dashbuilder/appformer/uberfire-workbench/uberfire-workbench-processors-tests/src/test/resources/org/uberfire/annotations/processors/WorkbenchScreenTest9.java
+packages/dashbuilder/dashbuilder-parent.iml
+packages/dashbuilder/dashbuilder-runtime-parent/dashbuilder-runtime-client/src/test/resources/ds.csv
+packages/dashbuilder/dashbuilder-runtime-parent/dashbuilder-runtime-client/src/test/resources/ds.dset
+packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/beanDataSetDef.dset
+packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/csvDataSetDef.dset
+packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/customDataSetDef.dset
+packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/dataSetDefFilter.dset
+packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/expenseReports.dset
+packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/externalDataSetDef.dset
+packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-api/src/test/resources/kafkaDataSetDef.dset
+packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-core/src/test/resources/deployments/salesPerYear.dset
+packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-core/src/test/resources/salesPerYear.dset
+packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-core/src/test/resources/salesPerYearAdjusted.dset
+packages/dashbuilder/kie-soup-dataset/kie-soup-dataset-core/src/test/resources/salesYear2014.dset
+packages/dev-deployment-quarkus-blank-app/dev-deployment-quarkus-blank-app.iml
+packages/dev-deployment-upload-service/go.mod
+packages/dev-deployment-upload-service/go.sum
+packages/dev-deployment-upload-service/tests/__snapshots__/integrationTest.test.js.snap
+packages/dmn-editor-standalone/tests-e2e/__fixtures__/files/loan-pre-qualification.dmn
+packages/dmn-editor-standalone/tests-e2e/__fixtures__/files/scorecard.pmml
+packages/dmn-editor/src/spec.txt
+packages/dmn-feel-antlr4-parser/src/parser/grammar/generated-parser/FEEL_1_1.interp
+packages/dmn-feel-antlr4-parser/src/parser/grammar/generated-parser/FEEL_1_1.tokens
+packages/dmn-feel-antlr4-parser/src/parser/grammar/generated-parser/FEEL_1_1Lexer.interp
+packages/dmn-feel-antlr4-parser/src/parser/grammar/generated-parser/FEEL_1_1Lexer.tokens
+packages/dmn-marshaller-backend-compatibility-tester/.gitignore
+packages/dmn-marshaller-backend-compatibility-tester/dmn-marshaller-backend-compatibility-tester.iml
+packages/dmn-marshaller/src/schemas/dmn-1_0/dmn.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_0/dmn3.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_1/dmn.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_2/DC.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_2/DI.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_2/DMN12.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_2/DMNDI12.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_3/DC.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_3/DI.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_3/DMN13.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_3/DMNDI13.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_4/DC.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_4/DI.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_4/DMN14.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_4/DMNDI13.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_5/DC.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_5/DI.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_5/DMN15.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_5/DMNDI15.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_6/DC.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_6/DI.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_6/DMN16.xsd
+packages/dmn-marshaller/src/schemas/dmn-1_6/DMNDI15.xsd
+packages/dmn-marshaller/src/schemas/kie-1_0/KIE.xsd
+packages/dmn-testing-models/dmn-testing-models.iml
+packages/dmn-uniforms-patternfly-form-wrapper/tests/__snapshots__/FormDmn.test.tsx.snap
+packages/dmn-uniforms-patternfly-form-wrapper/tests/__snapshots__/FormDmnOutputs.test.tsx.snap
+packages/drools-and-kogito/.gitignore
+packages/editor/tests/embedded/embedded/__snapshots__/EmbeddedEditor.test.tsx.snap
+packages/editor/tests/embedded/embedded/__snapshots__/EmbeddedViewer.test.tsx.snap
+packages/editor/tests/envelope/KeyBindingHelpOverlay/__snapshots__/KeyBindingsHelpOverlay.test.tsx.snap
+packages/editor/tests/envelope/LoadingScreen/__snapshots__/LoadingScreen.test.tsx.snap
+packages/editor/tests/envelope/__snapshots__/EditorEnvelopeView.test.tsx.snap
+packages/extended-services-java/extended-services-java.iml
+packages/extended-services/go.mod
+packages/extended-services/go.sum
+packages/extended-services/scripts/macos/src/Info.plist
+packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/getCheckboxGroupValue.txt
+packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/getMultipleSelectValue.txt
+packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/getRadioGroupValue.txt
+packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/listHelperFunctions.txt
+packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/setCheckboxGroupValue.txt
+packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/setRadioGroupValue.txt
+packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/setSelecMultipletValue.txt
+packages/form-code-generator-bootstrap4-theme/src/resources/staticCode/setSelectValue.txt
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkbox.setModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkbox.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkbox.writeModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkboxGroup.setModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkboxGroup.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/checkboxGroup.writeModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/date.setModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/date.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/form.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/formGroup.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/input.setModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/input.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/input.writeModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/listField.globalFunctions.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/listField.setModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/listField.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/listField.writeModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/nestField.globalFunctions.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/nestField.setModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/nestField.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/nestField.writeModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/number.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/number.writeModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/radioGroup.setModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/radioGroup.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/radioGroup.writeModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/select.setModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/select.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/select.writeModelData.template
+packages/form-code-generator-bootstrap4-theme/src/resources/templates/unsupported.template
+packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/AutoForm.test.tsx.snap
+packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/BoolField.test.tsx.snap
+packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/CheckboxGroupField.test.tsx.snap
+packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/DateField.test.tsx.snap
+packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/ListField.test.tsx.snap
+packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/NestField.test.tsx.snap
+packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/NumField.test.tsx.snap
+packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/RadioField.test.tsx.snap
+packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/SelectField.test.tsx.snap
+packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/TextField.test.tsx.snap
+packages/form-code-generator-bootstrap4-theme/tests/__snapshots__/UnsupportedField.test.tsx.snap
+packages/form-code-generator-patternfly-theme/src/resources/checkboxGroupFunctions.txt
+packages/form-code-generator-patternfly-theme/src/resources/dateFunctions.txt
+packages/form-code-generator-patternfly-theme/src/resources/multipleSelectFunctions.txt
+packages/form-code-generator-patternfly-theme/src/resources/selectFunctions.txt
+packages/form-code-generator-patternfly-theme/src/resources/timeFunctions.txt
+packages/form-code-generator-patternfly-theme/tests/__snapshots__/AutoForm.test.tsx.snap
+packages/form-code-generator-patternfly-theme/tests/__snapshots__/BoolField.test.tsx.snap
+packages/form-code-generator-patternfly-theme/tests/__snapshots__/CheckBoxGroupField.test.tsx.snap
+packages/form-code-generator-patternfly-theme/tests/__snapshots__/DateField.test.tsx.snap
+packages/form-code-generator-patternfly-theme/tests/__snapshots__/ListField.test.tsx.snap
+packages/form-code-generator-patternfly-theme/tests/__snapshots__/NestField.test.tsx.snap
+packages/form-code-generator-patternfly-theme/tests/__snapshots__/NumField.test.tsx.snap
+packages/form-code-generator-patternfly-theme/tests/__snapshots__/RadioField.test.tsx.snap
+packages/form-code-generator-patternfly-theme/tests/__snapshots__/SelectField.test.tsx.snap
+packages/form-code-generator-patternfly-theme/tests/__snapshots__/TextField.test.tsx.snap
+packages/form-code-generator-patternfly-theme/tests/__snapshots__/UnsupportedField.test.tsx.snap
+packages/image-builder/README.md
+packages/image-env-to-json/go.mod
+packages/image-env-to-json/go.sum
+packages/import-java-classes-component/tests/ImportJavaClasses/__snapshots__/ImportJavaClasses.test.tsx.snap
+packages/jbpm-quarkus-devui/dev/src/main/resources/META-INF/processSVG/hiring.svg
+packages/jbpm-quarkus-devui/dev/src/main/resources/custom-forms-dev/hiring.config
+packages/jbpm-quarkus-devui/dev/src/main/resources/custom-forms-dev/hiring.tsx
+packages/jbpm-quarkus-devui/dev/src/main/resources/custom-forms-dev/hiring_ITInterview.config
+packages/jbpm-quarkus-devui/dev/src/main/resources/custom-forms-dev/hiring_ITInterview.html
+packages/jbpm-quarkus-devui/dev/src/main/resources/custom-forms-dev/hiring_ITInterview.tsx
+packages/jbpm-quarkus-devui/jbpm-quarkus-devui-parent.iml
+packages/jbpm-quarkus-devui/jbpm-quarkus-devui-runtime/src/test/resources/custom-forms-dev/hiring_HRInterview.config
+packages/jbpm-quarkus-devui/jbpm-quarkus-devui-runtime/src/test/resources/custom-forms-dev/hiring_ITInterview.config
+packages/jbpm-quarkus-devui/jbpm-quarkus-devui-runtime/src/test/resources/forms/hiring_HRInterview.config
+packages/jbpm-quarkus-devui/jbpm-quarkus-devui-runtime/src/test/resources/forms/hiring_ITInterview.config
+packages/json-yaml-language-service/tests/__snapshots__/EditorJsonLanguageService.test.ts.snap
+packages/json-yaml-language-service/tests/__snapshots__/EditorYamlLanguageService.test.ts.snap
+packages/kie-editors-dev-vscode-extension/.vscodeignore
+packages/kie-editors-dev-vscode-extension/e2e-tests/resources/ReuseDataTypeTest.bpmn
+packages/kie-editors-dev-vscode-extension/e2e-tests/resources/demo-dmn.scesim
+packages/kie-editors-dev-vscode-extension/e2e-tests/resources/example.txt
+packages/kie-editors-dev-vscode-extension/e2e-tests/resources/global/default-global.wid
+packages/kie-editors-dev-vscode-extension/e2e-tests/resources/src/main/java/org/kie/Log.wid
+packages/kie-editors-dev-vscode-extension/e2e-tests/resources/src/main/java/org/kie/businessapp/Email.wid
+packages/kie-sandbox-distribution/.env
+packages/kie-sandbox-fs/src/DefaultBackend.js
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/.superblock.txt
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/0/a.txt
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/0/b.txt
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/0/c.txt
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/1/d.txt
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/1/e.txt
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/1/f.txt
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/2/a.txt
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/a.txt
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/b.txt
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/c.txt
+packages/kie-sandbox-fs/tests/__fixtures__/test-folder/not-in-superblock.txt
+packages/kie-sandbox-helm-chart/scripts/update-readmes.js
+packages/kie-sandbox-helm-chart/src/.helmignore
+packages/kie-sandbox-helm-chart/src/Chart.lock
+packages/kie-sandbox-helm-chart/src/Chart.yaml
+packages/kie-sandbox-helm-chart/src/charts/cors_proxy/Chart.yaml
+packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/_helpers.tpl
+packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/deployment.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/hpa.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/ingress.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/route.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/service.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/cors_proxy/templates/serviceaccount.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/extended_services/Chart.yaml
+packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/_helpers.tpl
+packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/deployment.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/hpa.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/ingress.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/route.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/service.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/extended_services/templates/serviceaccount.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/Chart.yaml
+packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/_helpers.tpl
+packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/deployment.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/hpa.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/ingress.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/route.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/service.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/templates/serviceaccount.yaml.helm
+packages/kie-sandbox-helm-chart/src/charts/kie_sandbox/tests/test-connection.yaml.helm
+packages/kie-sandbox-helm-chart/src/templates/NOTES.txt
+packages/kie-sandbox-helm-chart/src/templates/_helpers.tpl
+packages/kn-plugin-workflow/e2e-tests/testdata/lock.sw.yaml
+packages/kn-plugin-workflow/go.mod
+packages/kn-plugin-workflow/go.sum
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/docker/Dockerfile.jvm
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/docker/Dockerfile.legacy-jar
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/docker/Dockerfile.native
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/docker/Dockerfile.native-micro
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/dockerignore
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/knative.yml
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex-custom-namespace.yml
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex.yml
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex2-custom-namespace.yml
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex2.yml
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex3-custom-namespace.yml
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-complex3.yml
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-default-custom-namespace.yml
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/kogito-default.yml
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/pom1-expected.xml_no_auto_formatting
+packages/kn-plugin-workflow/pkg/command/quarkus/testdata/pom1-input.xml_no_auto_formatting
+packages/kn-plugin-workflow/pkg/common/k8sclient/fake.go
+packages/kn-plugin-workflow/pkg/common/k8sclient/goapi.go
+packages/kn-plugin-workflow/pkg/specs/testdata/greetingAPI.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/hello.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/emptyworkflow.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi-subflow34.expected.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi.expected.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi1.expected.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi1.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi2.expected.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/openapi2.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/subflow1.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/subflow2.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/subflow3.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/subflow4.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/workflow.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/refs/workflow1.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/subflow-custom.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/subflow-mySpecsDir.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/subflow.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/workflow-empty.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/workflow-empty2.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/workflow-greeting.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/workflow-mySpecsDir-one-finction.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/workflow-mySpecsDir.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/workflow-subflow-custom.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/workflow.sw.yaml
+packages/kn-plugin-workflow/pkg/specs/testdata/workflow2.sw.yaml
+packages/kogito-db-migrator-tool/.gitignore
+packages/kogito-db-migrator-tool/kogito-db-migrator-tool.iml
+packages/maven-base/kie-tools-maven-base.iml
+packages/maven-base/settings.xml
+packages/maven-m2-repo-via-http-image/settings.xml.envsubst
+packages/online-editor/Caddyfile
+packages/online-editor/src/accelerators/test.dmn
+packages/online-editor/static/samples/Sample.pmml
+packages/pmml-editor-marshaller/tests/marshaller/TestData_AnomalyDetectionModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_AssociationModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_BaselineModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_BayesianNetworkModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_ClusteringModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_GaussianProcessModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_GeneralRegressionModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_LinearRegressions.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_MiningModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_MiningSchema.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_NaiveBayesModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_NearestNeighborModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_NeuralNetwork.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_RuleSetModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_SequenceModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_SupportVectorMachineModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_TextModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_TimeSeriesModel.ts
+packages/pmml-editor-marshaller/tests/marshaller/TestData_TreeModel.ts
+packages/pmml-editor/e2e-tests/fixtures/compound-predicate.pmml
+packages/pmml-editor/e2e-tests/fixtures/empty-characteristics-DD-defined-types.pmml
+packages/pmml-editor/e2e-tests/fixtures/empty-characteristics-DD-defined.pmml
+packages/pmml-editor/e2e-tests/fixtures/simple-predicate.pmml
+packages/pmml-editor/tests/editor/components/DataDictionary/DataDictionaryContainer/__snapshots__/DataDictionaryContainer.test.tsx.snap
+packages/pmml-editor/tests/editor/components/EditorScorecard/organisms/__snapshots__/AttributesTable.test.tsx.snap
+packages/pmml-editor/tests/editor/components/EditorScorecard/organisms/__snapshots__/CharacteristicsTable.test.tsx.snap
+packages/pmml-editor/tests/editor/components/EditorScorecard/organisms/__snapshots__/CorePropertiesTable.test.tsx.snap
+packages/pmml-editor/tests/editor/components/LandingPage/molecules/__snapshots__/LandingPageToolbar.test.tsx.snap
+packages/pmml-editor/tests/editor/components/LandingPage/molecules/__snapshots__/ModelCard.test.tsx.snap
+packages/pmml-editor/tests/editor/components/LandingPage/organisms/__snapshots__/EmptyStateNoContent.test.tsx.snap
+packages/pmml-editor/tests/editor/components/LandingPage/organisms/__snapshots__/EmptyStateNoModels.test.tsx.snap
+packages/pmml-editor/tests/editor/components/LandingPage/templates/__snapshots__/LandingPage.test.tsx.snap
+packages/pmml-editor/tests/editor/components/MiningSchema/MiningSchemaContainer/__snapshots__/MiningSchemaContainer.test.tsx.snap
+packages/pmml-editor/tests/editor/components/Outputs/organisms/OutputFieldsTable/__snapshots__/OutputFieldsTable.test.tsx.snap
+packages/python-venv/requirements.txt
+packages/root-env/root-env.iml
+packages/runtime-tools-components/config/declare.d.ts
+packages/runtime-tools-components/src/declare.d.ts
+packages/runtime-tools-consoles-helm-chart/scripts/update-readmes.js
+packages/runtime-tools-consoles-helm-chart/src/.helmignore
+packages/runtime-tools-consoles-helm-chart/src/Chart.lock
+packages/runtime-tools-consoles-helm-chart/src/Chart.yaml
+packages/runtime-tools-consoles-helm-chart/src/charts/management-console/Chart.yaml
+packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/_helpers.tpl
+packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/deployment.yaml.helm
+packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/hpa.yaml.helm
+packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/ingress.yaml.helm
+packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/route.yaml.helm
+packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/service.yaml.helm
+packages/runtime-tools-consoles-helm-chart/src/charts/management-console/templates/serviceaccount.yaml.helm
+packages/runtime-tools-consoles-helm-chart/src/templates/NOTES.txt
+packages/runtime-tools-consoles-helm-chart/src/templates/_helpers.tpl
+packages/runtime-tools-management-console-webapp/dev-webapp/unsecured-runtime/src/main/resources/custom-forms-dev/hiring.config
+packages/runtime-tools-management-console-webapp/dev-webapp/unsecured-runtime/src/main/resources/custom-forms-dev/hiring.tsx
+packages/runtime-tools-management-console-webapp/dev-webapp/unsecured-runtime/src/main/resources/custom-forms-dev/hiring_ITInterview.config
+packages/runtime-tools-management-console-webapp/dev-webapp/unsecured-runtime/src/main/resources/custom-forms-dev/hiring_ITInterview.html
+packages/runtime-tools-management-console-webapp/dev-webapp/unsecured-runtime/src/main/resources/travelers.bpmn
+packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/hiring.config
+packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/hiring.tsx
+packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/html_hiring_HRInterview.config
+packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/html_hiring_ITInterview.config
+packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/react_hiring_HRInterview.config
+packages/runtime-tools-process-dev-ui-webapp/server/MockData/forms/examples/react_hiring_ITInterview.config
+packages/runtime-tools-process-gateway-api/src/graphql/types.tsx
+packages/serverless-logic-web-tools-swf-deployment-quarkus-app/serverless-logic-web-tools-swf-deployment-quarkus-app.iml
+packages/serverless-logic-web-tools-swf-dev-mode-image/.dockerignore
+packages/serverless-logic-web-tools/e2e-tests/fixtures/expression/expression.sw.yaml
+packages/serverless-logic-web-tools/e2e-tests/fixtures/uploadFile/helloDashbuilder.dash.yaml
+packages/serverless-logic-web-tools/e2e-tests/fixtures/uploadFile/helloYamlWorkflow.sw.yaml
+packages/serverless-workflow-diagram-editor/serverless-workflow-diagram-editor-parent.iml
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/C2S.externs.js
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/FileSaver.externs.js
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/Mustache.js
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/elk.externs.js
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/envelope.externs.js
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/jquery_plugins.js
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/jsPDF.externs.js
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/java/externs/monaco.externs.js
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-Bold-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-BoldItalic-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-ExtraBold-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-ExtraBoldItalic-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-Italic-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-Light-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-LightItalic-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-Regular-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-Semibold-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/OpenSans-SemiboldItalic-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/resources/org/kie/workbench/common/stunner/sw/resources/public/fonts/fontawesome-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-Bold-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-BoldItalic-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-ExtraBold-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-ExtraBoldItalic-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-Italic-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-Light-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-LightItalic-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-Regular-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-Semibold-webfont.svg
+packages/serverless-workflow-diagram-editor/sw-editor/sw-editor-kogito-app/src/main/webapp/fonts/OpenSans-SemiboldItalic-webfont.svg
+packages/serverless-workflow-diagram-editor/third_party/errai/src/main/java/org/jboss/errai/common/client/util/Base64Util.java
+packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/css/bootstrap-3.4.1.min.cache.css
+packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/css/bootstrap-theme-3.4.1.min.cache.css
+packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/css/font-awesome-4.7.0.min.cache.css
+packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/fonts/fontawesome-webfont.svg
+packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/js/bootstrap-3.4.1.min.cache.js.back
+packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/core/src/main/resources/org/gwtbootstrap3/client/resource/js/jquery-1.12.4.min.cache.js.back
+packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/extras/src/main/java/org/gwtbootstrap3/extras/animate/client/resource/css/animate-3.5.2.min.cache.css
+packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/extras/src/main/java/org/gwtbootstrap3/extras/notify/client/resource/css/bootstrap-notify-custom.min.cache.css
+packages/serverless-workflow-diagram-editor/third_party/gwtbootstrap3/extras/src/main/java/org/gwtbootstrap3/extras/notify/client/resource/js/bootstrap-notify-3.1.3.min.cache
+packages/serverless-workflow-diagram-editor/uberfire-extensions/uberfire-commons-editor/uberfire-commons-editor-client/src/main/resources/org/uberfire/ext/editor/commons/client/file/exports/js/FileSaver.min.js.back
+packages/serverless-workflow-diagram-editor/uberfire-extensions/uberfire-commons-editor/uberfire-commons-editor-client/src/main/resources/org/uberfire/ext/editor/commons/client/file/exports/js/canvas2svg.js.back
+packages/serverless-workflow-diagram-editor/uberfire-extensions/uberfire-commons-editor/uberfire-commons-editor-client/src/main/resources/org/uberfire/ext/editor/commons/client/file/exports/js/jspdf.min.js.back
+packages/serverless-workflow-diagram-editor/uberfire-workbench/uberfire-workbench-client/src/main/java/org/uberfire/client/util/GWTEditor.native.js
+packages/serverless-workflow-diagram-editor/uberfire-workbench/uberfire-workbench-client/src/main/resources/META-INF/beans.xml
+packages/serverless-workflow-language-service/tests/__snapshots__/SwfJsonLanguageService.test.ts.snap
+packages/serverless-workflow-language-service/tests/__snapshots__/SwfYamlLanguageService.test.ts.snap
+packages/serverless-workflow-language-service/tests/expectedResults/emptyfile_autocompletion.sw.json.result
+packages/serverless-workflow-language-service/tests/expectedResults/emptyfile_autocompletion.sw.yaml.result
+packages/serverless-workflow-language-service/tests/inputFiles/yaml/greeting-long.sw.yaml
+packages/serverless-workflow-language-service/tests/inputFiles/yaml/greeting.sw.yaml
+packages/serverless-workflow-language-service/tests/inputFiles/yaml/helloState.sw.yaml
+packages/serverless-workflow-service-catalog/tests/channel/parsers/examples/wrong.txt
+packages/serverless-workflow-standalone-editor/resources/swf/swfCombinedEditorEnvelopeIndex.template
+packages/serverless-workflow-standalone-editor/resources/swf/swfDiagramEditorEnvelopeIndex.template
+packages/serverless-workflow-standalone-editor/resources/swf/swfTextEditorEnvelopeIndex.template
+packages/serverless-workflow-vscode-extension/.vscodeignore
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/autocompletion.sw.json.result
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/autocompletion.sw.yaml
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/autocompletion.sw.yaml.result
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/emptyfile_autocompletion.sw.json.result
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/emptyfile_autocompletion.sw.yaml
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/emptyfile_autocompletion.sw.yaml.result
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/autocompletion/emptyworkflow_autocompletion.sw.json.result
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/basic-operations/greet.sw.yaml
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/basic-operations/hello-world.sw.yaml
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/diagram-navigation/applicant-request-decision.sw.yaml
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/expression/expression.sw.yaml
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/event.sw.json.result
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/event.sw.yaml
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/event.sw.yaml.result
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/function.sw.json.result
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/function.sw.yaml
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/function.sw.yaml.result
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/functions-events/specs/asyncapi.yaml
+packages/serverless-workflow-vscode-extension/e2e-tests/resources/greeting-flow/.dockerignore
+packages/sonataflow-builder-image/.gitignore
+packages/sonataflow-builder-image/test-resources/tests/features/sonataflow-builder-2.feature
+packages/sonataflow-builder-image/test-resources/tests/features/sonataflow-builder.feature
+packages/sonataflow-builder-image/test-resources/tests/shell/sonataflow-builder/resources/greet-with-inputschema/Dockerfile
+packages/sonataflow-builder-image/test-resources/tests/shell/sonataflow-builder/resources/greet/Dockerfile
+packages/sonataflow-dev-app/src/MockData/customDashboard/data.js
+packages/sonataflow-dev-app/src/MockData/forms/examples/html_hiring_HRInterview.config
+packages/sonataflow-dev-app/src/MockData/forms/examples/html_hiring_ITInterview.config
+packages/sonataflow-dev-app/src/MockData/forms/examples/react_hiring_HRInterview.config
+packages/sonataflow-dev-app/src/MockData/forms/examples/react_hiring_HRInterview.tsx
+packages/sonataflow-dev-app/src/MockData/forms/examples/react_hiring_ITInterview.config
+packages/sonataflow-dev-app/src/MockData/forms/examples/react_hiring_ITInterview.tsx
+packages/sonataflow-devmode-image/test-resources/tests/features/sonataflow-devmode-2.feature
+packages/sonataflow-devmode-image/test-resources/tests/features/sonataflow-devmode.feature
+packages/sonataflow-image-common/.gitignore
+packages/sonataflow-image-common/resources/modules/kogito-maven/common/maven/maven-m2-repo-via-http-settings.xml.envsubst
+packages/sonataflow-image-common/resources/modules/kogito-maven/common/maven/settings.xml
+packages/sonataflow-image-common/resources/scripts/common.py
+packages/sonataflow-management-console-image/.gitignore
+packages/sonataflow-management-console-image/test-resources/tests/features/sonataflow-management-console.feature
+packages/sonataflow-management-console-webapp/resources/monitoring-webapp/MonitoringReport.dash.yml
+packages/sonataflow-management-console-webapp/resources/monitoring-webapp/WorkflowDetails.dash.yml
+packages/sonataflow-operator/.gitignore
+packages/sonataflow-operator/PROJECT
+packages/sonataflow-operator/api/go.mod
+packages/sonataflow-operator/api/go.sum
+packages/sonataflow-operator/container-builder/go.mod
+packages/sonataflow-operator/container-builder/go.sum
+packages/sonataflow-operator/go.mod
+packages/sonataflow-operator/go.sum
+packages/sonataflow-operator/go.work
+packages/sonataflow-operator/go.work.sum
+packages/sonataflow-operator/images/requirements.txt
+packages/sonataflow-operator/workflowproj/go.mod
+packages/sonataflow-operator/workflowproj/go.sum
+packages/sonataflow-quarkus-devui/sonataflow-quarkus-devui-parent.iml
+packages/uniforms-patternfly/.eslintignore
+packages/vscode-extension-dashbuilder-editor/e2e-tests/resources/autocompletion/autocompletion.dash.yaml
+packages/vscode-extension-dashbuilder-editor/e2e-tests/resources/autocompletion/empty_file_autocompletion.dash.yaml
+packages/vscode-extension-dashbuilder-editor/e2e-tests/resources/autocompletion/empty_file_autocompletion.dash.yaml.result
+packages/vscode-extension-dashbuilder-editor/e2e-tests/resources/smoke-test/empty-dashbuilder-example.dash.yaml
+packages/vscode-extension/tests/test-workspace/resource1.txt
+packages/vscode-extension/tests/test-workspace/resource2.txt
+packages/vscode-java-code-completion-extension-plugin/vscode-java-code-completion-extension-plugin-core/META-INF/MANIFEST.MF
+packages/vscode-java-code-completion-extension-plugin/vscode-java-code-completion-extension-plugin-core/src/main/resources/templates/templateAccessors.java
+packages/vscode-java-code-completion-extension-plugin/vscode-java-code-completion-extension-plugin-core/src/main/resources/templates/templateClass.java
+packages/vscode-java-code-completion-extension-plugin/vscode-java-code-completion-extension-plugin-core/src/test/resources/testProject/src/main/java/org/kogito/test/project/empty/.gitkeep
+packages/vscode-java-code-completion-extension-plugin/vscode-java-code-completion-extension-plugin.iml
+packages/xml-parser-ts-codegen/src/schemas/xsd-incomplete--manually-written/HFP.xsd
+packages/xml-parser-ts-codegen/src/schemas/xsd-incomplete--manually-written/XSD.xsd
+packages/xml-parser-ts-codegen/src/schemas/xsd/HFP.xsd
+packages/xml-parser-ts-codegen/src/schemas/xsd/XSD.xsd
+packages/xml-parser-ts-codegen/src/schemas/xsd/xml.xsd
+packages/yaml-language-server/tests/__snapshots__/YamlLanguageService.test.ts.snap
+packages/yard-model/yard-model.iml
+packages/yard-validator-worker/yard-validator-worker.iml
+packages/yard-vscode-extension/.vscodeignore
+packages/yard-vscode-extension/e2e-tests/resources/empty.yard.yaml
+packages/yard-vscode-extension/e2e-tests/resources/empty.yard.yml
+patches/immer@10.0.3.patch
+patches/karma-firefox-launcher@2.1.2.patch
+patches/run-script-os@1.1.6.patch
+patches/zustand@4.4.2.patch
+pnpm-lock.yaml
+pnpm-workspace.yaml
+repo/graph.dot
+repo/repo.iml
+scripts/check-junit-report-results/tests/index.test.js
+scripts/check-junit-report-results/tests/reports/empty.xml
+scripts/run-script-if/README.md
+scripts/scripts.iml
