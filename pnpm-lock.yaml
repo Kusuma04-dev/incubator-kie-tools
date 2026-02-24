@@ -1821,8 +1821,8 @@ importers:
         specifier: ^4.17.23
         version: 4.17.23
       minimatch:
-        specifier: ^3.0.5
-        version: 3.1.2
+        specifier: ^3.1.3
+        version: 3.1.3
       nodemon:
         specifier: ^3.1.4
         version: 3.1.4
@@ -2012,8 +2012,8 @@ importers:
         specifier: ^18.5.3
         version: 18.5.3(encoding@0.1.13)
       minimatch:
-        specifier: ^3.0.5
-        version: 3.1.2
+        specifier: ^3.1.3
+        version: 3.1.3
       react:
         specifier: '>=17.0.2 <19.0.0'
         version: 17.0.2
@@ -2371,8 +2371,8 @@ importers:
         specifier: ^7.0.6
         version: 7.0.6
       minimatch:
-        specifier: ^3.0.5
-        version: 3.1.2
+        specifier: ^3.1.3
+        version: 3.1.3
       node-fetch:
         specifier: ^3.3.2
         version: 3.3.2
@@ -4483,8 +4483,8 @@ importers:
         specifier: ^4.17.23
         version: 4.17.23
       minimatch:
-        specifier: ^3.0.5
-        version: 3.1.2
+        specifier: ^3.1.3
+        version: 3.1.3
       nodemon:
         specifier: ^3.1.4
         version: 3.1.4
@@ -5082,8 +5082,8 @@ importers:
         specifier: ^3.0.11
         version: 3.0.11
       minimatch:
-        specifier: ^3.0.5
-        version: 3.1.2
+        specifier: ^3.1.3
+        version: 3.1.3
       react:
         specifier: '>=17.0.2 <19.0.0'
         version: 17.0.2
@@ -6569,8 +6569,8 @@ importers:
         specifier: workspace:*
         version: link:../vscode-java-code-completion-extension-plugin
       minimatch:
-        specifier: ^3.0.5
-        version: 3.1.2
+        specifier: ^3.1.3
+        version: 3.1.3
       monaco-editor:
         specifier: ^0.39.0
         version: 0.39.0
@@ -10302,8 +10302,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0
       minimatch:
-        specifier: ^3.0.5
-        version: 3.1.2
+        specifier: ^3.1.3
+        version: 3.1.3
       monaco-editor-webpack-plugin:
         specifier: ^7.0.1
         version: 7.0.1(monaco-editor@0.39.0)(monaco-yaml@4.0.4(monaco-editor@0.39.0))(webpack@5.104.1)
@@ -11458,8 +11458,8 @@ importers:
         specifier: ^3.6.0
         version: 3.6.0(jest@29.7.0(@types/node@24.10.11)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.10.11)(typescript@5.9.3)))
       minimatch:
-        specifier: ^3.0.5
-        version: 3.1.2
+        specifier: ^3.1.3
+        version: 3.1.3
       monaco-editor:
         specifier: ^0.39.0
         version: 0.39.0
@@ -13222,8 +13222,8 @@ importers:
         specifier: ^1.30.1
         version: 1.30.1
       minimatch:
-        specifier: ^3.0.5
-        version: 3.1.2
+        specifier: ^3.1.3
+        version: 3.1.3
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -13668,8 +13668,8 @@ importers:
         specifier: ^1.30.1
         version: 1.30.1
       minimatch:
-        specifier: ^3.0.5
-        version: 3.1.2
+        specifier: ^3.1.3
+        version: 3.1.3
       react:
         specifier: '>=17.0.2 <19.0.0'
         version: 17.0.2
@@ -25740,6 +25740,9 @@ packages:
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
 
+  minimatch@3.1.3:
+    resolution: {integrity: sha512-M2GCs7Vk83NxkUyQV1bkABc4yxgz9kILhHImZiBPAZ9ybuvCb0/H7lEl5XvIg3g+9d4eNotkZA5IWwYl0tibaA==}
+
   minimatch@4.2.3:
     resolution: {integrity: sha512-lIUdtK5hdofgCTu3aT0sOaHsYR37viUuIc0rwnnDXImbwFRcumyLMeZaM0t0I/fgxS6s6JMfu0rLD1Wz9pv1ng==}
     engines: {node: '>=10'}
@@ -32711,7 +32714,7 @@ snapshots:
       ignore: 5.3.1
       import-fresh: 3.3.1
       js-yaml: 4.1.1
-      minimatch: 3.1.2
+      minimatch: 3.1.3
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
@@ -33235,7 +33238,7 @@ snapshots:
     dependencies:
       '@humanwhocodes/object-schema': 2.0.1
       debug: 4.4.3
-      minimatch: 3.1.2
+      minimatch: 3.1.3
     transitivePeerDependencies:
       - supports-color
 
@@ -38444,7 +38447,7 @@ snapshots:
       leven: 3.1.0
       markdown-it: 14.1.0
       mime: 1.6.0
-      minimatch: 3.1.2
+      minimatch: 3.1.3
       parse-semver: 1.1.1
       read: 1.0.7
       secretlint: 10.2.2
@@ -41713,7 +41716,7 @@ snapshots:
 
   dotignore@0.1.2:
     dependencies:
-      minimatch: 3.1.2
+      minimatch: 3.1.3
 
   dset@3.1.2: {}
 
@@ -42927,7 +42930,7 @@ snapshots:
       deepmerge: 4.2.2
       fs-extra: 10.1.0
       memfs: 3.5.1
-      minimatch: 3.1.2
+      minimatch: 3.1.3
       node-abort-controller: 3.1.1
       schema-utils: 3.3.0
       semver: 7.7.4
@@ -42944,7 +42947,7 @@ snapshots:
       deepmerge: 4.2.2
       fs-extra: 10.1.0
       memfs: 3.5.1
-      minimatch: 3.1.2
+      minimatch: 3.1.3
       node-abort-controller: 3.1.1
       schema-utils: 3.3.0
       semver: 7.7.4
@@ -43218,7 +43221,7 @@ snapshots:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.1.2
+      minimatch: 3.1.3
       once: 1.4.0
       path-is-absolute: 1.0.1
 
@@ -43806,7 +43809,7 @@ snapshots:
 
   ignore-walk@4.0.1:
     dependencies:
-      minimatch: 3.1.2
+      minimatch: 3.1.3
 
   ignore-walk@8.0.0:
     dependencies:
@@ -44309,7 +44312,7 @@ snapshots:
       async: 3.2.3
       chalk: 4.1.2
       filelist: 1.0.4
-      minimatch: 3.1.2
+      minimatch: 3.1.3
 
   jasmine-core@4.6.0: {}
 
@@ -45762,6 +45765,10 @@ snapshots:
     dependencies:
       brace-expansion: 1.1.12
 
+  minimatch@3.1.3:
+    dependencies:
+      brace-expansion: 1.1.12
+
   minimatch@4.2.3:
     dependencies:
       brace-expansion: 1.1.12
@@ -46089,7 +46096,7 @@ snapshots:
 
   node-dir@0.1.17:
     dependencies:
-      minimatch: 3.1.2
+      minimatch: 3.1.3
 
   node-domexception@1.0.0: {}
 
@@ -47980,7 +47987,7 @@ snapshots:
 
   readdir-glob@1.1.1:
     dependencies:
-      minimatch: 3.1.2
+      minimatch: 3.1.3
 
   readdirp@3.6.0:
     dependencies:
@@ -49547,7 +49554,7 @@ snapshots:
     dependencies:
       '@istanbuljs/schema': 0.1.3
       glob: 7.2.3
-      minimatch: 3.1.2
+      minimatch: 3.1.3
 
   test-exclude@7.0.1:
     dependencies:
