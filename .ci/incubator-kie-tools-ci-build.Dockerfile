@@ -81,7 +81,7 @@ RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | 
 
 # Node setup
 RUN source $HOME/.nvm/nvm.sh && \
-    nvm install 24.13.0 && \
+    nvm install 24.14.0 && \
     sudo update-alternatives --install /usr/local/bin/node node $(which node) 1 && \
     sudo update-alternatives --install /usr/local/bin/npm npm $(which npm) 1
 
@@ -133,7 +133,7 @@ RUN go install github.com/openshift/source-to-image/cmd/s2i@v1.3.9
 ENV HOME="/home/nonrootuser"
 ENV JAVA_HOME="${HOME}/.sdkman/candidates/java/current/"
 ENV MAVEN_HOME="${HOME}/.sdkman/candidates/maven/current/"
-ENV NODE_HOME="${HOME}/.nvm/versions/node/v24.13.0"
+ENV NODE_HOME="${HOME}/.nvm/versions/node/v24.14.0"
 ENV DISPLAY=":99"
 ENV NODE_OPTIONS="--max_old_space_size=6144"
 ENV GOPATH="${HOME}/go"
