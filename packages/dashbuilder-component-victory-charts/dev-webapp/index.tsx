@@ -19,13 +19,15 @@
 
 import "@patternfly/react-core/dist/styles/base.css";
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import { ComponentDev } from "@kie-tools/dashbuilder-component-dev";
 import { ComponentApi } from "@kie-tools/dashbuilder-component-api";
 import { VictoryChartComponent } from "../src/VictoryChartComponent";
 
 const api = new ComponentApi();
 
-ReactDOM.render(<VictoryChartComponent controller={api.getComponentController()} />, document.getElementById("app")!);
+ReactDOM.createRoot(document.getElementById("app")!).render(
+  <VictoryChartComponent controller={api.getComponentController()} />
+);
 
 new ComponentDev().start();

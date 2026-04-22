@@ -18,7 +18,7 @@
  */
 
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import { EnvelopeBus } from "@kie-tools-core/envelope-bus/dist/api";
 import { Envelope, EnvelopeDivConfig } from "@kie-tools-core/envelope";
 import { WorkflowFormChannelApi, WorkflowFormEnvelopeApi } from "../api";
@@ -56,9 +56,10 @@ export function init(args: { config: EnvelopeDivConfig; container: HTMLDivElemen
     const ref = React.createRef<WorkflowFormEnvelopeViewApi>();
     return new Promise<() => WorkflowFormEnvelopeViewApi>((res) => {
       args.container.className = "kogito-workflow-form-container";
-      ReactDOM.render(<WorkflowFormEnvelopeView ref={ref} channelApi={envelope.channelApi} />, args.container, () =>
-        res(() => ref.current!)
+      ReactDOM.createRoot(args.container).render(
+        <WorkflowFormEnvelopeView ref={ref} channelApi={envelope.channelApi} />
       );
+      setTimeout(() => res(() => ref.current!), 0);
     });
   };
 

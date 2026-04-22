@@ -18,7 +18,7 @@
  */
 
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import { EnvelopeBus } from "@kie-tools-core/envelope-bus/dist/api";
 import { CustomDashboardListChannelApi, CustomDashboardListEnvelopeApi } from "../api";
 import { CustomDashboardListEnvelopeContext } from "./CustomDashboardListEnvelopeContext";
@@ -53,11 +53,10 @@ export function init(args: { config: EnvelopeDivConfig; container: HTMLDivElemen
   const envelopeViewDelegate = async () => {
     const ref = React.createRef<CustomDashboardListEnvelopeViewApi>();
     return new Promise<() => CustomDashboardListEnvelopeViewApi>((res) => {
-      ReactDOM.render(
-        <CustomDashboardListEnvelopeView ref={ref} channelApi={envelope.channelApi} />,
-        args.container,
-        () => res(() => ref.current!)
+      ReactDOM.createRoot(args.container).render(
+        <CustomDashboardListEnvelopeView ref={ref} channelApi={envelope.channelApi} />
       );
+      setTimeout(() => res(() => ref.current!), 0);
     });
   };
 

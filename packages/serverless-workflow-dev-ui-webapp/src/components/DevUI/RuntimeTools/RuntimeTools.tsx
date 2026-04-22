@@ -25,7 +25,7 @@ import ApolloClient from "apollo-client";
 import DevUIRoutes from "../DevUIRoutes/DevUIRoutes";
 import DevUILayout from "../DevUILayout/DevUILayout";
 import { changeBaseURLToCurrentLocation } from "../../../url";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { DiagramPreviewSize } from "@kie-tools/runtime-tools-swf-enveloped-components/dist/workflowDetails/api";
 import { ServerUnavailablePage } from "@kie-tools/runtime-tools-shared-webapp-components/dist/ServerUnavailablePage";
 
@@ -64,8 +64,7 @@ const RuntimeTools: React.FC<IOwnProps> = ({
 
   const fallbackUI = onError(({ networkError }: any) => {
     if (networkError && networkError.stack === "TypeError: Failed to fetch") {
-      // eslint-disable-next-line react/no-render-return-value
-      return ReactDOM.render(
+      ReactDOM.createRoot(document.getElementById("envelope-app")!).render(
         <DevUILayout
           apolloClient={client}
           availablePages={availablePages}
@@ -79,8 +78,7 @@ const RuntimeTools: React.FC<IOwnProps> = ({
           openApiPath={openApiPath}
         >
           <ServerUnavailablePage displayName={"Runtime Dev UI"} reload={() => window.location.reload()} />
-        </DevUILayout>,
-        document.getElementById("envelope-app")
+        </DevUILayout>
       );
     }
   });

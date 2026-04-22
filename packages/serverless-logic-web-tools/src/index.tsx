@@ -22,7 +22,7 @@ import "@patternfly/react-core/dist/styles/base.css";
 import "@patternfly/patternfly/patternfly-addons.css";
 import "@patternfly/quickstarts/dist/quickstarts.min.css";
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import { App } from "./App";
 import "../static/resources/style.css";
 import "../static/resources/application-services.css";
@@ -32,9 +32,9 @@ async function main() {
   const appContainer = document.getElementById("app")!;
 
   if (await incompatibleBrowser.isTrue()) {
-    ReactDOM.render(<incompatibleBrowser.Component />, appContainer);
+    ReactDOM.createRoot(appContainer).render(<incompatibleBrowser.Component />);
   } else {
-    ReactDOM.render(<App />, appContainer);
+    ReactDOM.createRoot(appContainer).render(<App />);
   }
 }
 

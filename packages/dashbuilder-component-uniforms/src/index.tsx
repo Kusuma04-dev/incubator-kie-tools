@@ -18,10 +18,12 @@
  */
 import "@patternfly/react-core/dist/styles/base.css";
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import { ComponentApi } from "@kie-tools/dashbuilder-component-api";
 import { UniformsComponent } from "./UniformsComponent";
 
 const api = new ComponentApi();
 
-ReactDOM.render(<UniformsComponent controller={api.getComponentController()} />, document.getElementById("app")!);
+ReactDOM.createRoot(document.getElementById("app")!).render(
+  <UniformsComponent controller={api.getComponentController()} />
+);

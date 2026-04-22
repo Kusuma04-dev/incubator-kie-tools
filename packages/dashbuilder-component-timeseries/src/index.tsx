@@ -18,10 +18,12 @@
  */
 
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import { ComponentApi } from "@kie-tools/dashbuilder-component-api";
 import { TimeSeriesComponent } from "./TimeSeriesComponent";
 
 const api = new ComponentApi();
 
-ReactDOM.render(<TimeSeriesComponent controller={api.getComponentController()} />, document.getElementById("app")!);
+ReactDOM.createRoot(document.getElementById("app")!).render(
+  <TimeSeriesComponent controller={api.getComponentController()} />
+);

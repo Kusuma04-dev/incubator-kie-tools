@@ -22,10 +22,9 @@ import { EnvelopeServer, EnvelopeServerType } from "@kie-tools-core/envelope-bus
 import * as React from "react";
 import { useImperativeHandle, useMemo, useRef } from "react";
 import { useConnectedEnvelopeServer } from "@kie-tools-core/envelope-bus/dist/hooks";
-import type * as CSS from "csstype";
 import { ContainerType } from "../api";
 
-const containerStyles: CSS.Properties = {
+const containerStyles: React.CSSProperties = {
   display: "flex",
   flex: 1,
   flexDirection: "column",
@@ -65,7 +64,7 @@ export function RefForwardingEmbeddedEnvelope<
   ApiToProvide extends ApiDefinition<ApiToProvide>,
   ApiToConsume extends ApiDefinition<ApiToConsume>,
   Ref,
->(props: EmbeddedEnvelopeProps<ApiToProvide, ApiToConsume, Ref>, forwardRef: React.RefObject<Ref>) {
+>(props: EmbeddedEnvelopeProps<ApiToProvide, ApiToConsume, Ref>, forwardRef: React.ForwardedRef<Ref>) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const divRef = useRef<HTMLDivElement>(null);
 
@@ -87,7 +86,7 @@ export function RefForwardingEmbeddedEnvelope<
       new EnvelopeServer<ApiToProvide, ApiToConsume>(
         bus,
         props.origin,
-        (self) =>
+        (self: EnvelopeServer<ApiToProvide, ApiToConsume>) =>
           props.pollInit(self, () =>
             props.config.containerType === ContainerType.DIV ? divRef.current! : iframeRef.current!
           ),

@@ -18,13 +18,13 @@
  */
 
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import { ComponentDev } from "@kie-tools/dashbuilder-component-dev";
 import { ComponentApi } from "@kie-tools/dashbuilder-component-api";
 import { MapComponent } from "../src/MapComponent";
 
 const api = new ComponentApi();
 
-ReactDOM.render(<MapComponent controller={api.getComponentController()} />, document.getElementById("app")!);
+ReactDOM.createRoot(document.getElementById("app")!).render(<MapComponent controller={api.getComponentController()} />);
 
 new ComponentDev().start();

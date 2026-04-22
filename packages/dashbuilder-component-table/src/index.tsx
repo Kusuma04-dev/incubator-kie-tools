@@ -19,10 +19,12 @@
 
 import "@patternfly/react-core/dist/styles/base.css";
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as ReactDOM from "react-dom/client";
 import { ComponentApi } from "@kie-tools/dashbuilder-component-api";
 import { FilteredTableComponent } from "./FilteredTableComponent";
 
 const api = new ComponentApi();
 
-ReactDOM.render(<FilteredTableComponent controller={api.getComponentController()} />, document.getElementById("app")!);
+ReactDOM.createRoot(document.getElementById("app")!).render(
+  <FilteredTableComponent controller={api.getComponentController()} />
+);
