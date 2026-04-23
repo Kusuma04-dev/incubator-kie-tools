@@ -299,16 +299,16 @@ importers:
         version: link:../../packages/workspace
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@kie-tools/root-env':
         specifier: workspace:*
@@ -512,11 +512,11 @@ importers:
         specifier: workspace:*
         version: link:../../packages/envelope-bus
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@kie-tools/root-env':
         specifier: workspace:*
@@ -610,11 +610,11 @@ importers:
         specifier: workspace:*
         version: link:../micro-frontends-multiplying-architecture-ping-pong-view
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@kie-tools/root-env':
         specifier: workspace:*
@@ -722,11 +722,11 @@ importers:
         specifier: workspace:*
         version: link:../../packages/envelope-bus
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@kie-tools/root-env':
         specifier: workspace:*
@@ -1231,31 +1231,31 @@ importers:
         version: link:../xml-parser-ts
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-styles':
         specifier: ^5.4.0
         version: 5.4.1
       '@patternfly/react-table':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       lodash:
         specifier: ^4.18.1
         version: 4.18.1
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-resizable:
         specifier: ^1.11.0
-        version: 1.11.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 1.11.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-table:
         specifier: ^7.6.2
-        version: 7.7.0(react@17.0.2)
+        version: 7.7.0(react@18.3.1)
       uuid:
         specifier: ^8.3.2
         version: 8.3.2
@@ -1292,28 +1292,28 @@ importers:
         version: link:../tsconfig
       '@microlink/react-json-view':
         specifier: ^1.24.0
-        version: 1.26.1(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 1.26.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@playwright/test':
         specifier: ^1.45.2
         version: 1.45.2
       '@storybook/addon-links':
         specifier: ^7.3.2
-        version: 7.6.13(react@17.0.2)
+        version: 7.6.13(react@18.3.1)
       '@storybook/blocks':
         specifier: ^7.3.2
-        version: 7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/manager-api':
         specifier: ^7.3.2
-        version: 7.6.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 7.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/preview-api':
         specifier: ^7.3.2
         version: 7.6.13
       '@storybook/react':
         specifier: ^7.3.2
-        version: 7.6.13(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.9.3)
+        version: 7.6.13(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
       '@storybook/react-webpack5':
         specifier: ^7.3.2
-        version: 7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)
+        version: 7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -1436,16 +1436,16 @@ importers:
         version: link:../xyflow-react-kie-diagram
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-styles':
         specifier: ^5.4.0
         version: 5.4.1
       '@visx/text':
         specifier: ^3.3.0
-        version: 3.3.0(react@17.0.2)
+        version: 3.3.0(react@18.3.1)
       d3-drag:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1465,23 +1465,23 @@ importers:
         specifier: ^2.29.4
         version: 2.29.4
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
         specifier: ^18.3.1
-        version: 18.3.1(react@17.0.2)
+        version: 18.3.1(react@18.3.1)
       react-error-boundary:
         specifier: ^4.1.2
-        version: 4.1.2(react@17.0.2)
+        version: 4.1.2(react@18.3.1)
       reactflow:
         specifier: ^11.8.3
-        version: 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       uuid:
         specifier: ^8.3.2
         version: 8.3.2
       zustand:
         specifier: ^4.4.2
-        version: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
+        version: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -1518,25 +1518,25 @@ importers:
         version: 1.45.2
       '@storybook/addon-links':
         specifier: ^7.3.2
-        version: 7.6.13(react@17.0.2)
+        version: 7.6.13(react@18.3.1)
       '@storybook/addon-webpack5-compiler-babel':
         specifier: ^3.0.5
         version: 3.0.5(webpack@5.104.1)
       '@storybook/blocks':
         specifier: ^7.3.2
-        version: 7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(encoding@0.1.13)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/manager-api':
         specifier: ^7.3.2
-        version: 7.6.13(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 7.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/preview-api':
         specifier: ^7.3.2
         version: 7.6.13
       '@storybook/react':
         specifier: ^7.3.2
-        version: 7.6.13(encoding@0.1.13)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)(typescript@5.9.3)
+        version: 7.6.13(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
       '@storybook/react-webpack5':
         specifier: ^7.3.2
-        version: 7.6.13(@babel/core@7.28.3)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)
+        version: 7.6.13(@babel/core@7.28.3)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)
       '@types/d3-drag':
         specifier: ^3.0.3
         version: 3.0.7
@@ -1653,13 +1653,13 @@ importers:
         version: link:../xyflow-react-kie-diagram
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -2021,11 +2021,11 @@ importers:
         specifier: 5.1.9
         version: 5.1.9
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -2050,7 +2050,7 @@ importers:
         version: link:../tsconfig
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/chrome':
         specifier: ^0.0.193
         version: 0.0.193
@@ -2538,11 +2538,11 @@ importers:
   packages/dashbuilder-component-api:
     dependencies:
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -2715,11 +2715,11 @@ importers:
         specifier: workspace:*
         version: link:../dashbuilder-component-echarts-base
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -2785,11 +2785,11 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -2837,14 +2837,14 @@ importers:
         specifier: ^4.0.2
         version: 4.0.2
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-simple-maps:
         specifier: ^3.0.0
-        version: 3.0.0(prop-types@15.8.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 3.0.0(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -2922,11 +2922,11 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -2996,16 +2996,16 @@ importers:
         version: link:../dashbuilder-component-api
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-table':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -3074,11 +3074,11 @@ importers:
         specifier: workspace:*
         version: link:../dashbuilder-component-echarts-base
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -3151,10 +3151,10 @@ importers:
         version: link:../uniforms-patternfly
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-table':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       ajv:
         specifier: ^8.18.0
         version: 8.18.0
@@ -3168,17 +3168,17 @@ importers:
         specifier: ^4.18.1
         version: 4.18.1
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       uniforms:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       uniforms-bridge-json-schema:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -3245,25 +3245,25 @@ importers:
         version: link:../dashbuilder-component-api
       '@patternfly/react-charts':
         specifier: ^7.4.7
-        version: 7.4.7(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 7.4.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-table':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       numeral:
         specifier: ^2.0.6
         version: 2.0.6
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       victory-zoom-container:
         specifier: ^35.11.4
-        version: 35.11.4(react@17.0.2)
+        version: 35.11.4(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -3357,10 +3357,10 @@ importers:
         version: link:../dashbuilder-language-service
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       json-schema:
         specifier: ^0.4.0
         version: 0.4.0
@@ -3371,11 +3371,11 @@ importers:
         specifier: ^4.0.4
         version: 4.0.4(monaco-editor@0.39.0)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       vscode-languageserver-types:
         specifier: ^3.16.0
         version: 3.17.2
@@ -3554,16 +3554,16 @@ importers:
         version: link:../workspace
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -3803,10 +3803,10 @@ importers:
         version: 5.1.0
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@readme/openapi-parser':
         specifier: ^2.5.0
         version: 2.5.0(openapi-types@7.2.3)
@@ -3817,14 +3817,14 @@ importers:
         specifier: ^4.18.1
         version: 4.18.1
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-router-dom:
         specifier: ^6.30.2
-        version: 6.30.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 6.30.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -3858,7 +3858,7 @@ importers:
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -4080,16 +4080,16 @@ importers:
         version: link:../xml-parser-ts
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-styles':
         specifier: ^5.4.0
         version: 5.4.1
       '@visx/text':
         specifier: ^3.3.0
-        version: 3.3.0(react@17.0.2)
+        version: 3.3.0(react@18.3.1)
       d3-drag:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4109,23 +4109,23 @@ importers:
         specifier: ^2.29.4
         version: 2.29.4
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-error-boundary:
         specifier: ^4.1.2
-        version: 4.1.2(react@17.0.2)
+        version: 4.1.2(react@18.3.1)
       reactflow:
         specifier: ^11.8.3
-        version: 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       uuid:
         specifier: ^8.3.2
         version: 8.3.2
       zustand:
         specifier: ^4.4.2
-        version: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
+        version: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -4165,25 +4165,25 @@ importers:
         version: 1.45.2
       '@storybook/addon-links':
         specifier: ^7.3.2
-        version: 7.6.13(react@17.0.2)
+        version: 7.6.13(react@18.3.1)
       '@storybook/addon-webpack5-compiler-babel':
         specifier: ^3.0.5
         version: 3.0.5(webpack@5.104.1)
       '@storybook/blocks':
         specifier: ^7.3.2
-        version: 7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/manager-api':
         specifier: ^7.3.2
-        version: 7.6.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 7.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/preview-api':
         specifier: ^7.3.2
         version: 7.6.13
       '@storybook/react':
         specifier: ^7.3.2
-        version: 7.6.13(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.9.3)
+        version: 7.6.13(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
       '@storybook/react-webpack5':
         specifier: ^7.3.2
-        version: 7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)
+        version: 7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)
       '@types/d3-drag':
         specifier: ^3.0.3
         version: 3.0.7
@@ -4318,13 +4318,13 @@ importers:
         version: link:../xml-parser-ts
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -4758,10 +4758,10 @@ importers:
         version: link:../uniforms-patternfly
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       ajv:
         specifier: ^8.18.0
         version: 8.18.0
@@ -4784,17 +4784,17 @@ importers:
         specifier: ^2.29.4
         version: 2.29.4
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       uniforms:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       uniforms-bridge-json-schema:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -4877,10 +4877,10 @@ importers:
         version: link:../uniforms-patternfly-form-wrapper
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       deep-object-diff:
         specifier: ^1.1.9
         version: 1.1.9
@@ -4888,17 +4888,17 @@ importers:
         specifier: ^4.18.1
         version: 4.18.1
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       uniforms:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       uniforms-bridge-json-schema:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -4929,7 +4929,7 @@ importers:
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -5080,10 +5080,10 @@ importers:
         version: link:../workspace
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       csstype:
         specifier: ^3.0.11
         version: 3.0.11
@@ -5091,11 +5091,11 @@ importers:
         specifier: 5.1.9
         version: 5.1.9
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -5123,10 +5123,10 @@ importers:
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@testing-library/react-hooks':
         specifier: ^8.0.1
-        version: 8.0.1(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react-test-renderer@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 8.0.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react-test-renderer@17.0.2(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -5176,11 +5176,11 @@ importers:
         specifier: ^3.0.11
         version: 3.0.11
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -5216,11 +5216,11 @@ importers:
   packages/envelope-bus:
     dependencies:
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -5427,11 +5427,11 @@ importers:
         specifier: workspace:*
         version: link:../i18n-common-dictionary
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -5575,20 +5575,20 @@ importers:
         specifier: ^2.8.8
         version: 2.8.8
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       underscore:
         specifier: ^1.13.8
         version: 1.13.8
       uniforms:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       uniforms-bridge-json-schema:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -5619,7 +5619,7 @@ importers:
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -5676,7 +5676,7 @@ importers:
         version: 5.9.3
       uniforms-bridge-simple-schema-2:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       webpack:
         specifier: ^5.104.1
         version: 5.104.1(@swc/core@1.3.92)
@@ -5702,17 +5702,17 @@ importers:
         specifier: ^2.8.8
         version: 2.8.8
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       uniforms:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       uniforms-bridge-json-schema:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -5743,7 +5743,7 @@ importers:
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -5797,7 +5797,7 @@ importers:
         version: 5.9.3
       uniforms-bridge-simple-schema-2:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       webpack:
         specifier: ^5.104.1
         version: 5.104.1(@swc/core@1.3.92)(webpack-cli@4.10.0)
@@ -5857,11 +5857,11 @@ importers:
   packages/i18n:
     dependencies:
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -5889,7 +5889,7 @@ importers:
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -6005,19 +6005,19 @@ importers:
         version: link:../i18n-common-dictionary
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-table':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -6054,7 +6054,7 @@ importers:
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -6354,8 +6354,8 @@ importers:
         specifier: workspace:*
         version: link:../operating-system
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -6383,10 +6383,10 @@ importers:
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@testing-library/react-hooks':
         specifier: ^8.0.1
-        version: 8.0.1(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react-test-renderer@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 8.0.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react-test-renderer@17.0.2(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -6446,13 +6446,13 @@ importers:
         version: link:../workspace
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -7843,13 +7843,13 @@ importers:
         version: link:../pmml-editor-marshaller
       '@patternfly/react-charts':
         specifier: ^7.4.7
-        version: 7.4.7(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 7.4.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       combine-reducer:
         specifier: ^1.0.2
         version: 1.0.2
@@ -7863,29 +7863,29 @@ importers:
         specifier: ^4.18.1
         version: 4.18.1
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-cool-onclickoutside:
         specifier: ^1.6.1
-        version: 1.6.2(react@17.0.2)
+        version: 1.6.2(react@18.3.1)
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-monaco-editor:
         specifier: ^0.49.0
-        version: 0.49.0(@types/react@18.3.28)(monaco-editor@0.39.0)(react@17.0.2)
+        version: 0.49.0(@types/react@18.3.28)(monaco-editor@0.39.0)(react@18.3.1)
       react-redux:
         specifier: ^7.2.4
-        version: 7.2.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 7.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-router-dom:
         specifier: ^6.30.2
-        version: 6.30.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 6.30.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-sortable-hoc:
         specifier: ^2.0.0
-        version: 2.0.0(prop-types@15.8.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 2.0.0(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-transition-group:
         specifier: ^4.4.1
-        version: 4.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 4.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       redux:
         specifier: ^4.1.0
         version: 4.1.0
@@ -7937,7 +7937,7 @@ importers:
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -8160,8 +8160,8 @@ importers:
   packages/react-hooks:
     dependencies:
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -8218,16 +8218,16 @@ importers:
         version: link:../uniforms-patternfly
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-styles':
         specifier: ^5.4.0
         version: 5.4.1
       '@patternfly/react-table':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       ajv:
         specifier: ^8.18.0
         version: 8.18.0
@@ -8250,26 +8250,26 @@ importers:
         specifier: ^0.39.0
         version: 0.39.0
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-datetime-picker:
         specifier: ^3.5.0
-        version: 3.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 3.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-moment:
         specifier: 0.9.7
-        version: 0.9.7(moment@2.29.4)(prop-types@15.8.1)(react@17.0.2)
+        version: 0.9.7(moment@2.29.4)(prop-types@15.8.1)(react@18.3.1)
       react-router-dom:
         specifier: ^6.30.2
-        version: 6.30.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 6.30.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       uniforms:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       uniforms-bridge-json-schema:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       uuid:
         specifier: ^8.3.2
         version: 8.3.2
@@ -8858,25 +8858,25 @@ importers:
         version: link:../runtime-tools-shared-gateway-api
       '@microlink/react-json-view':
         specifier: ^1.24.0
-        version: 1.26.1(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 1.26.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/patternfly':
         specifier: ^5.4.1
         version: 5.4.2
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-table':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       copyfiles:
         specifier: ^2.4.1
         version: 2.4.1
       dangerously-set-html-content:
         specifier: ^1.0.13
-        version: 1.1.0(react@17.0.2)
+        version: 1.1.0(react@18.3.1)
       json-schema:
         specifier: ^0.4.0
         version: 0.4.0
@@ -8887,32 +8887,32 @@ importers:
         specifier: ^0.39.0
         version: 0.39.0
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-datetime-picker:
         specifier: ^3.5.0
-        version: 3.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 3.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-helmet:
         specifier: ^6.1.0
-        version: 6.1.0(react@17.0.2)
+        version: 6.1.0(react@18.3.1)
       react-inlinesvg:
         specifier: ^2.3.0
-        version: 2.3.0(react@17.0.2)
+        version: 2.3.0(react@18.3.1)
       react-moment:
         specifier: 0.9.7
-        version: 0.9.7(moment@2.29.4)(prop-types@15.8.1)(react@17.0.2)
+        version: 0.9.7(moment@2.29.4)(prop-types@15.8.1)(react@18.3.1)
       react-pure-loaders:
         specifier: ^3.0.1
-        version: 3.0.1(@emotion/core@10.3.1(react@17.0.2))(react@17.0.2)
+        version: 3.0.1(@emotion/core@10.3.1(react@18.3.1))(react@18.3.1)
       react-svg-pan-zoom:
         specifier: ^3.12.1
         version: 3.12.1
       react-svg-pan-zoom-loader:
         specifier: ^1.4.2
-        version: 1.6.1(prop-types@15.8.1)(react@17.0.2)
+        version: 1.6.1(prop-types@15.8.1)(react@18.3.1)
       uuid:
         specifier: ^8.3.2
         version: 8.3.2
@@ -9096,8 +9096,8 @@ importers:
         specifier: ^4.18.1
         version: 4.18.1
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -9119,7 +9119,7 @@ importers:
         version: link:../tsconfig
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/lodash':
         specifier: ^4.14.168
         version: 4.14.202
@@ -9176,19 +9176,19 @@ importers:
         version: 5.4.2
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-table':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       copyfiles:
         specifier: ^2.4.1
         version: 2.4.1
       dangerously-set-html-content:
         specifier: ^1.0.13
-        version: 1.1.0(react@17.0.2)
+        version: 1.1.0(react@18.3.1)
       lodash:
         specifier: ^4.18.1
         version: 4.18.1
@@ -9196,29 +9196,29 @@ importers:
         specifier: ^0.39.0
         version: 0.39.0
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-helmet:
         specifier: ^6.1.0
-        version: 6.1.0(react@17.0.2)
+        version: 6.1.0(react@18.3.1)
       react-inlinesvg:
         specifier: ^2.3.0
-        version: 2.3.0(react@17.0.2)
+        version: 2.3.0(react@18.3.1)
       react-moment:
         specifier: 0.9.7
-        version: 0.9.7(moment@2.29.4)(prop-types@15.8.1)(react@17.0.2)
+        version: 0.9.7(moment@2.29.4)(prop-types@15.8.1)(react@18.3.1)
       react-pure-loaders:
         specifier: ^3.0.1
-        version: 3.0.1(@emotion/core@10.3.1(react@17.0.2))(react@17.0.2)
+        version: 3.0.1(@emotion/core@10.3.1(react@18.3.1))(react@18.3.1)
       react-svg-pan-zoom:
         specifier: ^3.12.1
         version: 3.12.1
       react-svg-pan-zoom-loader:
         specifier: ^1.4.2
-        version: 1.6.1(prop-types@15.8.1)(react@17.0.2)
+        version: 1.6.1(prop-types@15.8.1)(react@18.3.1)
       uuid:
         specifier: ^8.3.2
         version: 8.3.2
@@ -9303,16 +9303,16 @@ importers:
         version: link:../runtime-tools-components
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-router-dom:
         specifier: ^6.30.2
-        version: 6.30.3(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 6.30.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -9394,25 +9394,25 @@ importers:
         version: link:../sonataflow-uniforms
       '@microlink/react-json-view':
         specifier: ^1.24.0
-        version: 1.26.1(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 1.26.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/patternfly':
         specifier: ^5.4.1
         version: 5.4.2
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-table':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       copyfiles:
         specifier: ^2.4.1
         version: 2.4.1
       dangerously-set-html-content:
         specifier: ^1.0.13
-        version: 1.1.0(react@17.0.2)
+        version: 1.1.0(react@18.3.1)
       lodash:
         specifier: ^4.18.1
         version: 4.18.1
@@ -9420,23 +9420,23 @@ importers:
         specifier: ^0.39.0
         version: 0.39.0
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-datetime-picker:
         specifier: ^3.5.0
-        version: 3.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 3.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-helmet:
         specifier: ^6.1.0
-        version: 6.1.0(react@17.0.2)
+        version: 6.1.0(react@18.3.1)
       react-moment:
         specifier: 0.9.7
-        version: 0.9.7(moment@2.29.4)(prop-types@15.8.1)(react@17.0.2)
+        version: 0.9.7(moment@2.29.4)(prop-types@15.8.1)(react@18.3.1)
       react-pure-loaders:
         specifier: ^3.0.1
-        version: 3.0.1(@emotion/core@10.3.1(react@17.0.2))(react@17.0.2)
+        version: 3.0.1(@emotion/core@10.3.1(react@18.3.1))(react@18.3.1)
       uuid:
         specifier: ^8.3.2
         version: 8.3.2
@@ -9470,7 +9470,7 @@ importers:
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/babel__standalone':
         specifier: ^7.1.7
         version: 7.1.7
@@ -9651,10 +9651,10 @@ importers:
         version: link:../runtime-tools-swf-gateway-api
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       apollo-cache-inmemory:
         specifier: 1.6.6
         version: 1.6.6(graphql@14.3.1)
@@ -9665,8 +9665,8 @@ importers:
         specifier: 1.5.17
         version: 1.5.17(graphql@14.3.1)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -9908,13 +9908,13 @@ importers:
         version: link:../xml-parser-ts
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -10521,10 +10521,10 @@ importers:
         version: link:../serverless-workflow-text-editor
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       json-schema:
         specifier: ^0.4.0
         version: 0.4.0
@@ -10538,11 +10538,11 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       vscode-languageserver-types:
         specifier: ^3.16.0
         version: 3.17.2
@@ -10952,10 +10952,10 @@ importers:
         version: link:../xml-parser-ts
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-styles':
         specifier: ^5.4.0
         version: 5.4.1
@@ -10964,7 +10964,7 @@ importers:
         version: 0.8.4
       '@visx/text':
         specifier: ^3.3.0
-        version: 3.3.0(react@17.0.2)
+        version: 3.3.0(react@18.3.1)
       d3-drag:
         specifier: ^3.0.0
         version: 3.0.0
@@ -10984,23 +10984,23 @@ importers:
         specifier: ^2.29.4
         version: 2.29.4
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-error-boundary:
         specifier: ^4.1.2
-        version: 4.1.2(react@17.0.2)
+        version: 4.1.2(react@18.3.1)
       reactflow:
         specifier: ^11.8.3
-        version: 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       uuid:
         specifier: ^8.3.2
         version: 8.3.2
       zustand:
         specifier: ^4.4.2
-        version: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
+        version: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -11040,25 +11040,25 @@ importers:
         version: 1.45.2
       '@storybook/addon-links':
         specifier: ^7.3.2
-        version: 7.6.13(react@17.0.2)
+        version: 7.6.13(react@18.3.1)
       '@storybook/addon-webpack5-compiler-babel':
         specifier: ^3.0.5
         version: 3.0.5(webpack@5.104.1)
       '@storybook/blocks':
         specifier: ^7.3.2
-        version: 7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/manager-api':
         specifier: ^7.3.2
-        version: 7.6.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 7.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/preview-api':
         specifier: ^7.3.2
         version: 7.6.13
       '@storybook/react':
         specifier: ^7.3.2
-        version: 7.6.13(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.9.3)
+        version: 7.6.13(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
       '@storybook/react-webpack5':
         specifier: ^7.3.2
-        version: 7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)
+        version: 7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)
       '@types/d3-drag':
         specifier: ^3.0.3
         version: 3.0.7
@@ -11577,10 +11577,10 @@ importers:
         version: link:../serverless-workflow-service-catalog
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       json-schema:
         specifier: ^0.4.0
         version: 0.4.0
@@ -11591,11 +11591,11 @@ importers:
         specifier: ^4.0.4
         version: 4.0.4(monaco-editor@0.39.0)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       vscode-languageserver-types:
         specifier: ^3.16.0
         version: 3.17.2
@@ -12496,16 +12496,16 @@ importers:
         version: link:../uniforms-patternfly
       '@patternfly/react-code-editor':
         specifier: 5.4.3
-        version: 5.4.3(monaco-editor@0.39.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.3(monaco-editor@0.39.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       uniforms:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
     devDependencies:
       '@babel/preset-env':
         specifier: ^7.16.0
@@ -12527,16 +12527,16 @@ importers:
         version: link:../tsconfig
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@testing-library/jest-dom':
         specifier: ^6.4.6
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -12581,7 +12581,7 @@ importers:
         version: 5.9.3
       uniforms-bridge-simple-schema-2:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       webpack:
         specifier: ^5.104.1
         version: 5.104.1(@swc/core@1.3.92)(webpack-cli@4.10.0)
@@ -12743,16 +12743,16 @@ importers:
         version: link:../workspace
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       monaco-yaml:
         specifier: ^4.0.4
         version: 4.0.4(monaco-editor@0.39.0)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -12799,14 +12799,14 @@ importers:
         specifier: ^4.18.1
         version: 4.18.1
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       uniforms:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
     devDependencies:
       '@babel/preset-env':
         specifier: ^7.16.0
@@ -12828,16 +12828,16 @@ importers:
         version: link:../tsconfig
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@testing-library/jest-dom':
         specifier: ^6.4.6
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -12882,7 +12882,7 @@ importers:
         version: 5.9.3
       uniforms-bridge-simple-schema-2:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       webpack:
         specifier: ^5.104.1
         version: 5.104.1(@swc/core@1.3.92)(webpack-cli@4.10.0)
@@ -12915,10 +12915,10 @@ importers:
         version: link:../uniforms-patternfly
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       ajv:
         specifier: ^8.18.0
         version: 8.18.0
@@ -12938,17 +12938,17 @@ importers:
         specifier: ^4.18.1
         version: 4.18.1
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       uniforms:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       uniforms-bridge-json-schema:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -13042,10 +13042,10 @@ importers:
         version: link:../uniforms-patternfly
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/lodash':
         specifier: ^4.14.168
         version: 4.14.202
@@ -13074,23 +13074,23 @@ importers:
         specifier: ^2.29.4
         version: 2.29.4
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-id-generator:
         specifier: ^3.0.1
-        version: 3.0.2(react@17.0.2)
+        version: 3.0.2(react@18.3.1)
       react-table:
         specifier: ^7.6.2
-        version: 7.7.0(react@17.0.2)
+        version: 7.7.0(react@18.3.1)
       uniforms:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       uniforms-bridge-json-schema:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -13151,10 +13151,10 @@ importers:
         version: link:../unitables
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/lodash':
         specifier: ^4.14.168
         version: 4.14.202
@@ -13165,23 +13165,23 @@ importers:
         specifier: ^4.18.1
         version: 4.18.1
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-id-generator:
         specifier: ^3.0.1
-        version: 3.0.2(react@17.0.2)
+        version: 3.0.2(react@18.3.1)
       react-table:
         specifier: ^7.6.2
-        version: 7.7.0(react@17.0.2)
+        version: 7.7.0(react@18.3.1)
       uniforms:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
       uniforms-bridge-json-schema:
         specifier: ^3.10.2
-        version: 3.10.2(react@17.0.2)
+        version: 3.10.2(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -13696,8 +13696,8 @@ importers:
         specifier: 5.1.9
         version: 5.1.9
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       uuid:
         specifier: ^8.3.2
         version: 8.3.2
@@ -13728,7 +13728,7 @@ importers:
         version: 6.4.6(@jest/globals@29.7.0)(@types/jest@29.5.12)(jest@29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3)))
       '@testing-library/react':
         specifier: ^12.1.5
-        version: 12.1.5(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.12
         version: 29.5.12
@@ -13876,10 +13876,10 @@ importers:
         version: link:../switch-expression-ts
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-styles':
         specifier: ^5.4.0
         version: 5.4.1
@@ -13893,17 +13893,17 @@ importers:
         specifier: ^10.0.3
         version: 10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       reactflow:
         specifier: ^11.8.3
-        version: 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+        version: 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       uuid:
         specifier: ^8.3.2
         version: 8.3.2
       zustand:
         specifier: ^4.4.2
-        version: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
+        version: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@18.3.1)
     devDependencies:
       '@babel/core':
         specifier: ^7.16.0
@@ -14082,10 +14082,10 @@ importers:
         version: link:../yard-language-service
       '@patternfly/react-core':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@patternfly/react-icons':
         specifier: ^5.4.1
-        version: 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/js-yaml':
         specifier: ^4.0.5
         version: 4.0.5
@@ -14105,17 +14105,17 @@ importers:
         specifier: ^4.0.4
         version: 4.0.4(monaco-editor@0.39.0)
       react:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1
       react-dom:
-        specifier: '>=17.0.2 <19.0.0'
-        version: 17.0.2(react@17.0.2)
+        specifier: '>=18.3.1 <19.0.0'
+        version: 18.3.1(react@18.3.1)
       react-zoom-pan-pinch:
         specifier: ^3.1.0
-        version: 3.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       reaflow:
         specifier: 5.1.2
-        version: 5.1.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+        version: 5.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       vscode-languageserver-types:
         specifier: ^3.16.0
         version: 3.17.2
@@ -27409,11 +27409,6 @@ packages:
     resolution: {integrity: sha512-i8aF1nyKInZnANZ4uZrH49qn1paRgBZ7wZiCNBMnenlPzEv0mRl+ShpTVEI6wZNl8sSc79xZkivtgLKQArcanQ==}
     engines: {node: '>=16.14.0'}
 
-  react-dom@17.0.2:
-    resolution: {integrity: sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==}
-    peerDependencies:
-      react: 17.0.2
-
   react-dom@18.3.1:
     resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
     peerDependencies:
@@ -27501,6 +27496,9 @@ packages:
 
   react-is@18.1.0:
     resolution: {integrity: sha512-Fl7FuabXsJnV5Q1qIOQwx/sagGF18kogb4gpfcG4gjLBWO0WDiiz1ko/ExayuxE7InyQkBLkxRFG5oxY6Uu3Kg==}
+
+  react-is@18.3.1:
+    resolution: {integrity: sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==}
 
   react-lifecycles-compat@3.0.4:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
@@ -27682,10 +27680,6 @@ packages:
     peerDependencies:
       react: '*'
       react-dom: '*'
-
-  react@17.0.2:
-    resolution: {integrity: sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==}
-    engines: {node: '>=0.10.0'}
 
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
@@ -32568,7 +32562,7 @@ snapshots:
       '@emotion/utils': 0.11.3
       '@emotion/weak-memoize': 0.2.5
 
-  '@emotion/core@10.3.1(react@17.0.2)':
+  '@emotion/core@10.3.1(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.29.2
       '@emotion/cache': 10.0.29
@@ -32576,7 +32570,7 @@ snapshots:
       '@emotion/serialize': 0.11.16
       '@emotion/sheet': 0.9.4
       '@emotion/utils': 0.11.3
-      react: 17.0.2
+      react: 18.3.1
     transitivePeerDependencies:
       - supports-color
 
@@ -32610,10 +32604,6 @@ snapshots:
   '@emotion/stylis@0.8.5': {}
 
   '@emotion/unitless@0.7.5': {}
-
-  '@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@17.0.2)':
-    dependencies:
-      react: 17.0.2
 
   '@emotion/use-insertion-effect-with-fallbacks@1.0.1(react@18.3.1)':
     dependencies:
@@ -32815,18 +32805,6 @@ snapshots:
     dependencies:
       '@floating-ui/core': 1.5.0
       '@floating-ui/utils': 0.1.6
-
-  '@floating-ui/react-dom@2.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@floating-ui/dom': 1.5.3
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  '@floating-ui/react-dom@2.0.2(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@floating-ui/dom': 1.5.3
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
 
   '@floating-ui/react-dom@2.0.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -33967,13 +33945,13 @@ snapshots:
       '@types/react': 18.3.28
       react: 18.3.1
 
-  '@microlink/react-json-view@1.26.1(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+  '@microlink/react-json-view@1.26.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      react: 17.0.2
+      react: 18.3.1
       react-base16-styling: 0.9.1
-      react-dom: 17.0.2(react@17.0.2)
+      react-dom: 18.3.1(react@18.3.1)
       react-lifecycles-compat: 3.0.4
-      react-textarea-autosize: 8.5.7(@types/react@18.3.28)(react@17.0.2)
+      react-textarea-autosize: 8.5.7(@types/react@18.3.28)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
 
@@ -34003,13 +33981,6 @@ snapshots:
     dependencies:
       monaco-editor: 0.39.0
       state-local: 1.0.7
-
-  '@monaco-editor/react@4.6.0(monaco-editor@0.39.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@monaco-editor/loader': 1.4.0(monaco-editor@0.39.0)
-      monaco-editor: 0.39.0
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
 
   '@monaco-editor/react@4.6.0(monaco-editor@0.39.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -34435,45 +34406,32 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@patternfly/react-charts@7.4.7(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+  '@patternfly/react-charts@7.4.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@patternfly/react-styles': 5.4.1
       '@patternfly/react-tokens': 5.4.1
       hoist-non-react-statics: 3.3.2
       lodash: 4.18.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
       tslib: 2.8.1
-      victory-area: 37.3.2(react@17.0.2)
-      victory-axis: 37.3.2(react@17.0.2)
-      victory-bar: 37.3.2(react@17.0.2)
-      victory-box-plot: 37.3.2(react@17.0.2)
-      victory-chart: 37.3.2(react@17.0.2)
-      victory-core: 37.3.2(react@17.0.2)
-      victory-create-container: 37.3.2(react@17.0.2)
-      victory-cursor-container: 37.3.2(react@17.0.2)
-      victory-group: 37.3.2(react@17.0.2)
-      victory-legend: 37.3.2(react@17.0.2)
-      victory-line: 37.3.2(react@17.0.2)
-      victory-pie: 37.3.2(react@17.0.2)
-      victory-scatter: 37.3.2(react@17.0.2)
-      victory-stack: 37.3.2(react@17.0.2)
-      victory-tooltip: 37.3.2(react@17.0.2)
-      victory-voronoi-container: 37.3.2(react@17.0.2)
-      victory-zoom-container: 37.3.2(react@17.0.2)
-
-  '@patternfly/react-code-editor@5.4.3(monaco-editor@0.39.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@monaco-editor/react': 4.6.0(monaco-editor@0.39.0)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@patternfly/react-core': 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@patternfly/react-icons': 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@patternfly/react-styles': 5.4.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-dropzone: 11.7.1(react@17.0.2)
-      tslib: 2.8.1
-    transitivePeerDependencies:
-      - monaco-editor
+      victory-area: 37.3.2(react@18.3.1)
+      victory-axis: 37.3.2(react@18.3.1)
+      victory-bar: 37.3.2(react@18.3.1)
+      victory-box-plot: 37.3.2(react@18.3.1)
+      victory-chart: 37.3.2(react@18.3.1)
+      victory-core: 37.3.2(react@18.3.1)
+      victory-create-container: 37.3.2(react@18.3.1)
+      victory-cursor-container: 37.3.2(react@18.3.1)
+      victory-group: 37.3.2(react@18.3.1)
+      victory-legend: 37.3.2(react@18.3.1)
+      victory-line: 37.3.2(react@18.3.1)
+      victory-pie: 37.3.2(react@18.3.1)
+      victory-scatter: 37.3.2(react@18.3.1)
+      victory-stack: 37.3.2(react@18.3.1)
+      victory-tooltip: 37.3.2(react@18.3.1)
+      victory-voronoi-container: 37.3.2(react@18.3.1)
+      victory-zoom-container: 37.3.2(react@18.3.1)
 
   '@patternfly/react-code-editor@5.4.3(monaco-editor@0.39.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -34488,28 +34446,6 @@ snapshots:
     transitivePeerDependencies:
       - monaco-editor
 
-  '@patternfly/react-core@5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@patternfly/react-icons': 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@patternfly/react-styles': 5.4.1
-      '@patternfly/react-tokens': 5.4.1
-      focus-trap: 7.5.4
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-dropzone: 11.7.1(react@17.0.2)
-      tslib: 2.8.1
-
-  '@patternfly/react-core@5.4.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@patternfly/react-icons': 5.4.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@patternfly/react-styles': 5.4.1
-      '@patternfly/react-tokens': 5.4.1
-      focus-trap: 7.5.4
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      react-dropzone: 11.7.1(react@17.0.2)
-      tslib: 2.8.1
-
   '@patternfly/react-core@5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@patternfly/react-icons': 5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -34521,33 +34457,12 @@ snapshots:
       react-dropzone: 11.7.1(react@18.3.1)
       tslib: 2.8.1
 
-  '@patternfly/react-icons@5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  '@patternfly/react-icons@5.4.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-
   '@patternfly/react-icons@5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
   '@patternfly/react-styles@5.4.1': {}
-
-  '@patternfly/react-table@5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@patternfly/react-core': 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@patternfly/react-icons': 5.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@patternfly/react-styles': 5.4.1
-      '@patternfly/react-tokens': 5.4.1
-      lodash: 4.18.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      tslib: 2.8.1
 
   '@patternfly/react-table@5.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -35421,58 +35336,12 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.28.6
 
-  '@radix-ui/react-arrow@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-arrow@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
   '@radix-ui/react-arrow@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-collection@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-collection@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
     optionalDependencies:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
@@ -35490,24 +35359,10 @@ snapshots:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
-  '@radix-ui/react-compose-refs@1.0.1(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      react: 17.0.2
-    optionalDependencies:
-      '@types/react': 18.3.28
-
   '@radix-ui/react-compose-refs@1.0.1(@types/react@18.3.28)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
       react: 18.3.1
-    optionalDependencies:
-      '@types/react': 18.3.28
-
-  '@radix-ui/react-context@1.0.1(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      react: 17.0.2
     optionalDependencies:
       '@types/react': 18.3.28
 
@@ -35518,47 +35373,12 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.28
 
-  '@radix-ui/react-direction@1.0.1(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      react: 17.0.2
-    optionalDependencies:
-      '@types/react': 18.3.28
-
   '@radix-ui/react-direction@1.0.1(@types/react@18.3.28)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.28
-
-  '@radix-ui/react-dismissable-layer@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-escape-keydown': 1.0.3(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-dismissable-layer@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-escape-keydown': 1.0.3(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
   '@radix-ui/react-dismissable-layer@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -35574,43 +35394,12 @@ snapshots:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
-  '@radix-ui/react-focus-guards@1.0.1(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      react: 17.0.2
-    optionalDependencies:
-      '@types/react': 18.3.28
-
   '@radix-ui/react-focus-guards@1.0.1(@types/react@18.3.28)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.28
-
-  '@radix-ui/react-focus-scope@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-focus-scope@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
   '@radix-ui/react-focus-scope@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -35624,14 +35413,6 @@ snapshots:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
-  '@radix-ui/react-id@1.0.1(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-    optionalDependencies:
-      '@types/react': 18.3.28
-
   '@radix-ui/react-id@1.0.1(@types/react@18.3.28)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
@@ -35639,44 +35420,6 @@ snapshots:
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.28
-
-  '@radix-ui/react-popper@1.1.2(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@floating-ui/react-dom': 2.0.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-arrow': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-rect': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-size': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/rect': 1.0.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-popper@1.1.2(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@floating-ui/react-dom': 2.0.2(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-arrow': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-rect': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-size': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/rect': 1.0.1
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
   '@radix-ui/react-popper@1.1.2(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -35697,26 +35440,6 @@ snapshots:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
-  '@radix-ui/react-portal@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-portal@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
   '@radix-ui/react-portal@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
@@ -35727,68 +35450,12 @@ snapshots:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
-  '@radix-ui/react-primitive@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-primitive@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
   '@radix-ui/react-primitive@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@radix-ui/react-slot': 1.0.2(@types/react@18.3.28)(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-roving-focus@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-direction': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-id': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-roving-focus@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-direction': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-id': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
     optionalDependencies:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
@@ -35807,66 +35474,6 @@ snapshots:
       '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.28)(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-select@1.2.2(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/number': 1.0.1
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-direction': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-dismissable-layer': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-focus-guards': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-focus-scope': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-id': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-popper': 1.1.2(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-portal': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-previous': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-visually-hidden': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      aria-hidden: 1.2.3
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-remove-scroll: 2.5.5(@types/react@18.3.28)(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-select@1.2.2(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/number': 1.0.1
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-collection': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-direction': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-dismissable-layer': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-focus-guards': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-focus-scope': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-id': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-popper': 1.1.2(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-portal': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-slot': 1.0.2(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-use-previous': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-visually-hidden': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      aria-hidden: 1.2.3
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      react-remove-scroll: 2.5.5(@types/react@18.3.28)(react@17.0.2)
     optionalDependencies:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
@@ -35901,26 +35508,6 @@ snapshots:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
-  '@radix-ui/react-separator@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-separator@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
   '@radix-ui/react-separator@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
@@ -35931,14 +35518,6 @@ snapshots:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
-  '@radix-ui/react-slot@1.0.2(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-    optionalDependencies:
-      '@types/react': 18.3.28
-
   '@radix-ui/react-slot@1.0.2(@types/react@18.3.28)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
@@ -35946,38 +35525,6 @@ snapshots:
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.28
-
-  '@radix-ui/react-toggle-group@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-direction': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-roving-focus': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-toggle': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-toggle-group@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-direction': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-roving-focus': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-toggle': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
   '@radix-ui/react-toggle-group@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -35995,30 +35542,6 @@ snapshots:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
-  '@radix-ui/react-toggle@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-toggle@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
   '@radix-ui/react-toggle@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
@@ -36027,38 +35550,6 @@ snapshots:
       '@radix-ui/react-use-controllable-state': 1.0.1(@types/react@18.3.28)(react@18.3.1)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-toolbar@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-direction': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-roving-focus': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-separator': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-toggle-group': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-toolbar@1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/primitive': 1.0.1
-      '@radix-ui/react-context': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-direction': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-roving-focus': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-separator': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-toggle-group': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
     optionalDependencies:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
@@ -36079,25 +35570,10 @@ snapshots:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
-  '@radix-ui/react-use-callback-ref@1.0.1(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      react: 17.0.2
-    optionalDependencies:
-      '@types/react': 18.3.28
-
   '@radix-ui/react-use-callback-ref@1.0.1(@types/react@18.3.28)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
       react: 18.3.1
-    optionalDependencies:
-      '@types/react': 18.3.28
-
-  '@radix-ui/react-use-controllable-state@1.0.1(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
     optionalDependencies:
       '@types/react': 18.3.28
 
@@ -36109,26 +35585,11 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.28
 
-  '@radix-ui/react-use-escape-keydown@1.0.3(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-    optionalDependencies:
-      '@types/react': 18.3.28
-
   '@radix-ui/react-use-escape-keydown@1.0.3(@types/react@18.3.28)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@radix-ui/react-use-callback-ref': 1.0.1(@types/react@18.3.28)(react@18.3.1)
       react: 18.3.1
-    optionalDependencies:
-      '@types/react': 18.3.28
-
-  '@radix-ui/react-use-layout-effect@1.0.1(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      react: 17.0.2
     optionalDependencies:
       '@types/react': 18.3.28
 
@@ -36139,25 +35600,10 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.28
 
-  '@radix-ui/react-use-previous@1.0.1(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      react: 17.0.2
-    optionalDependencies:
-      '@types/react': 18.3.28
-
   '@radix-ui/react-use-previous@1.0.1(@types/react@18.3.28)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
       react: 18.3.1
-    optionalDependencies:
-      '@types/react': 18.3.28
-
-  '@radix-ui/react-use-rect@1.0.1(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/rect': 1.0.1
-      react: 17.0.2
     optionalDependencies:
       '@types/react': 18.3.28
 
@@ -36169,14 +35615,6 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.28
 
-  '@radix-ui/react-use-size@1.0.1(@types/react@18.3.28)(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-use-layout-effect': 1.0.1(@types/react@18.3.28)(react@17.0.2)
-      react: 17.0.2
-    optionalDependencies:
-      '@types/react': 18.3.28
-
   '@radix-ui/react-use-size@1.0.1(@types/react@18.3.28)(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
@@ -36184,26 +35622,6 @@ snapshots:
       react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.28
-
-  '@radix-ui/react-visually-hidden@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
-
-  '@radix-ui/react-visually-hidden@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
   '@radix-ui/react-visually-hidden@1.0.3(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -36219,51 +35637,29 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.28.6
 
-  '@reactflow/background@11.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+  '@reactflow/background@11.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classcat: 5.0.4
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - immer
 
-  '@reactflow/background@11.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
+  '@reactflow/controls@11.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classcat: 5.0.4
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - immer
 
-  '@reactflow/controls@11.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classcat: 5.0.4
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - immer
-
-  '@reactflow/controls@11.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      classcat: 5.0.4
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - immer
-
-  '@reactflow/core@11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
+  '@reactflow/core@11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@types/d3': 7.4.3
       '@types/d3-drag': 3.0.7
@@ -36273,104 +35669,48 @@ snapshots:
       d3-drag: 3.0.0
       d3-selection: 3.0.0
       d3-zoom: 3.0.0
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - immer
 
-  '@reactflow/core@11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
+  '@reactflow/minimap@11.7.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@types/d3': 7.4.3
-      '@types/d3-drag': 3.0.7
-      '@types/d3-selection': 3.0.10
-      '@types/d3-zoom': 3.0.8
-      classcat: 5.0.4
-      d3-drag: 3.0.0
-      d3-selection: 3.0.0
-      d3-zoom: 3.0.0
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - immer
-
-  '@reactflow/minimap@11.7.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/d3-selection': 3.0.10
       '@types/d3-zoom': 3.0.8
       classcat: 5.0.4
       d3-selection: 3.0.0
       d3-zoom: 3.0.0
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - immer
 
-  '@reactflow/minimap@11.7.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
+  '@reactflow/node-resizer@2.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@types/d3-selection': 3.0.10
-      '@types/d3-zoom': 3.0.8
-      classcat: 5.0.4
-      d3-selection: 3.0.0
-      d3-zoom: 3.0.0
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - immer
-
-  '@reactflow/node-resizer@2.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classcat: 5.0.4
       d3-drag: 3.0.0
       d3-selection: 3.0.0
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - immer
 
-  '@reactflow/node-resizer@2.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
+  '@reactflow/node-toolbar@1.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
+      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classcat: 5.0.4
-      d3-drag: 3.0.0
-      d3-selection: 3.0.0
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - immer
-
-  '@reactflow/node-toolbar@1.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      classcat: 5.0.4
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - immer
-
-  '@reactflow/node-toolbar@1.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      classcat: 5.0.4
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      zustand: 4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -37099,14 +36439,6 @@ snapshots:
       '@storybook/global': 5.0.0
       '@storybook/preview-api': 7.4.6
 
-  '@storybook/addon-links@7.6.13(react@17.0.2)':
-    dependencies:
-      '@storybook/csf': 0.1.2
-      '@storybook/global': 5.0.0
-      ts-dedent: 2.2.0
-    optionalDependencies:
-      react: 17.0.2
-
   '@storybook/addon-links@7.6.13(react@18.3.1)':
     dependencies:
       '@storybook/csf': 0.1.2
@@ -37220,72 +36552,6 @@ snapshots:
       react: 18.3.1
       react-colorful: 5.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-dom: 18.3.1(react@18.3.1)
-      telejson: 7.2.0
-      tocbot: 4.21.2
-      ts-dedent: 2.2.0
-      util-deprecate: 1.0.2
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
-      - encoding
-      - supports-color
-
-  '@storybook/blocks@7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@storybook/channels': 7.6.13
-      '@storybook/client-logger': 7.6.13
-      '@storybook/components': 7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@storybook/core-events': 7.6.13
-      '@storybook/csf': 0.1.2
-      '@storybook/docs-tools': 7.6.13(encoding@0.1.13)
-      '@storybook/global': 5.0.0
-      '@storybook/manager-api': 7.6.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@storybook/preview-api': 7.6.13
-      '@storybook/theming': 7.6.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@storybook/types': 7.6.13
-      '@types/lodash': 4.14.202
-      color-convert: 2.0.1
-      dequal: 2.0.3
-      lodash: 4.18.1
-      markdown-to-jsx: 7.3.2(react@17.0.2)
-      memoizerific: 1.11.3
-      polished: 4.2.2
-      react: 17.0.2
-      react-colorful: 5.6.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react-dom: 17.0.2(react@17.0.2)
-      telejson: 7.2.0
-      tocbot: 4.21.2
-      ts-dedent: 2.2.0
-      util-deprecate: 1.0.2
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
-      - encoding
-      - supports-color
-
-  '@storybook/blocks@7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(encoding@0.1.13)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@storybook/channels': 7.6.13
-      '@storybook/client-logger': 7.6.13
-      '@storybook/components': 7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@storybook/core-events': 7.6.13
-      '@storybook/csf': 0.1.2
-      '@storybook/docs-tools': 7.6.13(encoding@0.1.13)
-      '@storybook/global': 5.0.0
-      '@storybook/manager-api': 7.6.13(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@storybook/preview-api': 7.6.13
-      '@storybook/theming': 7.6.13(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@storybook/types': 7.6.13
-      '@types/lodash': 4.14.202
-      color-convert: 2.0.1
-      dequal: 2.0.3
-      lodash: 4.18.1
-      markdown-to-jsx: 7.3.2(react@17.0.2)
-      memoizerific: 1.11.3
-      polished: 4.2.2
-      react: 17.0.2
-      react-colorful: 5.6.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      react-dom: 18.3.1(react@17.0.2)
       telejson: 7.2.0
       tocbot: 4.21.2
       ts-dedent: 2.2.0
@@ -37564,42 +36830,6 @@ snapshots:
       - '@types/react'
       - '@types/react-dom'
 
-  '@storybook/components@7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@radix-ui/react-select': 1.2.2(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-toolbar': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@storybook/client-logger': 7.6.13
-      '@storybook/csf': 0.1.2
-      '@storybook/global': 5.0.0
-      '@storybook/theming': 7.6.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@storybook/types': 7.6.13
-      memoizerific: 1.11.3
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      use-resize-observer: 9.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      util-deprecate: 1.0.2
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
-
-  '@storybook/components@7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@radix-ui/react-select': 1.2.2(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@radix-ui/react-toolbar': 1.0.4(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@storybook/client-logger': 7.6.13
-      '@storybook/csf': 0.1.2
-      '@storybook/global': 5.0.0
-      '@storybook/theming': 7.6.13(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@storybook/types': 7.6.13
-      memoizerific: 1.11.3
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      use-resize-observer: 9.1.0(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      util-deprecate: 1.0.2
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
-
   '@storybook/components@7.6.13(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@radix-ui/react-select': 1.2.2(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -37837,46 +37067,6 @@ snapshots:
       telejson: 7.2.0
       ts-dedent: 2.2.0
 
-  '@storybook/manager-api@7.6.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@storybook/channels': 7.6.13
-      '@storybook/client-logger': 7.6.13
-      '@storybook/core-events': 7.6.13
-      '@storybook/csf': 0.1.2
-      '@storybook/global': 5.0.0
-      '@storybook/router': 7.6.13
-      '@storybook/theming': 7.6.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@storybook/types': 7.6.13
-      dequal: 2.0.3
-      lodash: 4.18.1
-      memoizerific: 1.11.3
-      store2: 2.14.2
-      telejson: 7.2.0
-      ts-dedent: 2.2.0
-    transitivePeerDependencies:
-      - react
-      - react-dom
-
-  '@storybook/manager-api@7.6.13(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@storybook/channels': 7.6.13
-      '@storybook/client-logger': 7.6.13
-      '@storybook/core-events': 7.6.13
-      '@storybook/csf': 0.1.2
-      '@storybook/global': 5.0.0
-      '@storybook/router': 7.6.13
-      '@storybook/theming': 7.6.13(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@storybook/types': 7.6.13
-      dequal: 2.0.3
-      lodash: 4.18.1
-      memoizerific: 1.11.3
-      store2: 2.14.2
-      telejson: 7.2.0
-      ts-dedent: 2.2.0
-    transitivePeerDependencies:
-      - react
-      - react-dom
-
   '@storybook/manager-api@7.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@storybook/channels': 7.6.13
@@ -37945,7 +37135,7 @@ snapshots:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
-  '@storybook/preset-react-webpack@7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)':
+  '@storybook/preset-react-webpack@7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)':
     dependencies:
       '@babel/preset-flow': 7.22.15(@babel/core@7.28.3)
       '@babel/preset-react': 7.22.15(@babel/core@7.28.3)
@@ -37953,57 +37143,19 @@ snapshots:
       '@storybook/core-webpack': 7.6.13(encoding@0.1.13)
       '@storybook/docs-tools': 7.6.13(encoding@0.1.13)
       '@storybook/node-logger': 7.6.13
-      '@storybook/react': 7.6.13(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.9.3)
+      '@storybook/react': 7.6.13(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
       '@storybook/react-docgen-typescript-plugin': 1.0.6--canary.9.0c3f3b7.0(typescript@5.9.3)(webpack@5.104.1)
       '@types/node': 18.19.130
       '@types/semver': 7.7.1
       babel-plugin-add-react-displayname: 0.0.5
       fs-extra: 11.2.0
       magic-string: 0.30.17
-      react: 17.0.2
+      react: 18.3.1
       react-docgen: 7.0.3
-      react-dom: 17.0.2(react@17.0.2)
+      react-dom: 18.3.1(react@18.3.1)
       react-refresh: 0.14.0
       semver: 7.7.4
       webpack: 5.104.1(@swc/core@1.3.92)(webpack-cli@4.10.0)
-    optionalDependencies:
-      '@babel/core': 7.28.3
-      typescript: 5.9.3
-    transitivePeerDependencies:
-      - '@swc/core'
-      - '@types/webpack'
-      - encoding
-      - esbuild
-      - sockjs-client
-      - supports-color
-      - type-fest
-      - uglify-js
-      - webpack-cli
-      - webpack-dev-server
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@storybook/preset-react-webpack@7.6.13(@babel/core@7.28.3)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)':
-    dependencies:
-      '@babel/preset-flow': 7.22.15(@babel/core@7.28.3)
-      '@babel/preset-react': 7.22.15(@babel/core@7.28.3)
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.11(@types/webpack@4.41.39)(react-refresh@0.14.0)(type-fest@4.41.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)(webpack@5.104.1)
-      '@storybook/core-webpack': 7.6.13(encoding@0.1.13)
-      '@storybook/docs-tools': 7.6.13(encoding@0.1.13)
-      '@storybook/node-logger': 7.6.13
-      '@storybook/react': 7.6.13(encoding@0.1.13)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)(typescript@5.9.3)
-      '@storybook/react-docgen-typescript-plugin': 1.0.6--canary.9.0c3f3b7.0(typescript@5.9.3)(webpack@5.104.1)
-      '@types/node': 18.19.130
-      '@types/semver': 7.7.1
-      babel-plugin-add-react-displayname: 0.0.5
-      fs-extra: 11.2.0
-      magic-string: 0.30.17
-      react: 17.0.2
-      react-docgen: 7.0.3
-      react-dom: 18.3.1(react@17.0.2)
-      react-refresh: 0.14.0
-      semver: 7.7.4
-      webpack: 5.104.1(webpack-cli@4.10.0)
     optionalDependencies:
       '@babel/core': 7.28.3
       typescript: 5.9.3
@@ -38128,16 +37280,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@storybook/react-dom-shim@7.6.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  '@storybook/react-dom-shim@7.6.13(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-
   '@storybook/react-dom-shim@7.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
@@ -38170,41 +37312,14 @@ snapshots:
       - webpack-hot-middleware
       - webpack-plugin-serve
 
-  '@storybook/react-webpack5@7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)':
+  '@storybook/react-webpack5@7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)':
     dependencies:
       '@storybook/builder-webpack5': 7.6.13(encoding@0.1.13)(typescript@5.9.3)(webpack-cli@4.10.0)
-      '@storybook/preset-react-webpack': 7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)
-      '@storybook/react': 7.6.13(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.9.3)
+      '@storybook/preset-react-webpack': 7.6.13(@babel/core@7.28.3)(@swc/core@1.3.92)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)
+      '@storybook/react': 7.6.13(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
       '@types/node': 18.19.130
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    optionalDependencies:
-      '@babel/core': 7.28.3
-      typescript: 5.9.3
-    transitivePeerDependencies:
-      - '@rspack/core'
-      - '@swc/core'
-      - '@swc/helpers'
-      - '@types/webpack'
-      - encoding
-      - esbuild
-      - sockjs-client
-      - supports-color
-      - type-fest
-      - uglify-js
-      - webpack-cli
-      - webpack-dev-server
-      - webpack-hot-middleware
-      - webpack-plugin-serve
-
-  '@storybook/react-webpack5@7.6.13(@babel/core@7.28.3)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)':
-    dependencies:
-      '@storybook/builder-webpack5': 7.6.13(encoding@0.1.13)(typescript@5.9.3)(webpack-cli@4.10.0)
-      '@storybook/preset-react-webpack': 7.6.13(@babel/core@7.28.3)(@types/webpack@4.41.39)(encoding@0.1.13)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)(type-fest@4.41.0)(typescript@5.9.3)(webpack-cli@4.10.0)(webpack-dev-server@4.15.2)(webpack-hot-middleware@2.25.4)
-      '@storybook/react': 7.6.13(encoding@0.1.13)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)(typescript@5.9.3)
-      '@types/node': 18.19.130
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
       '@babel/core': 7.28.3
       typescript: 5.9.3
@@ -38250,68 +37365,6 @@ snapshots:
       - webpack-dev-server
       - webpack-hot-middleware
       - webpack-plugin-serve
-
-  '@storybook/react@7.6.13(encoding@0.1.13)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)(typescript@5.9.3)':
-    dependencies:
-      '@storybook/client-logger': 7.6.13
-      '@storybook/core-client': 7.6.13
-      '@storybook/docs-tools': 7.6.13(encoding@0.1.13)
-      '@storybook/global': 5.0.0
-      '@storybook/preview-api': 7.6.13
-      '@storybook/react-dom-shim': 7.6.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@storybook/types': 7.6.13
-      '@types/escodegen': 0.0.6
-      '@types/estree': 0.0.51
-      '@types/node': 18.19.130
-      acorn: 7.4.1
-      acorn-jsx: 5.3.2(acorn@7.4.1)
-      acorn-walk: 7.2.0
-      escodegen: 2.1.0
-      html-tags: 3.3.1
-      lodash: 4.18.1
-      prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-element-to-jsx-string: 15.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      ts-dedent: 2.2.0
-      type-fest: 2.19.0
-      util-deprecate: 1.0.2
-    optionalDependencies:
-      typescript: 5.9.3
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
-
-  '@storybook/react@7.6.13(encoding@0.1.13)(react-dom@18.3.1(react@17.0.2))(react@17.0.2)(typescript@5.9.3)':
-    dependencies:
-      '@storybook/client-logger': 7.6.13
-      '@storybook/core-client': 7.6.13
-      '@storybook/docs-tools': 7.6.13(encoding@0.1.13)
-      '@storybook/global': 5.0.0
-      '@storybook/preview-api': 7.6.13
-      '@storybook/react-dom-shim': 7.6.13(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@storybook/types': 7.6.13
-      '@types/escodegen': 0.0.6
-      '@types/estree': 0.0.51
-      '@types/node': 18.19.130
-      acorn: 7.4.1
-      acorn-jsx: 5.3.2(acorn@7.4.1)
-      acorn-walk: 7.2.0
-      escodegen: 2.1.0
-      html-tags: 3.3.1
-      lodash: 4.18.1
-      prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      react-element-to-jsx-string: 15.0.0(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      ts-dedent: 2.2.0
-      type-fest: 2.19.0
-      util-deprecate: 1.0.2
-    optionalDependencies:
-      typescript: 5.9.3
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
 
   '@storybook/react@7.6.13(encoding@0.1.13)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)':
     dependencies:
@@ -38380,24 +37433,6 @@ snapshots:
       memoizerific: 1.11.3
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  '@storybook/theming@7.6.13(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@17.0.2)
-      '@storybook/client-logger': 7.6.13
-      '@storybook/global': 5.0.0
-      memoizerific: 1.11.3
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  '@storybook/theming@7.6.13(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@emotion/use-insertion-effect-with-fallbacks': 1.0.1(react@17.0.2)
-      '@storybook/client-logger': 7.6.13
-      '@storybook/global': 5.0.0
-      memoizerific: 1.11.3
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
 
   '@storybook/theming@7.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -38593,41 +37628,15 @@ snapshots:
       '@types/jest': 29.5.12
       jest: 29.7.0(@types/node@24.12.2)(node-notifier@8.0.2)(ts-node@10.9.2(@swc/core@1.3.92)(@types/node@24.12.2)(typescript@5.9.3))
 
-  '@testing-library/react-hooks@8.0.1(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react-test-renderer@17.0.2(react@17.0.2))(react@17.0.2)':
+  '@testing-library/react-hooks@8.0.1(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react-test-renderer@17.0.2(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.28.6
-      react: 17.0.2
-      react-error-boundary: 3.1.3(react@17.0.2)
+      react: 18.3.1
+      react-error-boundary: 3.1.3(react@18.3.1)
     optionalDependencies:
       '@types/react': 18.3.28
-      react-dom: 17.0.2(react@17.0.2)
-      react-test-renderer: 17.0.2(react@17.0.2)
-
-  '@testing-library/react-hooks@8.0.1(@types/react@18.3.28)(react-dom@18.3.1(react@17.0.2))(react-test-renderer@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      react: 17.0.2
-      react-error-boundary: 3.1.3(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      react-dom: 18.3.1(react@17.0.2)
-      react-test-renderer: 17.0.2(react@17.0.2)
-
-  '@testing-library/react@12.1.5(react-dom@17.0.2(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@testing-library/dom': 8.20.1
-      '@types/react-dom': 17.0.8
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  '@testing-library/react@12.1.5(react-dom@18.3.1(react@17.0.2))(react@17.0.2)':
-    dependencies:
-      '@babel/runtime': 7.28.6
-      '@testing-library/dom': 8.20.1
-      '@types/react-dom': 17.0.8
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
+      react-dom: 18.3.1(react@18.3.1)
+      react-test-renderer: 17.0.2(react@18.3.1)
 
   '@testing-library/react@12.1.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -39454,14 +38463,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@visx/text@3.3.0(react@17.0.2)':
+  '@visx/text@3.3.0(react@18.3.1)':
     dependencies:
       '@types/lodash': 4.14.202
       '@types/react': 18.3.28
       classnames: 2.3.2
       lodash: 4.18.1
       prop-types: 15.8.1
-      react: 17.0.2
+      react: 18.3.1
       reduce-css-calc: 1.3.0
 
   '@vitejs/plugin-basic-ssl@2.1.0(vite@7.1.11(@types/node@24.12.2)(jiti@1.21.7)(less@4.4.0)(sass@1.90.0)(terser@5.43.1)(yaml@2.8.3))':
@@ -42446,9 +41455,9 @@ snapshots:
       d3-selection: 3.0.0
       d3-transition: 2.0.0(d3-selection@3.0.0)
 
-  dangerously-set-html-content@1.1.0(react@17.0.2):
+  dangerously-set-html-content@1.1.0(react@18.3.1):
     dependencies:
-      react: 17.0.2
+      react: 18.3.1
 
   dashdash@1.14.1:
     dependencies:
@@ -44124,22 +43133,22 @@ snapshots:
     dependencies:
       map-cache: 0.2.2
 
-  framer-motion@7.10.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  framer-motion@7.10.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@motionone/dom': 10.16.2
       hey-listen: 1.0.8
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
       tslib: 2.4.0
     optionalDependencies:
       '@emotion/is-prop-valid': 0.8.8
 
-  framer-motion@7.8.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  framer-motion@7.8.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@motionone/dom': 10.16.2
       hey-listen: 1.0.8
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
       tslib: 2.4.0
     optionalDependencies:
       '@emotion/is-prop-valid': 0.8.8
@@ -46809,10 +45818,6 @@ snapshots:
 
   markdown-table@3.0.2: {}
 
-  markdown-to-jsx@7.3.2(react@17.0.2):
-    dependencies:
-      react: 17.0.2
-
   markdown-to-jsx@7.3.2(react@18.3.1):
     dependencies:
       react: 18.3.1
@@ -48703,14 +47708,14 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  rdk@6.5.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  rdk@6.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       body-scroll-lock: 4.0.0-beta.0
       classnames: 2.3.2
-      framer-motion: 7.8.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      framer-motion: 7.8.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       popper.js: 1.16.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react-apollo-hooks@0.5.0(apollo-client@2.6.10(graphql@14.3.1))(graphql@14.3.1):
     dependencies:
@@ -48768,48 +47773,38 @@ snapshots:
       csstype: 3.0.11
       lodash.curry: 4.1.1
 
-  react-calendar@3.9.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-calendar@3.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@wojtekmaj/date-utils': 1.5.0
       get-user-locale: 1.5.1
       merge-class-names: 1.4.2
       prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  react-clock@3.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-clock@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@wojtekmaj/date-utils': 1.5.0
       get-user-locale: 1.5.1
       merge-class-names: 1.4.2
       prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  react-colorful@5.6.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
-    dependencies:
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  react-colorful@5.6.1(react-dom@18.3.1(react@17.0.2))(react@17.0.2):
-    dependencies:
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react-colorful@5.6.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  react-cool-dimensions@2.0.7(react@17.0.2):
+  react-cool-dimensions@2.0.7(react@18.3.1):
     dependencies:
-      react: 17.0.2
+      react: 18.3.1
 
-  react-cool-onclickoutside@1.6.2(react@17.0.2):
+  react-cool-onclickoutside@1.6.2(react@18.3.1):
     dependencies:
-      react: 17.0.2
+      react: 18.3.1
 
-  react-date-picker@8.4.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-date-picker@8.4.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@types/react-calendar': 3.9.0
       '@wojtekmaj/date-utils': 1.5.0
@@ -48818,29 +47813,29 @@ snapshots:
       merge-class-names: 1.4.2
       merge-refs: 1.2.1
       prop-types: 15.8.1
-      react: 17.0.2
-      react-calendar: 3.9.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react-dom: 17.0.2(react@17.0.2)
-      react-fit: 1.7.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      react: 18.3.1
+      react-calendar: 3.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
+      react-fit: 1.7.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       update-input-width: 1.4.1
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
 
-  react-datetime-picker@3.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-datetime-picker@3.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@wojtekmaj/date-utils': 1.5.0
       get-user-locale: 1.5.1
       make-event-props: 1.6.1
       merge-class-names: 1.4.2
       prop-types: 15.8.1
-      react: 17.0.2
-      react-calendar: 3.9.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react-clock: 3.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react-date-picker: 8.4.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react-dom: 17.0.2(react@17.0.2)
-      react-fit: 1.7.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react-time-picker: 4.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      react: 18.3.1
+      react-calendar: 3.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-clock: 3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-date-picker: 8.4.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
+      react-fit: 1.7.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-time-picker: 4.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
@@ -48864,22 +47859,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  react-dom@17.0.2(react@17.0.2):
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
-      react: 17.0.2
-      scheduler: 0.20.2
-
   react-dom@18.3.1:
     dependencies:
       loose-envify: 1.4.0
-      scheduler: 0.23.2
-
-  react-dom@18.3.1(react@17.0.2):
-    dependencies:
-      loose-envify: 1.4.0
-      react: 17.0.2
       scheduler: 0.23.2
 
   react-dom@18.3.1(react@18.3.1):
@@ -48888,19 +47870,12 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
-  react-draggable@4.4.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-draggable@4.4.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       clsx: 1.1.1
       prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  react-dropzone@11.7.1(react@17.0.2):
-    dependencies:
-      attr-accept: 2.2.2
-      file-selector: 0.4.0
-      prop-types: 15.8.1
-      react: 17.0.2
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react-dropzone@11.7.1(react@18.3.1):
     dependencies:
@@ -48908,22 +47883,6 @@ snapshots:
       file-selector: 0.4.0
       prop-types: 15.8.1
       react: 18.3.1
-
-  react-element-to-jsx-string@15.0.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
-    dependencies:
-      '@base2/pretty-print-object': 1.0.1
-      is-plain-object: 5.0.0
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-is: 18.1.0
-
-  react-element-to-jsx-string@15.0.0(react-dom@18.3.1(react@17.0.2))(react@17.0.2):
-    dependencies:
-      '@base2/pretty-print-object': 1.0.1
-      is-plain-object: 5.0.0
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      react-is: 18.1.0
 
   react-element-to-jsx-string@15.0.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -48933,15 +47892,10 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-is: 18.1.0
 
-  react-error-boundary@3.1.3(react@17.0.2):
+  react-error-boundary@3.1.3(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.28.6
-      react: 17.0.2
-
-  react-error-boundary@4.1.2(react@17.0.2):
-    dependencies:
-      '@babel/runtime': 7.28.6
-      react: 17.0.2
+      react: 18.3.1
 
   react-error-boundary@4.1.2(react@18.3.1):
     dependencies:
@@ -48952,42 +47906,42 @@ snapshots:
 
   react-fast-compare@3.2.0: {}
 
-  react-fit@1.7.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-fit@1.7.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       detect-element-overflow: 1.4.1
       prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
       tiny-warning: 1.0.3
     optionalDependencies:
       '@types/react': 18.3.28
       '@types/react-dom': 18.3.7(@types/react@18.3.28)
 
-  react-from-dom@0.6.2(react@17.0.2):
+  react-from-dom@0.6.2(react@18.3.1):
     dependencies:
-      react: 17.0.2
+      react: 18.3.1
 
-  react-helmet@6.1.0(react@17.0.2):
+  react-helmet@6.1.0(react@18.3.1):
     dependencies:
       object-assign: 4.1.1
       prop-types: 15.8.1
-      react: 17.0.2
+      react: 18.3.1
       react-fast-compare: 3.2.0
-      react-side-effect: 2.1.2(react@17.0.2)
+      react-side-effect: 2.1.2(react@18.3.1)
 
-  react-id-generator@3.0.2(react@17.0.2):
+  react-id-generator@3.0.2(react@18.3.1):
     dependencies:
-      react: 17.0.2
+      react: 18.3.1
 
   react-if@4.1.4(react@18.3.1):
     dependencies:
       react: 18.3.1
 
-  react-inlinesvg@2.3.0(react@17.0.2):
+  react-inlinesvg@2.3.0(react@18.3.1):
     dependencies:
       exenv: 1.2.2
-      react: 17.0.2
-      react-from-dom: 0.6.2(react@17.0.2)
+      react: 18.3.1
+      react-from-dom: 0.6.2(react@18.3.1)
 
   react-is@16.13.1: {}
 
@@ -48995,13 +47949,9 @@ snapshots:
 
   react-is@18.1.0: {}
 
-  react-lifecycles-compat@3.0.4: {}
+  react-is@18.3.1: {}
 
-  react-moment@0.9.7(moment@2.29.4)(prop-types@15.8.1)(react@17.0.2):
-    dependencies:
-      moment: 2.29.4
-      prop-types: 15.8.1
-      react: 17.0.2
+  react-lifecycles-compat@3.0.4: {}
 
   react-moment@0.9.7(moment@2.29.4)(prop-types@15.8.1)(react@18.3.1):
     dependencies:
@@ -49009,56 +47959,37 @@ snapshots:
       prop-types: 15.8.1
       react: 18.3.1
 
-  react-monaco-editor@0.49.0(@types/react@18.3.28)(monaco-editor@0.39.0)(react@17.0.2):
+  react-monaco-editor@0.49.0(@types/react@18.3.28)(monaco-editor@0.39.0)(react@18.3.1):
     dependencies:
       '@types/react': 18.3.28
       monaco-editor: 0.39.0
       prop-types: 15.8.1
-      react: 17.0.2
+      react: 18.3.1
 
-  react-pure-loaders@3.0.1(@emotion/core@10.3.1(react@17.0.2))(react@17.0.2):
+  react-pure-loaders@3.0.1(@emotion/core@10.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@emotion/core': 10.3.1(react@17.0.2)
-      react: 17.0.2
+      '@emotion/core': 10.3.1(react@18.3.1)
+      react: 18.3.1
 
-  react-redux@7.2.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-redux@7.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.28.6
       '@types/react-redux': 7.1.16
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
       prop-types: 15.8.1
-      react: 17.0.2
+      react: 18.3.1
       react-is: 16.13.1
     optionalDependencies:
-      react-dom: 17.0.2(react@17.0.2)
+      react-dom: 18.3.1(react@18.3.1)
 
   react-refresh@0.14.0: {}
-
-  react-remove-scroll-bar@2.3.4(@types/react@18.3.28)(react@17.0.2):
-    dependencies:
-      react: 17.0.2
-      react-style-singleton: 2.2.1(@types/react@18.3.28)(react@17.0.2)
-      tslib: 2.8.1
-    optionalDependencies:
-      '@types/react': 18.3.28
 
   react-remove-scroll-bar@2.3.4(@types/react@18.3.28)(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-style-singleton: 2.2.1(@types/react@18.3.28)(react@18.3.1)
       tslib: 2.8.1
-    optionalDependencies:
-      '@types/react': 18.3.28
-
-  react-remove-scroll@2.5.5(@types/react@18.3.28)(react@17.0.2):
-    dependencies:
-      react: 17.0.2
-      react-remove-scroll-bar: 2.3.4(@types/react@18.3.28)(react@17.0.2)
-      react-style-singleton: 2.2.1(@types/react@18.3.28)(react@17.0.2)
-      tslib: 2.8.1
-      use-callback-ref: 1.3.0(@types/react@18.3.28)(react@17.0.2)
-      use-sidecar: 1.1.2(@types/react@18.3.28)(react@17.0.2)
     optionalDependencies:
       '@types/react': 18.3.28
 
@@ -49073,26 +48004,12 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.28
 
-  react-resizable@1.11.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-resizable@1.11.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-draggable: 4.4.4(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-
-  react-router-dom@6.30.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
-    dependencies:
-      '@remix-run/router': 1.23.2
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-      react-router: 6.30.3(react@17.0.2)
-
-  react-router-dom@6.30.3(react-dom@18.3.1(react@17.0.2))(react@17.0.2):
-    dependencies:
-      '@remix-run/router': 1.23.2
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
-      react-router: 6.30.3(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      react-draggable: 4.4.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
 
   react-router-dom@6.30.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -49101,59 +48018,38 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-router: 6.30.3(react@18.3.1)
 
-  react-router@6.30.3(react@17.0.2):
-    dependencies:
-      '@remix-run/router': 1.23.2
-      react: 17.0.2
-
   react-router@6.30.3(react@18.3.1):
     dependencies:
       '@remix-run/router': 1.23.2
       react: 18.3.1
 
-  react-shallow-renderer@16.15.0(react@17.0.2):
-    dependencies:
-      object-assign: 4.1.1
-      react: 17.0.2
-      react-is: 18.1.0
-    optional: true
-
   react-shallow-renderer@16.15.0(react@18.3.1):
     dependencies:
       object-assign: 4.1.1
       react: 18.3.1
-      react-is: 18.1.0
+      react-is: 18.3.1
 
-  react-side-effect@2.1.2(react@17.0.2):
+  react-side-effect@2.1.2(react@18.3.1):
     dependencies:
-      react: 17.0.2
+      react: 18.3.1
 
-  react-simple-maps@3.0.0(prop-types@15.8.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-simple-maps@3.0.0(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       d3-geo: 2.0.2
       d3-selection: 2.0.0
       d3-zoom: 2.0.0
       prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
       topojson-client: 3.1.0
 
-  react-sortable-hoc@2.0.0(prop-types@15.8.1)(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-sortable-hoc@2.0.0(prop-types@15.8.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.28.6
       invariant: 2.2.4
       prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  react-style-singleton@2.2.1(@types/react@18.3.28)(react@17.0.2):
-    dependencies:
-      get-nonce: 1.0.1
-      invariant: 2.2.4
-      react: 17.0.2
-      tslib: 2.8.1
-    optionalDependencies:
-      '@types/react': 18.3.28
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react-style-singleton@2.2.1(@types/react@18.3.28)(react@18.3.1):
     dependencies:
@@ -49164,40 +48060,27 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.28
 
-  react-svg-pan-zoom-loader@1.6.1(prop-types@15.8.1)(react@17.0.2):
+  react-svg-pan-zoom-loader@1.6.1(prop-types@15.8.1)(react@18.3.1):
     dependencies:
       prop-types: 15.8.1
-      react: 17.0.2
+      react: 18.3.1
       react-svg-pan-zoom: 3.12.1
-      react-svgmt: 2.0.2(react@17.0.2)
+      react-svgmt: 2.0.2(react@18.3.1)
 
   react-svg-pan-zoom@3.12.1:
     dependencies:
       prop-types: 15.8.1
       transformation-matrix: 2.16.1
 
-  react-svgmt@2.0.2(react@17.0.2):
+  react-svgmt@2.0.2(react@18.3.1):
     dependencies:
       d3-ease: 1.0.7
       prop-types: 15.8.1
-      react: 17.0.2
-
-  react-table@7.7.0(react@17.0.2):
-    dependencies:
-      react: 17.0.2
+      react: 18.3.1
 
   react-table@7.7.0(react@18.3.1):
     dependencies:
       react: 18.3.1
-
-  react-test-renderer@17.0.2(react@17.0.2):
-    dependencies:
-      object-assign: 4.1.1
-      react: 17.0.2
-      react-is: 17.0.2
-      react-shallow-renderer: 16.15.0(react@17.0.2)
-      scheduler: 0.20.2
-    optional: true
 
   react-test-renderer@17.0.2(react@18.3.1):
     dependencies:
@@ -49207,16 +48090,16 @@ snapshots:
       react-shallow-renderer: 16.15.0(react@18.3.1)
       scheduler: 0.20.2
 
-  react-textarea-autosize@8.5.7(@types/react@18.3.28)(react@17.0.2):
+  react-textarea-autosize@8.5.7(@types/react@18.3.28)(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.28.6
-      react: 17.0.2
-      use-composed-ref: 1.4.0(@types/react@18.3.28)(react@17.0.2)
-      use-latest: 1.3.0(@types/react@18.3.28)(react@17.0.2)
+      react: 18.3.1
+      use-composed-ref: 1.4.0(@types/react@18.3.28)(react@18.3.1)
+      use-latest: 1.3.0(@types/react@18.3.28)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
 
-  react-time-picker@4.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-time-picker@4.5.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@wojtekmaj/date-utils': 1.5.0
       get-user-locale: 1.5.1
@@ -49224,27 +48107,27 @@ snapshots:
       merge-class-names: 1.4.2
       merge-refs: 1.2.1
       prop-types: 15.8.1
-      react: 17.0.2
-      react-clock: 3.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react-dom: 17.0.2(react@17.0.2)
-      react-fit: 1.7.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      react: 18.3.1
+      react-clock: 3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
+      react-fit: 1.7.0(@types/react-dom@18.3.7(@types/react@18.3.28))(@types/react@18.3.28)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       update-input-width: 1.4.1
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
 
-  react-transition-group@4.4.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-transition-group@4.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.28.6
       dom-helpers: 5.2.0
       loose-envify: 1.4.0
       prop-types: 15.8.1
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
-  react-use-gesture@8.0.1(react@17.0.2):
+  react-use-gesture@8.0.1(react@18.3.1):
     dependencies:
-      react: 17.0.2
+      react: 18.3.1
 
   react-virtualized-auto-sizer@1.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
@@ -49258,44 +48141,25 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  react-zoom-pan-pinch@3.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  react-zoom-pan-pinch@3.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  react@17.0.2:
-    dependencies:
-      loose-envify: 1.4.0
-      object-assign: 4.1.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
 
-  reactflow@11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  reactflow@11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@reactflow/background': 11.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@reactflow/controls': 11.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@reactflow/minimap': 11.7.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@reactflow/node-resizer': 2.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      '@reactflow/node-toolbar': 1.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-    transitivePeerDependencies:
-      - '@types/react'
-      - immer
-
-  reactflow@11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2):
-    dependencies:
-      '@reactflow/background': 11.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@reactflow/controls': 11.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@reactflow/minimap': 11.7.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@reactflow/node-resizer': 2.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      '@reactflow/node-toolbar': 1.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
+      '@reactflow/background': 11.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@reactflow/controls': 11.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@reactflow/core': 11.10.1(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@reactflow/minimap': 11.7.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@reactflow/node-resizer': 2.2.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@reactflow/node-toolbar': 1.3.6(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -49373,31 +48237,31 @@ snapshots:
 
   readdirp@4.1.2: {}
 
-  reaflow@5.1.2(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  reaflow@5.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       calculate-size: 1.1.1
       classnames: 2.3.2
       d3-shape: 3.2.0
       elkjs: 0.8.2
       ellipsize: 0.2.0
-      framer-motion: 7.10.3(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      framer-motion: 7.10.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       kld-affine: 2.1.1
       kld-intersections: 0.7.0
       p-cancelable: 3.0.0
-      rdk: 6.5.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
-      react: 17.0.2
-      react-cool-dimensions: 2.0.7(react@17.0.2)
-      react-dom: 17.0.2(react@17.0.2)
+      rdk: 6.5.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-cool-dimensions: 2.0.7(react@18.3.1)
+      react-dom: 18.3.1(react@18.3.1)
       react-fast-compare: 3.2.0
-      react-use-gesture: 8.0.1(react@17.0.2)
-      reakeys: 1.3.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2)
+      react-use-gesture: 8.0.1(react@18.3.1)
+      reakeys: 1.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       undoo: 0.5.0
 
-  reakeys@1.3.1(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
+  reakeys@1.3.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       mousetrap: 1.6.5
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   realpath-missing@1.1.0: {}
 
@@ -51436,31 +50300,12 @@ snapshots:
 
   unicorn-magic@0.3.0: {}
 
-  uniforms-bridge-json-schema@3.10.2(react@17.0.2):
-    dependencies:
-      invariant: 2.2.4
-      lodash: 4.17.23
-      tslib: 2.8.1
-      uniforms: 3.10.2(react@17.0.2)
-    transitivePeerDependencies:
-      - react
-
   uniforms-bridge-json-schema@3.10.2(react@18.3.1):
     dependencies:
       invariant: 2.2.4
       lodash: 4.17.23
       tslib: 2.8.1
       uniforms: 3.10.2(react@18.3.1)
-    transitivePeerDependencies:
-      - react
-
-  uniforms-bridge-simple-schema-2@3.10.2(react@17.0.2):
-    dependencies:
-      invariant: 2.2.4
-      lodash: 4.17.23
-      simpl-schema: 1.13.1
-      tslib: 2.8.1
-      uniforms: 3.10.2(react@17.0.2)
     transitivePeerDependencies:
       - react
 
@@ -51482,13 +50327,6 @@ snapshots:
       uniforms: 3.10.2(react@18.3.1)
     transitivePeerDependencies:
       - react
-
-  uniforms@3.10.2(react@17.0.2):
-    dependencies:
-      invariant: 2.2.4
-      lodash: 4.17.23
-      react: 17.0.2
-      tslib: 2.8.1
 
   uniforms@3.10.2(react@18.3.1):
     dependencies:
@@ -51631,13 +50469,6 @@ snapshots:
 
   urlpattern-polyfill@8.0.2: {}
 
-  use-callback-ref@1.3.0(@types/react@18.3.28)(react@17.0.2):
-    dependencies:
-      react: 17.0.2
-      tslib: 2.8.1
-    optionalDependencies:
-      '@types/react': 18.3.28
-
   use-callback-ref@1.3.0(@types/react@18.3.28)(react@18.3.1):
     dependencies:
       react: 18.3.1
@@ -51645,50 +50476,30 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.28
 
-  use-composed-ref@1.4.0(@types/react@18.3.28)(react@17.0.2):
+  use-composed-ref@1.4.0(@types/react@18.3.28)(react@18.3.1):
     dependencies:
-      react: 17.0.2
+      react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.28
 
-  use-isomorphic-layout-effect@1.1.1(@types/react@18.3.28)(react@17.0.2):
+  use-isomorphic-layout-effect@1.1.1(@types/react@18.3.28)(react@18.3.1):
     dependencies:
-      react: 17.0.2
+      react: 18.3.1
     optionalDependencies:
       '@types/react': 18.3.28
 
-  use-latest@1.3.0(@types/react@18.3.28)(react@17.0.2):
+  use-latest@1.3.0(@types/react@18.3.28)(react@18.3.1):
     dependencies:
-      react: 17.0.2
-      use-isomorphic-layout-effect: 1.1.1(@types/react@18.3.28)(react@17.0.2)
+      react: 18.3.1
+      use-isomorphic-layout-effect: 1.1.1(@types/react@18.3.28)(react@18.3.1)
     optionalDependencies:
       '@types/react': 18.3.28
-
-  use-resize-observer@9.1.0(react-dom@17.0.2(react@17.0.2))(react@17.0.2):
-    dependencies:
-      '@juggle/resize-observer': 3.4.0
-      react: 17.0.2
-      react-dom: 17.0.2(react@17.0.2)
-
-  use-resize-observer@9.1.0(react-dom@18.3.1(react@17.0.2))(react@17.0.2):
-    dependencies:
-      '@juggle/resize-observer': 3.4.0
-      react: 17.0.2
-      react-dom: 18.3.1(react@17.0.2)
 
   use-resize-observer@9.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@juggle/resize-observer': 3.4.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-
-  use-sidecar@1.1.2(@types/react@18.3.28)(react@17.0.2):
-    dependencies:
-      detect-node-es: 1.1.0
-      react: 17.0.2
-      tslib: 2.8.1
-    optionalDependencies:
-      '@types/react': 18.3.28
 
   use-sidecar@1.1.2(@types/react@18.3.28)(react@18.3.1):
     dependencies:
@@ -51697,10 +50508,6 @@ snapshots:
       tslib: 2.8.1
     optionalDependencies:
       '@types/react': 18.3.28
-
-  use-sync-external-store@1.2.0(react@17.0.2):
-    dependencies:
-      react: 17.0.2
 
   use-sync-external-store@1.2.0(react@18.3.1):
     dependencies:
@@ -51765,51 +50572,51 @@ snapshots:
     dependencies:
       semver: 7.7.4
 
-  victory-area@37.3.2(react@17.0.2):
+  victory-area@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
       victory-vendor: 37.3.2
 
-  victory-axis@37.3.2(react@17.0.2):
+  victory-axis@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
 
-  victory-bar@37.3.2(react@17.0.2):
+  victory-bar@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
       victory-vendor: 37.3.2
 
-  victory-box-plot@37.3.2(react@17.0.2):
+  victory-box-plot@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
       victory-vendor: 37.3.2
 
-  victory-brush-container@37.3.2(react@17.0.2):
+  victory-brush-container@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
+      react: 18.3.1
       react-fast-compare: 3.2.0
-      victory-core: 37.3.2(react@17.0.2)
+      victory-core: 37.3.2(react@18.3.1)
 
-  victory-chart@37.3.2(react@17.0.2):
+  victory-chart@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
+      react: 18.3.1
       react-fast-compare: 3.2.0
-      victory-axis: 37.3.2(react@17.0.2)
-      victory-core: 37.3.2(react@17.0.2)
-      victory-polar-axis: 37.3.2(react@17.0.2)
-      victory-shared-events: 37.3.2(react@17.0.2)
+      victory-axis: 37.3.2(react@18.3.1)
+      victory-core: 37.3.2(react@18.3.1)
+      victory-polar-axis: 37.3.2(react@18.3.1)
+      victory-shared-events: 37.3.2(react@18.3.1)
 
-  victory-core@35.11.4(react@17.0.2):
+  victory-core@35.11.4(react@18.3.1):
     dependencies:
       d3-ease: 1.0.7
       d3-interpolate: 1.4.0
@@ -51818,100 +50625,100 @@ snapshots:
       d3-timer: 1.0.10
       lodash: 4.18.1
       prop-types: 15.8.1
-      react: 17.0.2
+      react: 18.3.1
       react-fast-compare: 2.0.4
 
-  victory-core@37.3.2(react@17.0.2):
+  victory-core@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
+      react: 18.3.1
       react-fast-compare: 3.2.0
       victory-vendor: 37.3.2
 
-  victory-create-container@37.3.2(react@17.0.2):
+  victory-create-container@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-brush-container: 37.3.2(react@17.0.2)
-      victory-core: 37.3.2(react@17.0.2)
-      victory-cursor-container: 37.3.2(react@17.0.2)
-      victory-selection-container: 37.3.2(react@17.0.2)
-      victory-voronoi-container: 37.3.2(react@17.0.2)
-      victory-zoom-container: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-brush-container: 37.3.2(react@18.3.1)
+      victory-core: 37.3.2(react@18.3.1)
+      victory-cursor-container: 37.3.2(react@18.3.1)
+      victory-selection-container: 37.3.2(react@18.3.1)
+      victory-voronoi-container: 37.3.2(react@18.3.1)
+      victory-zoom-container: 37.3.2(react@18.3.1)
 
-  victory-cursor-container@37.3.2(react@17.0.2):
+  victory-cursor-container@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
 
-  victory-group@37.3.2(react@17.0.2):
+  victory-group@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
+      react: 18.3.1
       react-fast-compare: 3.2.0
-      victory-core: 37.3.2(react@17.0.2)
-      victory-shared-events: 37.3.2(react@17.0.2)
+      victory-core: 37.3.2(react@18.3.1)
+      victory-shared-events: 37.3.2(react@18.3.1)
 
-  victory-legend@37.3.2(react@17.0.2):
+  victory-legend@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
 
-  victory-line@37.3.2(react@17.0.2):
+  victory-line@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
       victory-vendor: 37.3.2
 
-  victory-pie@37.3.2(react@17.0.2):
+  victory-pie@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
       victory-vendor: 37.3.2
 
-  victory-polar-axis@37.3.2(react@17.0.2):
+  victory-polar-axis@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
 
-  victory-scatter@37.3.2(react@17.0.2):
+  victory-scatter@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
 
-  victory-selection-container@37.3.2(react@17.0.2):
+  victory-selection-container@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
 
-  victory-shared-events@37.3.2(react@17.0.2):
+  victory-shared-events@37.3.2(react@18.3.1):
     dependencies:
       json-stringify-safe: 5.0.1
       lodash: 4.18.1
-      react: 17.0.2
+      react: 18.3.1
       react-fast-compare: 3.2.0
-      victory-core: 37.3.2(react@17.0.2)
+      victory-core: 37.3.2(react@18.3.1)
 
-  victory-stack@37.3.2(react@17.0.2):
+  victory-stack@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
+      react: 18.3.1
       react-fast-compare: 3.2.0
-      victory-core: 37.3.2(react@17.0.2)
-      victory-shared-events: 37.3.2(react@17.0.2)
+      victory-core: 37.3.2(react@18.3.1)
+      victory-shared-events: 37.3.2(react@18.3.1)
 
-  victory-tooltip@37.3.2(react@17.0.2):
+  victory-tooltip@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
 
   victory-vendor@37.3.2:
     dependencies:
@@ -51930,27 +50737,27 @@ snapshots:
       d3-time: 3.1.0
       d3-timer: 3.0.1
 
-  victory-voronoi-container@37.3.2(react@17.0.2):
+  victory-voronoi-container@37.3.2(react@18.3.1):
     dependencies:
       delaunay-find: 0.0.6
       lodash: 4.18.1
-      react: 17.0.2
+      react: 18.3.1
       react-fast-compare: 3.2.0
-      victory-core: 37.3.2(react@17.0.2)
-      victory-tooltip: 37.3.2(react@17.0.2)
+      victory-core: 37.3.2(react@18.3.1)
+      victory-tooltip: 37.3.2(react@18.3.1)
 
-  victory-zoom-container@35.11.4(react@17.0.2):
+  victory-zoom-container@35.11.4(react@18.3.1):
     dependencies:
       lodash: 4.18.1
       prop-types: 15.8.1
-      react: 17.0.2
-      victory-core: 35.11.4(react@17.0.2)
+      react: 18.3.1
+      victory-core: 35.11.4(react@18.3.1)
 
-  victory-zoom-container@37.3.2(react@17.0.2):
+  victory-zoom-container@37.3.2(react@18.3.1):
     dependencies:
       lodash: 4.18.1
-      react: 17.0.2
-      victory-core: 37.3.2(react@17.0.2)
+      react: 18.3.1
+      victory-core: 37.3.2(react@18.3.1)
 
   vite@7.1.11(@types/node@24.12.2)(jiti@1.21.7)(less@4.4.0)(sass@1.90.0)(terser@5.43.1)(yaml@2.8.3):
     dependencies:
@@ -52972,14 +51779,6 @@ snapshots:
   zrender@5.3.1:
     dependencies:
       tslib: 2.3.0
-
-  zustand@4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@17.0.2):
-    dependencies:
-      use-sync-external-store: 1.2.0(react@17.0.2)
-    optionalDependencies:
-      '@types/react': 18.3.28
-      immer: 10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19)
-      react: 17.0.2
 
   zustand@4.4.2(patch_hash=5c5bf0e87d873c263d03537e4be9624274aa0d3a87a7d907599335802ca0d236)(@types/react@18.3.28)(immer@10.0.3(patch_hash=c64b5311f0e912edb362cdb76fd2894d78fab70e26f770a47a4ce516fd2afc19))(react@18.3.1):
     dependencies:
