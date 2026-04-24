@@ -96,7 +96,7 @@ export const WorkspaceCommitModal: PromiseModalChildren<string, WorkspaceCommitM
   );
 
   const onSubmit = useCallback(
-    async (e) => {
+    async (e: any) => {
       setLoading(true);
       e.preventDefault();
       e.stopPropagation();

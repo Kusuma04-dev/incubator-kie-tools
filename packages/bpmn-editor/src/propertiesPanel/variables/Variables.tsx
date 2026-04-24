@@ -85,17 +85,17 @@ export function Variables({
 
   const [hoveredIndex, setHoveredIndex] = useState<number | undefined>(undefined);
 
-  const hasWhitespace = useCallback((value) => {
+  const hasWhitespace = useCallback((value: string) => {
     return /\s/.test(value);
   }, []);
   const [variableNames, setVariableNames] = useState<Map<number, string>>(new Map());
 
   const variableInputStyle = (variableName: string | undefined) => ({
     ...entryColumnStyle,
-    color: hasWhitespace(variableName) ? "red" : "black",
-    textDecorationLine: hasWhitespace(variableName) ? "underline" : undefined,
-    textDecorationStyle: hasWhitespace(variableName) ? ("dotted" as const) : undefined,
-    textDecorationColor: hasWhitespace(variableName) ? "red" : undefined,
+    color: variableName && hasWhitespace(variableName) ? "red" : "black",
+    textDecorationLine: variableName && hasWhitespace(variableName) ? "underline" : undefined,
+    textDecorationStyle: variableName && hasWhitespace(variableName) ? ("dotted" as const) : undefined,
+    textDecorationColor: variableName && hasWhitespace(variableName) ? "red" : undefined,
   });
 
   return (

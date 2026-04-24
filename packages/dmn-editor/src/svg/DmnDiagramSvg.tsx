@@ -128,7 +128,9 @@ export function DmnDiagramSvg({
               <AlternativeInputDataNodeSvg
                 width={node.width!}
                 height={node.height!}
+                // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
                 x={node.positionAbsolute!.x}
+                // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
                 y={node.positionAbsolute!.y}
                 {...style}
                 {...shapeStyle}
@@ -139,7 +141,9 @@ export function DmnDiagramSvg({
               <InputDataNodeSvg
                 width={node.width!}
                 height={node.height!}
+                // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
                 x={node.positionAbsolute!.x}
+                // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
                 y={node.positionAbsolute!.y}
                 {...style}
                 {...shapeStyle}
@@ -150,7 +154,9 @@ export function DmnDiagramSvg({
             <DecisionNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}
@@ -162,7 +168,9 @@ export function DmnDiagramSvg({
             <BkmNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}
@@ -173,7 +181,9 @@ export function DmnDiagramSvg({
             <KnowledgeSourceNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}
@@ -184,7 +194,9 @@ export function DmnDiagramSvg({
             <DecisionServiceNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               showSectionLabels={false}
               isReadOnly={true}
@@ -206,7 +218,9 @@ export function DmnDiagramSvg({
             <TextAnnotationNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}

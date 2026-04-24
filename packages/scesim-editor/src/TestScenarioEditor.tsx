@@ -203,9 +203,9 @@ function TestScenarioMainPanel() {
   }, [externalModelsByNamespace, testScenarioDmnFilePath, testScenarioDmnNamespace, testScenarioType]);
 
   const onTabChanged = useCallback(
-    (_event, tab) => {
+    (_event: React.MouseEvent<HTMLElement>, tab: string | number) => {
       testScenarioEditorStoreApi.setState((state) => {
-        state.navigation.tab = tab;
+        state.navigation.tab = tab as TestScenarioEditorTab;
       });
     },
     [testScenarioEditorStoreApi]
@@ -484,11 +484,20 @@ export const TestScenarioEditor = React.forwardRef(
     );
     const storeRef = React.useRef<StoreApiType>(store);
 
-    const resetState: ErrorBoundaryPropsWithFallback["onReset"] = useCallback(({ args }) => {
-      storeRef.current?.setState((state) => {
-        state.scesim.model = args[0];
-      });
-    }, []);
+    const resetState: ErrorBoundaryPropsWithFallback["onReset"] = useCallback(
+      (
+        details:
+          | { reason: "imperative-api"; args: any[] }
+          | { reason: "keys"; prev: any[] | undefined; next: any[] | undefined }
+      ) => {
+        if (details.reason === "imperative-api" && details.args) {
+          storeRef.current?.setState((state) => {
+            state.scesim.model = details.args[0];
+          });
+        }
+      },
+      []
+    );
 
     return (
       <I18nDictionariesProvider

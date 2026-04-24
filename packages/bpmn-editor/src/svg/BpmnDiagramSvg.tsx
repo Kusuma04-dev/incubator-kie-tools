@@ -144,7 +144,9 @@ export function BpmnDiagramSvg({
             <DataObjectNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               showFoldedPage={true}
               // Doesn't need to be painted by the Kogito SVG Add-on
@@ -157,7 +159,9 @@ export function BpmnDiagramSvg({
               bpmnElement={node?.data?.bpmnElement as BpmnElementActivitytIcons}
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               variant={getBpmnNodeVariant<typeof NODE_TYPES.task>(NODE_TYPES.task, node?.data?.bpmnElement)}
               strokeWidth={node?.data?.bpmnElement?.__$$element === "callActivity" ? 5 : undefined}
@@ -170,7 +174,9 @@ export function BpmnDiagramSvg({
             <GroupNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               strokeWidth={3}
               // Doesn't need to be painted by the Kogito SVG Add-on
@@ -181,7 +187,9 @@ export function BpmnDiagramSvg({
             <TextAnnotationNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               // Doesn't need to be painted by the Kogito SVG Add-on
               {...style}
@@ -191,7 +199,9 @@ export function BpmnDiagramSvg({
             <StartEventNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               variant={getBpmnNodeVariant<typeof NODE_TYPES.startEvent>(NODE_TYPES.startEvent, node?.data?.bpmnElement)}
               isInterrupting={
@@ -211,7 +221,9 @@ export function BpmnDiagramSvg({
             <IntermediateCatchEventNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               variant={getBpmnNodeVariant<typeof NODE_TYPES.intermediateCatchEvent>(
                 NODE_TYPES.intermediateCatchEvent,
@@ -230,7 +242,9 @@ export function BpmnDiagramSvg({
             <IntermediateThrowEventNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               variant={getBpmnNodeVariant<typeof NODE_TYPES.intermediateThrowEvent>(
                 NODE_TYPES.intermediateThrowEvent,
@@ -244,7 +258,9 @@ export function BpmnDiagramSvg({
             <GatewayNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               variant={getBpmnNodeVariant<typeof NODE_TYPES.gateway>(NODE_TYPES.gateway, node?.data?.bpmnElement)}
               exportedSvgId={node.id}
@@ -255,7 +271,9 @@ export function BpmnDiagramSvg({
             <EndEventNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               variant={getBpmnNodeVariant<typeof NODE_TYPES.endEvent>(NODE_TYPES.endEvent, node?.data?.bpmnElement)}
               strokeWidth={6}
@@ -270,7 +288,9 @@ export function BpmnDiagramSvg({
               bpmnElement={node?.data?.bpmnElement as BpmnElementActivitytIcons}
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               variant={getBpmnNodeVariant<typeof NODE_TYPES.subProcess>(NODE_TYPES.subProcess, node?.data?.bpmnElement)}
               exportedSvgId={node.id}
@@ -281,7 +301,9 @@ export function BpmnDiagramSvg({
             <LaneNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               // Doesn't need to be painted by the Kogito SVG Add-on
               {...style}
@@ -291,7 +313,9 @@ export function BpmnDiagramSvg({
             <UnknownNodeSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.position!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.position!.y}
               // Doesn't need to be painted by the Kogito SVG Add-on
               {...style}

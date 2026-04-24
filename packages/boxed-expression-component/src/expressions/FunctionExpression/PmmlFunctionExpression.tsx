@@ -17,7 +17,7 @@
  * under the License.
  */
 
-import { Select, SelectOption, SelectVariant } from "@patternfly/react-core/deprecated";
+import { Select, SelectOption, SelectOptionObject, SelectVariant } from "@patternfly/react-core/deprecated";
 import * as React from "react";
 import { useCallback, useEffect, useMemo } from "react";
 import * as ReactTable from "react-table";
@@ -466,11 +466,14 @@ function PmmlFunctionExpressionDocumentCell(props: React.PropsWithChildren<BeeTa
   }, [contextExpression]);
 
   const onSelect = useCallback(
-    (event, newDocument) => {
+    (
+      _event: React.MouseEvent<Element, MouseEvent> | React.ChangeEvent<Element>,
+      newDocument: string | SelectOptionObject
+    ) => {
       setSelectOpen(false);
       setExpression({
         setExpressionAction: (prev: Normalized<BoxedFunctionPmml>) => {
-          return getUpdatedExpression(prev, newDocument, "");
+          return getUpdatedExpression(prev, newDocument.toString(), "");
         },
         expressionChangedArgs: { action: Action.ExpressionCreated },
       });
@@ -526,7 +529,10 @@ function PmmlFunctionExpressionModelCell(props: React.PropsWithChildren<BeeTable
   const { setExpression } = useBoxedExpressionEditorDispatch();
 
   const onSelect = useCallback(
-    (event, newModel) => {
+    (
+      _event: React.MouseEvent<Element, MouseEvent> | React.ChangeEvent<Element>,
+      newModel: string | SelectOptionObject
+    ) => {
       setSelectOpen(false);
 
       setExpression({
@@ -535,9 +541,13 @@ function PmmlFunctionExpressionModelCell(props: React.PropsWithChildren<BeeTable
           const currentDocument =
             document.expression?.__$$element === "literalExpression" ? document.expression.text?.__$$text ?? "" : "";
 
-          return getUpdatedExpression(prev, currentDocument, newModel);
+          return getUpdatedExpression(prev, currentDocument, newModel.toString());
         },
-        expressionChangedArgs: { action: Action.LiteralTextExpressionChanged, from: "", to: newModel },
+        expressionChangedArgs: {
+          action: Action.LiteralTextExpressionChanged,
+          from: "",
+          to: newModel.toString(),
+        },
       });
     },
     [setExpression]

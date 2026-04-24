@@ -20,6 +20,7 @@
 import * as React from "react";
 import { useCallback } from "react";
 import { BeeTableCellProps, BoxedFilter, Normalized } from "../../api";
+import { OnSetExpression } from "../../BoxedExpressionEditorContext";
 import {
   NestedExpressionDispatchContextProvider,
   useBoxedExpressionEditorDispatch,
@@ -36,15 +37,16 @@ export function FilterExpressionCollectionCell({
 }: BeeTableCellProps<ROWTYPE> & { parentElementId: string }) {
   const { setExpression } = useBoxedExpressionEditorDispatch();
 
-  const onSetExpression = useCallback(
+  const onSetExpression = useCallback<OnSetExpression>(
     ({ getNewExpression, expressionChangedArgs }) => {
       setExpression({
-        setExpressionAction: (prev: Normalized<BoxedFilter>) => {
+        setExpressionAction: (prev) => {
+          const filter = prev as Normalized<BoxedFilter>;
           return {
-            ...prev,
+            ...filter,
             in: {
-              ...prev.in,
-              expression: getNewExpression(prev.in.expression),
+              ...filter.in,
+              expression: getNewExpression(filter.in.expression) ?? filter.in.expression,
             },
           };
         },

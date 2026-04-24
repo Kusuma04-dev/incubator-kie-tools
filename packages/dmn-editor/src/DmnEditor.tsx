@@ -353,7 +353,7 @@ export const DmnEditorInternal = ({
   }, [isDiagramEditingInProgress, onModelChange, dmn.model]);
 
   const onTabChanged = useCallback(
-    (e, tab) => {
+    (_e: React.MouseEvent<HTMLElement>, tab: DmnEditorTab) => {
       dmnEditorStoreApi.setState((state) => {
         state.navigation.tab = tab;
         if (tab === DmnEditorTab.DATA_TYPES) {
@@ -481,12 +481,19 @@ export const DmnEditor = React.forwardRef((props: DmnEditorProps, ref: React.Ref
   );
   const storeRef = React.useRef<StoreApiType>(store);
 
-  const resetState: ErrorBoundaryPropsWithFallback["onReset"] = useCallback(({ args }) => {
-    storeRef.current?.setState((state) => {
-      state.diagram = defaultStaticState().diagram;
-      state.dmn.model = args[0];
-    });
-  }, []);
+  const resetState: ErrorBoundaryPropsWithFallback["onReset"] = useCallback(
+    (
+      details:
+        | { reason: "imperative-api"; args: any[] }
+        | { reason: "keys"; prev: any[] | undefined; next: any[] | undefined }
+    ) => {
+      storeRef.current?.setState((state) => {
+        state.diagram = defaultStaticState().diagram;
+        state.dmn.model = details.reason === "imperative-api" ? details.args[0] : props.model;
+      });
+    },
+    [props.model]
+  );
 
   return (
     <I18nDictionariesProvider

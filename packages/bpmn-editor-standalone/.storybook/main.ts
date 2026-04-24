@@ -20,8 +20,6 @@
 import { baseConfig } from "@kie-tools/storybook-base/dist/config/baseConfig";
 import common from "@kie-tools-core/webpack-base/webpack.common.config";
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import { env } from "../env";
 const buildEnv: any = env; // build-env is not typed
 

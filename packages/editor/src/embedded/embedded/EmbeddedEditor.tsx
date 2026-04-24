@@ -25,7 +25,6 @@ import {
   KogitoEditorChannelApi,
   KogitoEditorEnvelopeApi,
 } from "../../api";
-import type * as CSS from "csstype";
 import * as React from "react";
 import { useCallback, useImperativeHandle, useMemo, useRef, useState } from "react";
 import { EmbeddedEditorFile, StateControl } from "../../channel";
@@ -67,7 +66,7 @@ export type EmbeddedEditorRef = EditorApi & {
   onKeyDown: (ke: React.KeyboardEvent) => void;
 };
 
-const containerStyles: CSS.Properties = {
+const containerStyles: React.CSSProperties = {
   display: "flex",
   flex: 1,
   flexDirection: "column",
