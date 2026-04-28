@@ -38,7 +38,7 @@ RUN mkdir $HOME \
   && microdnf --disableplugin=subscription-manager install -y tar gzip \
   && microdnf --disableplugin=subscription-manager clean all \
   && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash \
-  && /bin/bash -c "source $NVM_DIR/nvm.sh && nvm install $NODE_VERSION"
+  && /bin/bash -c "source $NVM_DIR/nvm.sh && nvm install $NODE_VERSION && rm -rf $NVM_DIR/versions/node/$NODE_VERSION/lib/node_modules/npm"
 
 
 ENV NODE_PATH $NVM_DIR/versions/node/$NODE_VERSION/bin
