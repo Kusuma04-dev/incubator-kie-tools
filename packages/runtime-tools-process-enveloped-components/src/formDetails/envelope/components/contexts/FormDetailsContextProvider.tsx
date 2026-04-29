@@ -24,7 +24,7 @@ interface IOwnProps {
   children?: React.ReactNode;
 }
 
-const FormDetailsContextProvider: React.FC<IOwnProps> = ({ children }) => {
+const FormDetailsContextProvider = ({ children }: IOwnProps) => {
   return (
     <RuntimeToolsFormDetailsContext.Provider value={new FormDetailsContextImpl()}>
       {children}

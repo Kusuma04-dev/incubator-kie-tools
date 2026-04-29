@@ -71,7 +71,7 @@ export function RuntimeToolsTriggerCloudEvent() {
   );
 
   const onStartWorkflowError = useCallback(
-    (error) => {
+    (error: Error) => {
       const message = error?.message || "Unknown error. More details in the developer tools console.";
       startWorkflowErrorAlert.show({ message });
     },

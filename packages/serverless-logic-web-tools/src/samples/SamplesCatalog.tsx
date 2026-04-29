@@ -194,7 +194,7 @@ export function SamplesCatalog() {
     [onSearch, searchFilter]
   );
 
-  const onSetPage = useCallback((_e, v) => {
+  const onSetPage = useCallback((_e: React.MouseEvent | React.KeyboardEvent, v: number) => {
     setPage(v);
   }, []);
 

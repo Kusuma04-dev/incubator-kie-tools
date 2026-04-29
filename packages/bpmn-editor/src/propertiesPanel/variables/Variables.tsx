@@ -90,13 +90,16 @@ export function Variables({
   }, []);
   const [variableNames, setVariableNames] = useState<Map<number, string>>(new Map());
 
-  const variableInputStyle = (variableName: string | undefined) => ({
-    ...entryColumnStyle,
-    color: variableName && hasWhitespace(variableName) ? "red" : "black",
-    textDecorationLine: variableName && hasWhitespace(variableName) ? "underline" : undefined,
-    textDecorationStyle: variableName && hasWhitespace(variableName) ? ("dotted" as const) : undefined,
-    textDecorationColor: variableName && hasWhitespace(variableName) ? "red" : undefined,
-  });
+  const variableInputStyle = (variableName: string | undefined) => {
+    const hasInvalidWhitespace = variableName && hasWhitespace(variableName);
+    return {
+      ...entryColumnStyle,
+      color: hasInvalidWhitespace ? "red" : "black",
+      textDecorationLine: hasInvalidWhitespace ? "underline" : undefined,
+      textDecorationStyle: hasInvalidWhitespace ? ("dotted" as const) : undefined,
+      textDecorationColor: hasInvalidWhitespace ? "red" : undefined,
+    };
+  };
 
   return (
     <>

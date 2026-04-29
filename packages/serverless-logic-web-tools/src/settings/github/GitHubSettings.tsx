@@ -94,7 +94,7 @@ export function GitHubSettings(props: SettingsPageProps) {
   }, []);
 
   const onPasteGitHubToken = useCallback(
-    (e) => {
+    (e: React.ClipboardEvent) => {
       const token = e.clipboardData.getData("text/plain").slice(0, GITHUB_OAUTH_TOKEN_SIZE);
       setPotentialGitHubToken(token);
       settingsDispatch.github.authService

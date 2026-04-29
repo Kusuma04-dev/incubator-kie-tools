@@ -28,7 +28,7 @@ interface Props {
   direction: SelectDirection;
   className?: string;
   selected: OperatingSystem;
-  onSelect: React.Dispatch<OperatingSystem>;
+  onSelect: React.Dispatch<OperatingSystem | string | number>;
 }
 
 export type SelectOsRef = { getOperationalSystem: () => OperatingSystem } | null;
@@ -40,12 +40,15 @@ const WINDOWS = "Windows";
 export function SelectOs(props: Props) {
   const [isSelectExpanded, setSelectIsExpanded] = useState(false);
 
-  const onSelectOsToggle = useCallback((isExpanded) => {
-    setSelectIsExpanded(isExpanded);
-  }, []);
+  const onSelectOsToggle = useCallback(
+    (_event: React.MouseEvent | React.ChangeEvent | React.KeyboardEvent, isExpanded: boolean) => {
+      setSelectIsExpanded(isExpanded);
+    },
+    []
+  );
 
   const onSelectOperatingSystem = useCallback(
-    (e, selection) => {
+    (e: React.MouseEvent | React.ChangeEvent, selection: string | number) => {
       props.onSelect(selection);
       setSelectIsExpanded(false);
     },

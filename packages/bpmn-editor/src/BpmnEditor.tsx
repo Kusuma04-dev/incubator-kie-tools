@@ -394,11 +394,7 @@ export const BpmnEditor = React.forwardRef((props: BpmnEditorProps, ref: React.R
   const storeRef = React.useRef<StoreApiType>(store);
 
   const resetState: ErrorBoundaryPropsWithFallback["onReset"] = useCallback(
-    (
-      details:
-        | { reason: "imperative-api"; args: any[] }
-        | { reason: "keys"; prev: any[] | undefined; next: any[] | undefined }
-    ) => {
+    (details: Parameters<NonNullable<ErrorBoundaryPropsWithFallback["onReset"]>>[0]) => {
       storeRef.current?.setState((state) => {
         state.diagram = getDefaultStaticState().diagram;
         state.bpmn.model = details.reason === "imperative-api" ? details.args[0] : props.model;

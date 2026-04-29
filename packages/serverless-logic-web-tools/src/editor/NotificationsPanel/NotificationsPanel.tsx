@@ -36,12 +36,12 @@ interface Props {
 
 export interface NotificationsPanelRef {
   getTab: (name: string) => NotificationsChannelApi | undefined;
-  setActiveTab: React.Dispatch<React.SetStateAction<string>>;
+  setActiveTab: React.Dispatch<React.SetStateAction<string | number | undefined>>;
 }
 
 export const NotificationsPanel = React.forwardRef<NotificationsPanelRef, Props>((props, forwardRef) => {
   const { i18n } = useAppI18n();
-  const [activeTab, setActiveTab] = useState<string | undefined>();
+  const [activeTab, setActiveTab] = useState<string | number | undefined>();
   const [tabsNotificationsCount, setTabsNotificationsCount] = useState<Map<string, number>>(new Map());
   const tabs: Map<string, React.RefObject<NotificationsChannelApi>> = useMemo(() => new Map(), []);
 
@@ -49,7 +49,7 @@ export const NotificationsPanel = React.forwardRef<NotificationsPanelRef, Props>
     forwardRef,
     () => ({
       getTab: (name: string) => tabs.get(name)?.current ?? undefined,
-      setActiveTab: (name: string) => setActiveTab(name),
+      setActiveTab: setActiveTab,
     }),
     [tabs]
   );
@@ -113,7 +113,7 @@ export const NotificationsPanel = React.forwardRef<NotificationsPanelRef, Props>
     [hasChanged]
   );
 
-  const onSelectTab = useCallback((event, tabName) => {
+  const onSelectTab = useCallback((event: React.MouseEvent<HTMLElement, MouseEvent>, tabName: string | number) => {
     setActiveTab(tabName);
   }, []);
 

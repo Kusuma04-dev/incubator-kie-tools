@@ -24,6 +24,7 @@ import { DiagramPreviewSize } from "@kie-tools/runtime-tools-swf-enveloped-compo
 
 interface IOwnProps {
   availablePages: string[];
+  children: React.ReactNode;
   devUIUrl: string;
   diagramPreviewSize: DiagramPreviewSize;
   isLocalCluster?: boolean;

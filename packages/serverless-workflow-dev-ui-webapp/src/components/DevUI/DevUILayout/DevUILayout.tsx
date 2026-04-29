@@ -38,7 +38,7 @@ import { WorkflowDefinitionListContextProviderWithApolloClient } from "@kie-tool
 interface IOwnProps {
   apolloClient: ApolloClient<any>;
   availablePages?: string[];
-  children: React.ReactElement;
+  children?: React.ReactNode;
   devUIUrl: string;
   diagramPreviewSize?: DiagramPreviewSize;
   isLocalCluster?: boolean;

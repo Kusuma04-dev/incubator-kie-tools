@@ -54,7 +54,7 @@ export abstract class XYChart extends BaseChart {
     );
   }
 
-  abstract buildChartGroup(): ChartGroupType;
+  abstract buildChartGroup(): JSX.Element;
 
   categories() {
     return this.props.dataSet.columns.slice(1).map((column: any) => column.settings["columnName"]);

@@ -71,7 +71,10 @@ export const YardUIEditor = ({ yardData, isReadOnly }: Props) => {
 
   const { i18n } = useBoxedExpressionEditorI18n();
 
-  const handleTabClick = useCallback((_event, tabIndex) => setActiveTabIndex(tabIndex), []);
+  const handleTabClick = useCallback(
+    (_event: React.MouseEvent<HTMLElement>, tabIndex: string | number) => setActiveTabIndex(Number(tabIndex)),
+    []
+  );
 
   const createNode = useCallback((id: number, text: string) => {
     let textLines = text.split("\n");

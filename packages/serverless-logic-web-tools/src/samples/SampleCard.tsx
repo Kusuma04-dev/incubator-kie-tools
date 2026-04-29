@@ -69,8 +69,8 @@ export function SampleCard(props: SampleCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const routes = useRoutes();
 
-  const handleModalToggle = useCallback((e?) => {
-    e?.stopPropagation();
+  const handleModalToggle = useCallback((e: React.MouseEvent<Element, MouseEvent> | KeyboardEvent) => {
+    e.stopPropagation();
     setIsModalOpen((prevState) => !prevState);
   }, []);
 

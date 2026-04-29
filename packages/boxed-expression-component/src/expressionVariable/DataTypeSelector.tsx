@@ -74,7 +74,8 @@ export const DataTypeSelector: React.FunctionComponent<DataTypeSelectorProps> = 
       /* this setTimeout keeps the context menu open after type selection changes. Without this Popover component thinks there has been a click outside the context menu, after DataTypeSelector has changed. This because the Select component has been removed from the html*/
       setTimeout(() => setOpen(false), 0);
 
-      onChange(selection.toString() === DmnBuiltInDataType.Undefined ? undefined : selection.toString());
+      const selectionString = selection.toString();
+      onChange(selectionString === DmnBuiltInDataType.Undefined ? undefined : selectionString);
 
       // Because Select leave the focus to the detached btn, give back the focus to the selectWrapperRef
       (selectContainerRef.current?.querySelector("button") as HTMLInputElement)?.focus();

@@ -93,7 +93,9 @@ export function SwfDiagramSvg({
             <CallbackstateSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}
@@ -103,7 +105,9 @@ export function SwfDiagramSvg({
             <EventstateSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}
@@ -113,7 +117,9 @@ export function SwfDiagramSvg({
             <ForeachstateSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}
@@ -123,7 +129,9 @@ export function SwfDiagramSvg({
             <InjectstateSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}
@@ -133,7 +141,9 @@ export function SwfDiagramSvg({
             <OperationstateSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}
@@ -143,7 +153,9 @@ export function SwfDiagramSvg({
             <ParallelstateSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}
@@ -153,7 +165,9 @@ export function SwfDiagramSvg({
             <SleepstateSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}
@@ -163,7 +177,9 @@ export function SwfDiagramSvg({
             <SwitchstateSvg
               width={node.width!}
               height={node.height!}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               x={node.positionAbsolute!.x}
+              // @ts-expect-error - ReactFlow branded types X/Y are compatible with number at runtime
               y={node.positionAbsolute!.y}
               {...style}
               {...shapeStyle}

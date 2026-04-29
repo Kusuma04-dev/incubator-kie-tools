@@ -136,7 +136,7 @@ export function NewWorkspaceFromUrlPage() {
   );
 
   const setUrl = useCallback(
-    (newUrl: any) => {
+    (newUrl: string | ((prev: string) => string)) => {
       if (!newUrl) {
         navigate(
           {
@@ -161,7 +161,7 @@ export function NewWorkspaceFromUrlPage() {
   );
 
   const setGitRefName = useCallback(
-    (newGitRefName: any) => {
+    (newGitRefName: string | ((prev: string) => string)) => {
       if (!newGitRefName) {
         navigate(
           {
