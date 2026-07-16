@@ -240,22 +240,6 @@ Error details: ${error}`);
     }
   }
 
-  // TODO: Rewrite this using the new Marshaller.
-  // Receive all contents, paths and a node ID and returns the model that contains the node.
-  public getPathFromNodeId(resources: DmnLanguageServiceResource[], nodeId: string): string {
-    for (const resourceContent of resources) {
-      const xmlContent = this.parser.parseFromString(resourceContent.content ?? "", XML_MIME);
-      const inputDataTag = this.inputDataRegEx.exec(resourceContent.content ?? "");
-      const inputs = xmlContent.getElementsByTagName(inputDataTag?.[0] ?? INPUT_DATA);
-      for (const input of Array.from(inputs)) {
-        if (input.id === nodeId) {
-          return resourceContent.normalizedPosixPathRelativeToTheWorkspaceRoot;
-        }
-      }
-    }
-    return "";
-  }
-
   //To get namespace with decision and it's related inputs
   public getDecisionInputDataNodes(
     decisionId: string,
@@ -370,6 +354,22 @@ Error details: ${error}`);
     });
   };
 
+  // TODO: Rewrite this using the new Marshaller.
+  // Receive all contents, paths and a node ID and returns the model that contains the node.
+  public getPathFromNodeId(resources: DmnLanguageServiceResource[], nodeId: string): string {
+    for (const resourceContent of resources) {
+      const xmlContent = this.parser.parseFromString(resourceContent.content ?? "", XML_MIME);
+      const inputDataTag = this.inputDataRegEx.exec(resourceContent.content ?? "");
+      const inputs = xmlContent.getElementsByTagName(inputDataTag?.[0] ?? INPUT_DATA);
+      for (const input of Array.from(inputs)) {
+        if (input.id === nodeId) {
+          return resourceContent.normalizedPosixPathRelativeToTheWorkspaceRoot;
+        }
+      }
+    }
+    return "";
+  }
+
   public buildIncludedModelsSchema(
     parentSchema: JSONSchema4,
     readonly__modelName: string,
@@ -379,7 +379,11 @@ Error details: ${error}`);
     readonly__namespaceToDrgElementsMap: Map<string, Map<string, DrgElement>>,
     readonly__modifiedJsonSchema: JSONSchema4,
     readonly__inputSet: JSONSchema4,
-    alreadyProcessedIncludedModelNames = new Set<string>()
+    alreadyProcessedIncludedModelNames = new Set<string>(),
+    // Tracks namespaces whose inputs have already been emitted anywhere in the form.
+    // Per DMN spec §10.3.1: a unified InputData is bound once — duplicates via any
+    // import path (including deep diamond imports) are suppressed.
+    alreadyEmittedInputNamespaces = new Set<string>()
   ) {
     if (alreadyProcessedIncludedModelNames.has(readonly__modelName)) return;
     alreadyProcessedIncludedModelNames.add(readonly__modelName);
@@ -387,7 +391,6 @@ Error details: ${error}`);
     const modelHierarchy = readonly__importIndex.hierarchy.get(readonly__modelName);
     if (!modelHierarchy) return;
 
-    // For immediate imported models
     modelHierarchy.immediate.forEach((importedModelName: string) => {
       const importedModel = readonly__modelNameToImportDefinition.get(importedModelName);
       if (!importedModel) return;
@@ -396,51 +399,55 @@ Error details: ${error}`);
         definition?.["x-dmn-type"]?.includes(importedModel["@_namespace"])
       ) as JSONSchema4 | undefined;
 
-      if (!dmnDefinition?.properties) return;
+      const namespaceAlreadyEmitted =
+        importedModel["@_namespace"] && alreadyEmittedInputNamespaces.has(importedModel["@_namespace"]);
 
-      // Get required inputs for this namespace
+      // Collect the names of required inputData for this namespace.
       const inputDataNames = new Set<string>();
-      readonly__requiredDecisions.forEach((namespaceDecisionId) => {
-        const [namespace, decisionId] = namespaceDecisionId.split("#");
-        if (namespace !== importedModel["@_namespace"]) return;
+      if (dmnDefinition?.properties && !namespaceAlreadyEmitted) {
+        readonly__requiredDecisions.forEach((namespaceDecisionId) => {
+          const [namespace, decisionId] = namespaceDecisionId.split("#");
+          if (namespace !== importedModel["@_namespace"]) return;
 
-        const drgElementsMap = readonly__namespaceToDrgElementsMap.get(namespace);
-        if (!drgElementsMap) return;
+          const drgElementsMap = readonly__namespaceToDrgElementsMap.get(namespace);
+          if (!drgElementsMap) return;
 
-        const drgElement = drgElementsMap.get(decisionId);
-        if (!drgElement) return;
+          const drgElement = drgElementsMap.get(decisionId);
+          if (!drgElement || drgElement.__$$element !== "decision") return;
 
-        if (drgElement.__$$element !== "decision") return;
-
-        drgElement.informationRequirement?.forEach((requirement: DMN_LATEST__tInformationRequirement) => {
-          if (requirement.requiredInput) {
-            const inputDataId = requirement.requiredInput["@_href"].split("#")[1];
-            const inputElement = drgElementsMap.get(inputDataId);
-            if (inputElement && inputElement["@_name"]) {
-              inputDataNames.add(inputElement["@_name"]);
+          drgElement.informationRequirement?.forEach((requirement: DMN_LATEST__tInformationRequirement) => {
+            if (requirement.requiredInput) {
+              const inputDataId = requirement.requiredInput["@_href"].split("#")[1];
+              const inputElement = drgElementsMap.get(inputDataId);
+              if (inputElement?.["@_name"]) {
+                inputDataNames.add(inputElement["@_name"]);
+              }
             }
-          }
+          });
         });
-      });
+      }
 
-      // Filter properties to only include required inputs
-      const filteredProperties = Object.fromEntries(
-        Object.entries(dmnDefinition.properties).filter(([inputDataName]) => {
-          const isInInputDataNames = inputDataNames.has(inputDataName);
-          const shouldInclude = !(
-            !importedModel["@_name"] &&
-            readonly__inputSet.properties &&
-            inputDataName in readonly__inputSet.properties
-          );
-          return isInInputDataNames && shouldInclude;
-        })
-      );
+      // Build the set of properties this model contributes to the form.
+      // Suppressed when: already emitted, no schema definition, or already in root InputSet.
+      const filteredProperties =
+        dmnDefinition?.properties && !namespaceAlreadyEmitted
+          ? Object.fromEntries(
+              Object.entries(dmnDefinition.properties).filter(([inputDataName]) => {
+                if (!inputDataNames.has(inputDataName)) return false;
+                // Suppress inputs already present at the root level — they are unified
+                // and the engine uses the root value for all occurrences.
+                return !(readonly__inputSet.properties && inputDataName in readonly__inputSet.properties);
+              })
+            )
+          : {};
 
-      if (Object.keys(filteredProperties).length > 0) {
-        if (!parentSchema.properties) parentSchema.properties = {};
+      if (!parentSchema.properties) parentSchema.properties = {};
 
-        if (importedModel["@_name"]) {
-          // If we have an import name, nest under that importName
+      if (importedModel["@_name"]) {
+        // Named import.
+
+        if (Object.keys(filteredProperties).length > 0 && !namespaceAlreadyEmitted) {
+          // Create or merge into the bucket for this model's alias on parentSchema.
           if (!parentSchema.properties[importedModel["@_name"]]) {
             parentSchema.properties[importedModel["@_name"]] = {
               type: "object" as const,
@@ -451,33 +458,44 @@ Error details: ${error}`);
           if (!importSchema.properties) importSchema.properties = {};
           Object.assign(importSchema.properties, filteredProperties);
 
-          // Recursively build inputs for import's dependencies
-          this.buildIncludedModelsSchema(
-            importSchema,
-            importedModelName,
-            readonly__importIndex,
-            readonly__modelNameToImportDefinition,
-            readonly__requiredDecisions,
-            readonly__namespaceToDrgElementsMap,
-            readonly__modifiedJsonSchema,
-            readonly__inputSet,
-            alreadyProcessedIncludedModelNames
-          );
-        } else {
-          // If no import name, add directly to properties
-          Object.assign(parentSchema.properties, filteredProperties);
-          this.buildIncludedModelsSchema(
-            parentSchema,
-            importedModelName,
-            readonly__importIndex,
-            readonly__modelNameToImportDefinition,
-            readonly__requiredDecisions,
-            readonly__namespaceToDrgElementsMap,
-            readonly__modifiedJsonSchema,
-            readonly__inputSet,
-            alreadyProcessedIncludedModelNames
-          );
+          // Mark namespace as emitted so sibling paths to the same model are suppressed.
+          alreadyEmittedInputNamespaces.add(importedModel["@_namespace"]);
         }
+
+        // Always recurse into this model's sub-imports, passing parentSchema so that
+        // deeply owned inputs are also placed at the Included Models top level.
+        this.buildIncludedModelsSchema(
+          parentSchema,
+          importedModelName,
+          readonly__importIndex,
+          readonly__modelNameToImportDefinition,
+          readonly__requiredDecisions,
+          readonly__namespaceToDrgElementsMap,
+          readonly__modifiedJsonSchema,
+          readonly__inputSet,
+          alreadyProcessedIncludedModelNames,
+          alreadyEmittedInputNamespaces
+        );
+      } else {
+        // Default namespace import: merge inputs directly into parent (no alias bucket).
+        if (Object.keys(filteredProperties).length > 0) {
+          Object.assign(parentSchema.properties, filteredProperties);
+          if (importedModel["@_namespace"]) {
+            alreadyEmittedInputNamespaces.add(importedModel["@_namespace"]);
+          }
+        }
+        this.buildIncludedModelsSchema(
+          parentSchema,
+          importedModelName,
+          readonly__importIndex,
+          readonly__modelNameToImportDefinition,
+          readonly__requiredDecisions,
+          readonly__namespaceToDrgElementsMap,
+          readonly__modifiedJsonSchema,
+          readonly__inputSet,
+          alreadyProcessedIncludedModelNames,
+          alreadyEmittedInputNamespaces
+        );
       }
     });
   }
@@ -517,20 +535,23 @@ Error details: ${error}`);
     const requiredDecisionsHref = new Set<string>();
     const currentModel = importIndex.models.values().next().value;
     this.filterRequiredDecisionInputDataNodes(
-      currentModel.definitions?.["@_namespace"],
+      currentModel?.definitions?.["@_namespace"],
       namespaceToIdToDrgElementsMap,
       decisionIdToInputIdsMap,
       requiredDecisionsHref
     );
 
-    // Create a map of model filenames to their import definitions
+    // Create a map of workspace-relative model paths to their import definitions.
+    // The keys must match the full paths used in importIndex.hierarchy (e.g. "dir/b.dmn"),
+    // not just the bare filename from locationURI (e.g. "b.dmn").
     const modelNameToImportDefinition = new Map<string, DMN_LATEST__tImport>();
-    Array.from(importIndex.models.values()).forEach((model) => {
+    Array.from(importIndex.models.entries()).forEach(([modelPath, model]) => {
+      const basedir = path.posix.dirname(modelPath);
       model.definitions?.import?.forEach((importDefinition) => {
         const locationUri = importDefinition["@_locationURI"];
         if (locationUri) {
-          const modelName = locationUri.replace("./", "");
-          modelNameToImportDefinition.set(modelName, importDefinition);
+          const resolvedPath = path.posix.join(basedir, path.posix.normalize(locationUri));
+          modelNameToImportDefinition.set(resolvedPath, importDefinition);
         }
       });
     });

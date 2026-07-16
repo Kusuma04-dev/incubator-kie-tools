@@ -370,9 +370,17 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
         props.dmnLanguageService
       );
       const { ["Included Models"]: includedModelInputs, ...rest } = formInputs ?? {};
+
+      const allowedIncludedModelKeys = new Set(
+        Object.keys(jsonSchema?.definitions?.InputSet?.properties?.["Included Models"]?.properties ?? {})
+      );
+      const filteredIncludedModelInputs = Object.fromEntries(
+        Object.entries(includedModelInputs ?? {}).filter(([key]) => allowedIncludedModelKeys.has(key))
+      );
+
       const modifiedFormInputs = {
         ...rest,
-        ...includedModelInputs,
+        ...filteredIncludedModelInputs,
       };
 
       return {
@@ -389,6 +397,7 @@ export function DmnRunnerContextProvider(props: PropsWithChildren<Props>) {
     },
     [
       isStrictMode,
+      jsonSchema,
       props.dmnLanguageService,
       props.workspaceFile.relativePath,
       props.workspaceFile.workspaceId,
