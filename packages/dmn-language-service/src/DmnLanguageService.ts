@@ -428,16 +428,14 @@ Error details: ${error}`);
       }
 
       // Build the set of properties this model contributes to the form.
-      // Suppressed when: already emitted, no schema definition, or already in root InputSet.
+      // Only inputs whose names are in inputDataNames AND whose namespace has not yet
+      // been emitted are included.  Two independent inputs that merely share a name
+      // across different namespaces are NOT unified per spec §7.3.4 — they are
+      // different nodes and each gets its own form field.
       const filteredProperties =
         dmnDefinition?.properties && !namespaceAlreadyEmitted
           ? Object.fromEntries(
-              Object.entries(dmnDefinition.properties).filter(([inputDataName]) => {
-                if (!inputDataNames.has(inputDataName)) return false;
-                // Suppress inputs already present at the root level — they are unified
-                // and the engine uses the root value for all occurrences.
-                return !(readonly__inputSet.properties && inputDataName in readonly__inputSet.properties);
-              })
+              Object.entries(dmnDefinition.properties).filter(([inputDataName]) => inputDataNames.has(inputDataName))
             )
           : {};
 
@@ -445,7 +443,6 @@ Error details: ${error}`);
 
       if (importedModel["@_name"]) {
         // Named import.
-
         if (Object.keys(filteredProperties).length > 0 && !namespaceAlreadyEmitted) {
           // Create or merge into the bucket for this model's alias on parentSchema.
           if (!parentSchema.properties[importedModel["@_name"]]) {
