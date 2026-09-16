@@ -147,12 +147,18 @@ for artifact_name in "${!IMAGES[@]}"; do
     full_image="$REGISTRY/incubator-kie-$artifact_name:$VERSION"
     docker tag "$(node -p "require('./$pkg_path/package.json').name" 2>/dev/null | sed 's|@kie-tools/||')" "$full_image" 2>/dev/null \
         || docker tag "incubator-kie-$artifact_name:latest" "$full_image" 2>/dev/null \
+        || docker tag "apache/incubator-kie-$artifact_name:main" "$full_image" 2>/dev/null \
+        || docker tag "apache/incubator-kie-$artifact_name:latest" "$full_image" 2>/dev/null \
         || echo "  WARN  could not tag $artifact_name (image may have a different local name)"
 
     if [[ "$RC_MODE" == "true" ]]; then
-        tarball="$OUTPUT_DIR/apache-kie-$VERSION-incubating-$artifact_name-image.tar.gz"
-        echo "  SAVE  $tarball"
-        docker save "$full_image" | gzip > "$tarball"
+        if docker image inspect "$full_image" &>/dev/null; then
+            tarball="$OUTPUT_DIR/apache-kie-$VERSION-incubating-$artifact_name-image.tar.gz"
+            echo "  SAVE  $tarball"
+            docker save "$full_image" | gzip > "$tarball"
+        else
+            echo "  SKIP  $artifact_name (image $full_image not found in local Docker daemon)"
+        fi
     fi
 done
 
