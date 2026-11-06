@@ -103,7 +103,7 @@ export CHROME_KIE_EDITORS_EXTENSION_ID="..."
 
 ## Jenkins Setup
 
-In Jenkins, credentials are configured in `.ci/jenkins/Jenkinsfile.103xplus.release-publish` using:
+In Jenkins, credentials are configured in `.ci/jenkins/Jenkinsfile.release-publish` using:
 
 - `CHROME_CLIENT_ID` / `CHROME_CLIENT_SECRET`: `chromeStoreCredentialsId`
 - `CHROME_REFRESH_TOKEN`: `chromeStoreRefreshTokenCredentialsId`
